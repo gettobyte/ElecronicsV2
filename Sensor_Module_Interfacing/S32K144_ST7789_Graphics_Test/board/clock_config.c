@@ -36,23 +36,23 @@ called_from_default_init: true
 outputs:
 - {id: ADC0_CLK.outFreq, value: 8 MHz}
 - {id: ADC1_CLK.outFreq, value: 8 MHz}
-- {id: BUS_CLK.outFreq, value: 16 MHz}
+- {id: BUS_CLK.outFreq, value: 12 MHz}
 - {id: CLKOUT.outFreq, value: 48 MHz}
-- {id: CMP0_CLK.outFreq, value: 16 MHz}
-- {id: CORE_CLK.outFreq, value: 16 MHz}
-- {id: CRC0_CLK.outFreq, value: 16 MHz}
-- {id: DMA0_CLK.outFreq, value: 16 MHz}
-- {id: DMAMUX0_CLK.outFreq, value: 16 MHz}
-- {id: EIM0_CLK.outFreq, value: 16 MHz}
-- {id: ERM0_CLK.outFreq, value: 16 MHz}
-- {id: EWM0_CLK.outFreq, value: 16 MHz}
+- {id: CMP0_CLK.outFreq, value: 12 MHz}
+- {id: CORE_CLK.outFreq, value: 48 MHz}
+- {id: CRC0_CLK.outFreq, value: 12 MHz}
+- {id: DMA0_CLK.outFreq, value: 48 MHz}
+- {id: DMAMUX0_CLK.outFreq, value: 12 MHz}
+- {id: EIM0_CLK.outFreq, value: 48 MHz}
+- {id: ERM0_CLK.outFreq, value: 48 MHz}
+- {id: EWM0_CLK.outFreq, value: 12 MHz}
 - {id: FIRCDIV1_CLK.outFreq, value: 48 MHz}
 - {id: FIRCDIV2_CLK.outFreq, value: 48 MHz}
-- {id: FLASH_CLK.outFreq, value: 8 MHz}
-- {id: FLEXCAN0_CLK.outFreq, value: 16 MHz}
-- {id: FLEXCAN1_CLK.outFreq, value: 16 MHz}
-- {id: FLEXCAN2_CLK.outFreq, value: 16 MHz}
-- {id: FTFC0_CLK.outFreq, value: 8 MHz}
+- {id: FLASH_CLK.outFreq, value: 24 MHz}
+- {id: FLEXCAN0_CLK.outFreq, value: 48 MHz}
+- {id: FLEXCAN1_CLK.outFreq, value: 48 MHz}
+- {id: FLEXCAN2_CLK.outFreq, value: 48 MHz}
+- {id: FTFC0_CLK.outFreq, value: 24 MHz}
 - {id: FTM0_CLK.outFreq, value: 8 MHz}
 - {id: FTM1_CLK.outFreq, value: 8 MHz}
 - {id: FTM2_CLK.outFreq, value: 8 MHz}
@@ -63,22 +63,22 @@ outputs:
 - {id: LPO_1K_CLK.outFreq, value: 1 kHz}
 - {id: LPO_CLK.outFreq, value: 128 kHz}
 - {id: LPSPI0_CLK.outFreq, value: 8 MHz}
-- {id: LPSPI1_CLK.outFreq, value: 8 MHz}
+- {id: LPSPI1_CLK.outFreq, value: 16 MHz}
 - {id: LPSPI2_CLK.outFreq, value: 8 MHz}
 - {id: LPTMR0_CLK.outFreq, value: 8 MHz}
 - {id: LPUART0_CLK.outFreq, value: 8 MHz}
 - {id: LPUART1_CLK.outFreq, value: 8 MHz}
 - {id: LPUART2_CLK.outFreq, value: 8 MHz}
-- {id: MPU0_CLK.outFreq, value: 16 MHz}
-- {id: MSCM0_CLK.outFreq, value: 16 MHz}
-- {id: PDB0_CLK.outFreq, value: 16 MHz}
-- {id: PDB1_CLK.outFreq, value: 16 MHz}
-- {id: PORTA_CLK.outFreq, value: 16 MHz}
-- {id: PORTB_CLK.outFreq, value: 16 MHz}
-- {id: PORTC_CLK.outFreq, value: 16 MHz}
-- {id: PORTD_CLK.outFreq, value: 16 MHz}
-- {id: PORTE_CLK.outFreq, value: 16 MHz}
-- {id: RTC0_CLK.outFreq, value: 16 MHz}
+- {id: MPU0_CLK.outFreq, value: 48 MHz}
+- {id: MSCM0_CLK.outFreq, value: 48 MHz}
+- {id: PDB0_CLK.outFreq, value: 48 MHz}
+- {id: PDB1_CLK.outFreq, value: 48 MHz}
+- {id: PORTA_CLK.outFreq, value: 12 MHz}
+- {id: PORTB_CLK.outFreq, value: 12 MHz}
+- {id: PORTC_CLK.outFreq, value: 12 MHz}
+- {id: PORTD_CLK.outFreq, value: 12 MHz}
+- {id: PORTE_CLK.outFreq, value: 12 MHz}
+- {id: RTC0_CLK.outFreq, value: 12 MHz}
 - {id: RTC_CLK.outFreq, value: 48 MHz}
 - {id: SCGCLKOUT.outFreq, value: 48 MHz}
 - {id: SIRCDIV1_CLK.outFreq, value: 8 MHz}
@@ -88,24 +88,25 @@ outputs:
 - {id: SPLLDIV1_CLK.outFreq, value: 96 MHz}
 - {id: SPLLDIV2_CLK.outFreq, value: 96 MHz}
 - {id: SPLL_CLK_OUT.outFreq, value: 96 MHz}
-- {id: SYS_CLK.outFreq, value: 16 MHz}
-- {id: TRACE_CLK.outFreq, value: 16 MHz}
+- {id: SYS_CLK.outFreq, value: 48 MHz}
+- {id: TRACE_CLK.outFreq, value: 48 MHz}
 settings:
 - {id: 'HSRUN:SCG.DIVBUS.scale', value: '2', locked: true}
 - {id: 'HSRUN:SCG.DIVCORE.scale', value: '3', locked: true}
 - {id: 'HSRUN:SCG.DIVSLOW.scale', value: '4', locked: true}
 - {id: 'HSRUN:SCG.SCSSEL.sel', value: SCG.SPLL_CLK}
+- {id: PCC.LPSPI1_CLK_SEL.sel, value: SCG.SOSCDIV2_CLK}
 - {id: PCC.LPTMR0_FRAC.scale, value: '1', locked: true}
 - {id: PCC.PREDIV.scale, value: '1', locked: true}
 - {id: PCC.PREDIVTRACE.scale, value: '1', locked: true}
 - {id: PCC.TRACE_FRAC.scale, value: '1', locked: true}
 - {id: RTCCLKSEL.sel, value: SCG.FIRCDIV1_CLK}
-- {id: 'RUN:SCG.DIVBUS.scale', value: '1', locked: true}
-- {id: 'RUN:SCG.DIVCORE.scale', value: '6', locked: true}
+- {id: 'RUN:SCG.DIVBUS.scale', value: '4', locked: true}
+- {id: 'RUN:SCG.DIVCORE.scale', value: '2', locked: true}
 - {id: 'RUN:SCG.DIVSLOW.scale', value: '2', locked: true}
 - {id: 'RUN:SCG.SCSSEL.sel', value: SCG.SPLL_CLK}
-- {id: SCG.DIVBUS.scale, value: '1', locked: true}
-- {id: SCG.DIVCORE.scale, value: '6', locked: true}
+- {id: SCG.DIVBUS.scale, value: '4', locked: true}
+- {id: SCG.DIVCORE.scale, value: '2', locked: true}
 - {id: SCG.DIVSLOW.scale, value: '2', locked: true}
 - {id: SCG.FIRCDIV1.scale, value: '1', locked: true}
 - {id: SCG.FIRCDIV2.scale, value: '1', locked: true}
@@ -155,7 +156,7 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
     {
         .clockName = LPSPI1_CLK,
         .clkGate = true,
-        .clkSrc = CLK_SRC_SIRC_DIV2,
+        .clkSrc = CLK_SRC_SOSC_DIV2,
         .frac = MULTIPLY_BY_ONE,
         .divider = DIVIDE_BY_ONE,
     },
@@ -420,8 +421,8 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
             .rccrConfig =
             {
                 .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
-                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_6,/* Core Clock Divider: divided by 6 */
-                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_1,/* Bus Clock Divider: divided by 1 */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_2,/* Core Clock Divider: divided by 2 */
+                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
                 .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_2,/* Slow Clock Divider: divided by 2 */
             },
             .vccrConfig =
