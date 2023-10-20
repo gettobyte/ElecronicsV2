@@ -17,9 +17,6 @@
 // For ST7789 Driver IC and we are using 240*240 pixel and 1.3 inch display
 #define ST7789_WIDTH 240
 #define ST7789_HEIGHT 240
-#define X_SHIFT 0 // starting point for X axis that is for rows. Rows will start from 0 index
-#define Y_SHIFT 0 //starting point for Y axis that is for coloumns. Columns will start from 0 index.
-
 
 /*
  * @brief write data to ST7789 controller
@@ -91,7 +88,48 @@ void GB_ST7789_Init()
 }
 
 /**
- * @brief Set address of DisplayWindow
+ * @brief Set address of DisplayWindow, this API sets the cursor for ST7789
+ * Total canvas size is of 240*320 for ST7789 Driver IC, that is 240 columns and 320 rows.
+ * But the module of ST7789, which we are using has canvas size of 240*240.
+ * That is 240 columns from 0->239 amd 240 rows from 80->319.
+ * Now columns are represented by x-axis, their value would be ranging from 0 to 239
+ * and rows are represented by y-axis, their value would be ranging from 80 to 319.
+ *
+ *       (0,0)   -----------------------(239,0)      --> x-axis
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               (coloumns from 0 to 240)
+ *       (0,80)  |---------------------|(239,80)
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *           R   |-|-|-|-|-|-|-|-|-|-|-|
+ *           O   |-|-|-|-|-|-|-|-|-|-|-|
+ *           W   |-|-|-|-|-|-|-|-|-|-|-|
+ *           S   |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *           F   |-|-|-|-|-|-|-|-|-|-|-|
+ *           R   |-|-|-|-|-|-|-|-|-|-|-|
+ *           O   |-|-|-|-|-|-|-|-|-|-|-|
+ *           M   |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *          80   |-|-|-|-|-|-|-|-|-|-|-|
+ *          to   |-|-|-|-|-|-|-|-|-|-|-|
+ *          319  |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *      (0,319)  -----------------------(239,319)
+ *
+ *               |
+ *               |^
+ *               y axis
+ *
+ * So for using full canvas of ST7789, xStart = 0, xEnd=239
+ * For using full canvas of ST7789, yStart = 0, yEnd = 319
+ *
  * @param x0&y0 -> x(Xstart) and y(Ystart) axis start
  * @param x1&y1 -> x(Xend) and y(Yend) axis end
  * @return none
@@ -99,14 +137,16 @@ void GB_ST7789_Init()
 
 void ST7789_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1)
 {
-	uint8_t data;
 	gb_ST7789_CS_pin_low();
 
-	uint16_t x_start = x0+ X_SHIFT;
-	uint16_t x_end = x1 +Y_SHIFT;
-	uint16_t y_start = y0+ Y_SHIFT;
-	uint16_t y_end = y1 + Y_SHIFT;
+	uint16_t x_start = x0;
+	uint16_t x_end = x1;
+	uint16_t y_start = y0;
+	uint16_t y_end = y1;
 
+	/*
+	 *
+	 */
 	uint8_t ColAddr[4]={ x_start >> 8,x_start & 0xFF,x_end >> 8, x_end & 0xff};
 	//uint8_t ColAddr[4]={ 0x00,0x00,0x00, 0xEF};
 
@@ -124,7 +164,7 @@ void ST7789_Fill_Color(uint16_t color)
 
 	uint16_t i,j;
 	uint8_t data;
-uint8_t x=0xff;
+	uint8_t x=0xff;
 	gb_ST7789_CS_pin_low();
 
 
@@ -138,15 +178,6 @@ uint8_t x=0xff;
 			uint8_t data[] = { color >>8, color & 0xFF};
 			GB_ST7789_SendData(data, sizeof(data));
 		}
-
-//	for (j =0; j<8; j++)
-//	 {
-//		//for(i = 0; i<1; i++)
-//		{
-//			GB_ST7789_SendData(&x, 10000);
-//
-//		}
-//	}
 
 	gb_ST7789_CS_pin_high();
 }

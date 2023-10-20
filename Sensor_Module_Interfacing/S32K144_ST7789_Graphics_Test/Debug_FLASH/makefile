@@ -15,6 +15,7 @@ RM := rm -rf
 -include SDK/platform/drivers/src/lpspi/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
 -include SDK/platform/drivers/src/edma/subdir.mk
+-include SDK/platform/drivers/src/csec/subdir.mk
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
 -include SDK/platform/devices/S32K144/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk

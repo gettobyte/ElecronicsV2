@@ -35,6 +35,11 @@
 			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/clock/doxygen/clock_manager.dox</locationURI>
 		</link>
 		<link>
+			<name>doc/SDK/platform/drivers/src/csec/doxygen/csec.dox</name>
+			<type>1</type>
+			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/csec/doxygen/csec.dox</locationURI>
+		</link>
+		<link>
 			<name>doc/SDK/platform/drivers/src/edma/doxygen/edma_driver.dox</name>
 			<type>1</type>
 			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/edma/doxygen/edma_driver.dox</locationURI>

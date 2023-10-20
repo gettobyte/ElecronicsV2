@@ -25,6 +25,7 @@ S&M_Driv/src \
 SDK/platform/devices/S32K144/startup \
 SDK/platform/devices \
 SDK/platform/drivers/src/clock/S32K1xx \
+SDK/platform/drivers/src/csec \
 SDK/platform/drivers/src/edma \
 SDK/platform/drivers/src/interrupt \
 SDK/platform/drivers/src/lpspi \

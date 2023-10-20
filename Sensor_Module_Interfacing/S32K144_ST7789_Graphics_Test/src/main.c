@@ -1251,17 +1251,16 @@ int main(void)
 {
 	/* Write your code here */
 	/* Configure clocks for PORT */
-		 error = CLOCK_DRV_Init(&clockMan1_InitConfig0);
-		 DEV_ASSERT(error == STATUS_SUCCESS);
+	error = CLOCK_DRV_Init(&clockMan1_InitConfig0);
+	DEV_ASSERT(error == STATUS_SUCCESS);
 
-		 error = PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
-		 DEV_ASSERT(error == STATUS_SUCCESS);
+	error = PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
+	DEV_ASSERT(error == STATUS_SUCCESS);
 
-		 /* Initialize LPSPI0 (Send)*/
-		    LPSPI_DRV_MasterInit(INST_ST7789_INTERFACE, &ST7789_InterfaceState, &ST7789_SPI_Config);
+	/* Initialize LPSPI0 (Send)*/
+	LPSPI_DRV_MasterInit(INST_ST7789_INTERFACE, &ST7789_InterfaceState, &ST7789_SPI_Config);
 
-
-	    	GB_ST7789_Init();
+	GB_ST7789_Init();
 
 	    	OSIF_TimeDelay(100);
 
