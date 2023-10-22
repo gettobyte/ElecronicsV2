@@ -36,16 +36,16 @@ called_from_default_init: true
 outputs:
 - {id: ADC0_CLK.outFreq, value: 8 MHz}
 - {id: ADC1_CLK.outFreq, value: 8 MHz}
-- {id: BUS_CLK.outFreq, value: 56/3 MHz}
+- {id: BUS_CLK.outFreq, value: 28/3 MHz}
 - {id: CLKOUT.outFreq, value: 48 MHz}
-- {id: CMP0_CLK.outFreq, value: 56/3 MHz}
+- {id: CMP0_CLK.outFreq, value: 28/3 MHz}
 - {id: CORE_CLK.outFreq, value: 112/3 MHz}
-- {id: CRC0_CLK.outFreq, value: 56/3 MHz}
+- {id: CRC0_CLK.outFreq, value: 28/3 MHz}
 - {id: DMA0_CLK.outFreq, value: 112/3 MHz}
-- {id: DMAMUX0_CLK.outFreq, value: 56/3 MHz}
+- {id: DMAMUX0_CLK.outFreq, value: 28/3 MHz}
 - {id: EIM0_CLK.outFreq, value: 112/3 MHz}
 - {id: ERM0_CLK.outFreq, value: 112/3 MHz}
-- {id: EWM0_CLK.outFreq, value: 56/3 MHz}
+- {id: EWM0_CLK.outFreq, value: 28/3 MHz}
 - {id: FIRCDIV1_CLK.outFreq, value: 48 MHz}
 - {id: FIRCDIV2_CLK.outFreq, value: 48 MHz}
 - {id: FLASH_CLK.outFreq, value: 28/3 MHz}
@@ -73,12 +73,12 @@ outputs:
 - {id: MSCM0_CLK.outFreq, value: 112/3 MHz}
 - {id: PDB0_CLK.outFreq, value: 112/3 MHz}
 - {id: PDB1_CLK.outFreq, value: 112/3 MHz}
-- {id: PORTA_CLK.outFreq, value: 56/3 MHz}
-- {id: PORTB_CLK.outFreq, value: 56/3 MHz}
-- {id: PORTC_CLK.outFreq, value: 56/3 MHz}
-- {id: PORTD_CLK.outFreq, value: 56/3 MHz}
-- {id: PORTE_CLK.outFreq, value: 56/3 MHz}
-- {id: RTC0_CLK.outFreq, value: 56/3 MHz}
+- {id: PORTA_CLK.outFreq, value: 28/3 MHz}
+- {id: PORTB_CLK.outFreq, value: 28/3 MHz}
+- {id: PORTC_CLK.outFreq, value: 28/3 MHz}
+- {id: PORTD_CLK.outFreq, value: 28/3 MHz}
+- {id: PORTE_CLK.outFreq, value: 28/3 MHz}
+- {id: RTC0_CLK.outFreq, value: 28/3 MHz}
 - {id: RTC_CLK.outFreq, value: 48 MHz}
 - {id: SCGCLKOUT.outFreq, value: 48 MHz}
 - {id: SIRCDIV1_CLK.outFreq, value: 8 MHz}
@@ -91,7 +91,6 @@ outputs:
 - {id: SYS_CLK.outFreq, value: 112/3 MHz}
 - {id: TRACE_CLK.outFreq, value: 112/3 MHz}
 settings:
-- {id: powerMode, value: HSRUN}
 - {id: 'HSRUN:SCG.DIVBUS.scale', value: '2', locked: true}
 - {id: 'HSRUN:SCG.DIVCORE.scale', value: '3', locked: true}
 - {id: 'HSRUN:SCG.DIVSLOW.scale', value: '4', locked: true}
@@ -103,10 +102,10 @@ settings:
 - {id: PCC.TRACE_FRAC.scale, value: '1', locked: true}
 - {id: RTCCLKSEL.sel, value: SCG.FIRCDIV1_CLK}
 - {id: 'RUN:SCG.DIVBUS.scale', value: '4', locked: true}
-- {id: 'RUN:SCG.DIVCORE.scale', value: '2', locked: true}
+- {id: 'RUN:SCG.DIVCORE.scale', value: '3', locked: true}
 - {id: 'RUN:SCG.DIVSLOW.scale', value: '4', locked: true}
 - {id: 'RUN:SCG.SCSSEL.sel', value: SCG.SPLL_CLK}
-- {id: SCG.DIVBUS.scale, value: '2', locked: true}
+- {id: SCG.DIVBUS.scale, value: '4', locked: true}
 - {id: SCG.DIVCORE.scale, value: '3', locked: true}
 - {id: SCG.DIVSLOW.scale, value: '4', locked: true}
 - {id: SCG.FIRCDIV1.scale, value: '1', locked: true}
@@ -420,7 +419,7 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
             .rccrConfig =
             {
                 .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
-                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_2,/* Core Clock Divider: divided by 2 */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_3,/* Core Clock Divider: divided by 3 */
                 .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
                 .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
             },
