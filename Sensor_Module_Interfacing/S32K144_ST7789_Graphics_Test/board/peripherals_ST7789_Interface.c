@@ -48,7 +48,7 @@ instance:
         - pcsPolarity: 'LPSPI_ACTIVE_LOW'
         - isPcsContinuous: 'false'
         - bitcount: '8'
-        - lpspiSrcClk: '8000000'
+        - lpspiSrcClk: '1600000'
         - clkPhase: 'LPSPI_CLOCK_PHASE_1ST_EDGE'
         - clkPolarity: 'LPSPI_SCK_ACTIVE_HIGH'
         - lsbFirst: 'false'
@@ -73,7 +73,6 @@ instance:
  * The external variables will be used in other source files in application code.
  *
  */
-
 void GB_MA_SPI_send_byte_conti(uint8_t *val, uint16_t count, uint32_t timeout)
 {
 	static uint8_t rx_value;
@@ -93,7 +92,6 @@ uint8_t GB_MA_SPI_exchange_byte(uint8_t *val, uint8_t count)
 	return rx_value;
 
 }
-
 /* Define state structure for current SPI instance */
 lpspi_state_t ST7789_InterfaceState;
 

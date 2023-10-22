@@ -95,7 +95,8 @@ typedef struct {
  * @param dataBytes  -> pointer to the data buffer that needs to send/write at that address
  * @param numDataBytes -> number of data bytes that needs to send
  */
-
+void GB_STT7789_SPI_CS_low(void);
+void GB_STT7789_SPI_CS_high(void);
 void GB_ST7789_SendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes, uint32_t timeout);
 void GB_ST7789_SendData( uint8_t *data, uint32_t data_size);
 void GB_ST7789_SendDataIm( const uint8_t *data, uint32_t data_size);

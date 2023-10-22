@@ -25,6 +25,16 @@
  * @param numDataBytes -> number of data bytes that needs to send
  */
 
+void GB_STT7789_SPI_CS_low()
+{
+	gb_ST7789_CS_pin_low();
+}
+
+void GB_STT7789_SPI_CS_high()
+{
+	gb_ST7789_CS_pin_high();
+}
+
 void GB_ST7789_SendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes, uint32_t timeout)
 {
 
@@ -54,9 +64,9 @@ void GB_ST7789_Init()
 {
 
 	uint8_t ColorMod = ST7789_16_Bit_5_6_5_Input_64K_Color;
-	uint8_t MADCTL_SetRotation1 = 0x08; //MY = 1, MV=0, MX = 0, BGR is set
-	uint8_t MADCTL_SetRotation0 = 0xC0; // MY = 1, MX= 1, RGB is set
-	uint8_t MADCTL_SetRotation2 = 0x00; //MY = 0, MX = 0, RGB is set, MH =0
+	uint8_t MADCTL_SetRotation1 = 0x80; //MX = 0, MY=1, MX = 0
+	uint8_t MADCTL_SetRotation0 = 0xC0; // MY = 0, MX= 0, RGB is set
+
 	uint8_t ColAddr[4]={ 0x00,0x00,0x00,240};
 	uint8_t RowAddr[4] = {0x00,0x00,320>>8,320&0xFF};
 	uint8_t data;
@@ -74,7 +84,7 @@ void GB_ST7789_Init()
 
 	GB_ST7789_SendCommand(ST77XX_COLMOD, &ColorMod, 1, 1000);   // Set color Mode
 
-	GB_ST7789_SendCommand(ST77XX_MADCTL, &MADCTL_SetRotation1, 1, 10);  // Set display rotation
+	//GB_ST7789_SendCommand(ST77XX_MADCTL, &MADCTL_SetRotation1, 1, 10);  // Set display rotation
 
 	GB_ST7789_SendCommand(ST77XX_INVON, &data, 0, 10);
 
@@ -83,7 +93,6 @@ void GB_ST7789_Init()
 	GB_ST7789_SendCommand(ST77XX_DISPON, &data, 0, 10);
 
 	GB_ST7789_SendCommand(ST77XX_MADCTL, &MADCTL_SetRotation0, 1, 10);
-
 	gb_ST7789_CS_pin_high();
 }
 
@@ -164,13 +173,10 @@ void ST7789_Fill_Color(uint16_t color)
 
 	uint16_t i,j;
 	uint8_t data;
-	uint8_t x=0xff;
 	gb_ST7789_CS_pin_low();
 
 
 	GB_ST7789_SendCommand(ST77XX_RAMWR, &data, 0, 10);
-
-	uint8_t data_co[] = { color >>8, color & 0xFF};
 
 	for (i =0; i < ST7789_WIDTH; i++)
 		for (j=0; j<ST7789_HEIGHT; j++)
@@ -183,29 +189,63 @@ void ST7789_Fill_Color(uint16_t color)
 }
 uint32_t length = 0;
 uint16_t i,j;
+
+/*
+ * @brief This API, will print images on the canvas
+ * @param x -> value of cell(x cordinate) from where image should start(range 0->240)
+ * @param y -> value of cell(y cordinate) from where image should start(range 0->240)
+ * @param w -> width of image
+ * @param h -> height of image
+ * @param data -> pointer to array of bytes of image
+ */
 void ST7789_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint8_t *data)
 {
 	uint8_t d_data;
 
-//	ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+	ST7789_SetAddressWindow(x,y, (x+w)-1, (y+h)-1);
 	gb_ST7789_CS_pin_low();
 
 	GB_ST7789_SendCommand(ST77XX_RAMWR, &d_data, 0, 10);
 
-for (j =0; j<8; j++)
- {
-	//for(i = 0; i<14400; i++)
+	uint16_t BytesToSend,NoOfRounds =0;
+	uint32_t TotalCellsToBeFilled = w*h;
+	uint32_t TotalBytesToBeFilled = w*h*2;
+	if(TotalBytesToBeFilled <= 14400)
 	{
-		GB_ST7789_SendDataIm(&data[(14400 *j)], 14400);
-
+		NoOfRounds = 1;
+		BytesToSend = TotalBytesToBeFilled;
+	}else if(TotalBytesToBeFilled > 14400)
+	{
+		NoOfRounds = TotalBytesToBeFilled/7200;
+		BytesToSend = TotalBytesToBeFilled/NoOfRounds;
 	}
+
+	for (j =0; j<NoOfRounds; j++)
+	 {
+		{
+			GB_ST7789_SendDataIm(&data[(BytesToSend *j)], BytesToSend);
+
+		}
+	}
+
+   gb_ST7789_CS_pin_high();
+
 }
 
-
-   // GB_ST7789_SendDataIm(data, 27000);
+void ST7789DrawPixel(uint16_t x, uint16_t y, uint16_t color)
+{
+	ST7789_SetAddressWindow(x,y,x,y);
+	uint8_t data[] = {color>>8, color & 0xFF};
+	gb_ST7789_CS_pin_low();
+	GB_ST7789_SendData(data, sizeof(data));
 	gb_ST7789_CS_pin_high();
 
 }
+
+//void ST7789_DrawLine( uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1)
+//{
+//
+//}
 /**
  * @brief Write a char
  * @param  x&y -> cursor of the start point.
@@ -219,7 +259,6 @@ void ST7789_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t co
 {
 	uint32_t i, b, j;
 	uint8_t d_ata;
-	//ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
 
 	ST7789_SetAddressWindow(x,y, (x+font.width)-1, (y+font.height)-1);
 
@@ -230,7 +269,6 @@ void ST7789_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t co
 	for (i = 0; i < font.height; i++)
 	{
 		b = font.data[(ch - 32) * font.height + i];
-		//ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart+i, ST7789_XEnd, ST7789_YEnd);
 		for (j = 0; j < font.width; j++)
 		{
 			if ((b << j) & 0x8000)
@@ -261,7 +299,6 @@ void ST7789_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t co
 void ST7789_WriteString(uint16_t x, uint16_t y, const char *str, FontDef font, uint16_t color, uint16_t bgcolor)
 {
 	{
-		//gb_ST7789_CS_pin_low();
 		while (*str)
 		{
 			if (x + font.width >= ST7789_WIDTH)
@@ -284,7 +321,6 @@ void ST7789_WriteString(uint16_t x, uint16_t y, const char *str, FontDef font, u
 			x += font.width;
 			str++;
 		}
-	//gb_ST7789_CS_pin_high();
 	}
 }
 //void ST7789_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color)
