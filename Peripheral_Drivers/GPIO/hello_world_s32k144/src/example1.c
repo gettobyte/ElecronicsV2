@@ -13,15 +13,30 @@
  */
 
 	#define PCC_CLOCK	PCC_PORTD_CLOCK
-	#define LED0_PORT PTD
-	#define LED0_PIN  15
-    #define SWITCH1_PORT PTC
-    #define SWITCH1_PIN 13
 
-    #define ReadSwitch  PINS_DRV_ReadPins(SWITCH1_PORT) >> SWITCH1_PIN
-    #define LED0_HIGH   PINS_DRV_SetPins(LED0_PORT, 1 << LED0_PIN);
-    #define LED1_LOW    PINS_DRV_ClearPins(LED0_PORT, 1 << LED0_PIN);
-    #include "sdk_project_config.h"
+    #define RED_LED_PORT PTD
+	#define RED_LED_PIN  15
+	#define GREEN_LED_PORT PTD
+	#define GREEN_LED_PIN  16
+
+    #define SWITCH2_PORT PTC
+    #define SWITCH2_PIN 13
+
+    #define SWITCH1_PORT PTC
+    #define SWITCH1_PIN 12
+
+    #define ReadSwitch2  PINS_DRV_ReadPins(SWITCH2_PORT) >> SWITCH2_PIN
+    #define ReadSwitch1 PINS_DRV_ReadPins(SWITCH1_PORT) >> SWITCH1_PIN
+
+    #define RED_LED_HIGH     PINS_DRV_SetPins(RED_LED_PORT, 1 << RED_LED_PIN);
+    #define RED_LED_LOW    PINS_DRV_ClearPins(RED_LED_PORT, 1 << RED_LED_PIN);
+    #define RED_LED_TOGGLE  PINS_DRV_TogglePins(RED_LED_PORT, 1 << RED_LED_PIN);
+
+    #define GREEN_LED_HIGH   PINS_DRV_SetPins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+    #define GREEN_LED_LOW    PINS_DRV_ClearPins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+    #define GREEN_LED_TOGGLE  PINS_DRV_TogglePins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+
+#include "sdk_project_config.h"
 
 int main(void)
 {
@@ -35,15 +50,20 @@ int main(void)
 
   for (;;)
   {
-      if(ReadSwitch)
+      if(ReadSwitch1 & 0x01) // Switch1 HIGH
       {
-    	  LED0_HIGH;
-
-      }else if(!(ReadSwitch))
+    	  RED_LED_HIGH;  // RED LED HIGH
+      }else if(!(ReadSwitch1 & 0x01)) // Switch1 LOW
       {
-    	  LED1_LOW;
-
+    	  RED_LED_LOW; // RED LED LOW
       }
 
+      if(ReadSwitch2 & 0x01) // Switch2 High
+	  {
+    	  GREEN_LED_HIGH; //Green LED High
+	  }else if(!(ReadSwitch2 & 0x01)) // Switch2 Low
+	  {
+		  GREEN_LED_LOW;  //Green LED Low
+	  }
   }
 }

@@ -13,14 +13,26 @@
  */
 
 	#define PCC_CLOCK	PCC_PORTD_CLOCK
-	#define LED0_PORT PTD
-	#define LED0_PIN  15
-    #define SWITCH1_PORT PTC
-    #define SWITCH1_PIN 13
 
-    #define ReadSwitch  PINS_DRV_ReadPins(SWITCH1_PORT) >> SWITCH1_PIN
+    #define LED0_PORT PTD
+	#define LED0_PIN  15
+	#define LED1_PORT PTD
+	#define LED1_PIN  16
+
+    #define SWITCH2_PORT PTC
+    #define SWITCH2_PIN 13
+
+    #define SWITCH1_PORT PTC
+    #define SWITCH1_PIN 12
+
+    #define ReadSwitch2  PINS_DRV_ReadPins(SWITCH2_PORT) >> SWITCH2_PIN
+    #define ReadSwitch1 PINS_DRV_ReadPins(SWITCH1_PORT) >> SWITCH1_PIN
+
     #define LED0_HIGH   PINS_DRV_SetPins(LED0_PORT, 1 << LED0_PIN);
-    #define LED1_LOW    PINS_DRV_ClearPins(LED0_PORT, 1 << LED0_PIN);
+    #define LED0_LOW    PINS_DRV_ClearPins(LED0_PORT, 1 << LED0_PIN);
+
+    #define LED1_HIGH   PINS_DRV_SetPins(LED1_PORT, 1 << LED1_PIN);
+    #define LED1_LOW    PINS_DRV_ClearPins(LED1_PORT, 1 << LED1_PIN);
     #include "sdk_project_config.h"
 
 int main(void)
@@ -35,15 +47,6 @@ int main(void)
 
   for (;;)
   {
-      if(ReadSwitch)
-      {
-    	  LED0_HIGH;
-
-      }else if(!(ReadSwitch))
-      {
-    	  LED1_LOW;
-
-      }
 
   }
 }
