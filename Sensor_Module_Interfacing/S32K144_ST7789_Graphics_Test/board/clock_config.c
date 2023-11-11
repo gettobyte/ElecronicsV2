@@ -36,23 +36,23 @@ called_from_default_init: true
 outputs:
 - {id: ADC0_CLK.outFreq, value: 8 MHz}
 - {id: ADC1_CLK.outFreq, value: 8 MHz}
-- {id: BUS_CLK.outFreq, value: 28/3 MHz}
+- {id: BUS_CLK.outFreq, value: 7 MHz}
 - {id: CLKOUT.outFreq, value: 48 MHz}
-- {id: CMP0_CLK.outFreq, value: 28/3 MHz}
-- {id: CORE_CLK.outFreq, value: 112/3 MHz}
-- {id: CRC0_CLK.outFreq, value: 28/3 MHz}
-- {id: DMA0_CLK.outFreq, value: 112/3 MHz}
-- {id: DMAMUX0_CLK.outFreq, value: 28/3 MHz}
-- {id: EIM0_CLK.outFreq, value: 112/3 MHz}
-- {id: ERM0_CLK.outFreq, value: 112/3 MHz}
-- {id: EWM0_CLK.outFreq, value: 28/3 MHz}
+- {id: CMP0_CLK.outFreq, value: 7 MHz}
+- {id: CORE_CLK.outFreq, value: 28 MHz}
+- {id: CRC0_CLK.outFreq, value: 7 MHz}
+- {id: DMA0_CLK.outFreq, value: 28 MHz}
+- {id: DMAMUX0_CLK.outFreq, value: 7 MHz}
+- {id: EIM0_CLK.outFreq, value: 28 MHz}
+- {id: ERM0_CLK.outFreq, value: 28 MHz}
+- {id: EWM0_CLK.outFreq, value: 7 MHz}
 - {id: FIRCDIV1_CLK.outFreq, value: 48 MHz}
 - {id: FIRCDIV2_CLK.outFreq, value: 48 MHz}
-- {id: FLASH_CLK.outFreq, value: 28/3 MHz}
-- {id: FLEXCAN0_CLK.outFreq, value: 112/3 MHz}
-- {id: FLEXCAN1_CLK.outFreq, value: 112/3 MHz}
-- {id: FLEXCAN2_CLK.outFreq, value: 112/3 MHz}
-- {id: FTFC0_CLK.outFreq, value: 28/3 MHz}
+- {id: FLASH_CLK.outFreq, value: 7 MHz}
+- {id: FLEXCAN0_CLK.outFreq, value: 28 MHz}
+- {id: FLEXCAN1_CLK.outFreq, value: 28 MHz}
+- {id: FLEXCAN2_CLK.outFreq, value: 28 MHz}
+- {id: FTFC0_CLK.outFreq, value: 7 MHz}
 - {id: FTM0_CLK.outFreq, value: 8 MHz}
 - {id: FTM1_CLK.outFreq, value: 8 MHz}
 - {id: FTM2_CLK.outFreq, value: 8 MHz}
@@ -62,39 +62,40 @@ outputs:
 - {id: LPIT0_CLK.outFreq, value: 8 MHz}
 - {id: LPO_1K_CLK.outFreq, value: 1 kHz}
 - {id: LPO_CLK.outFreq, value: 128 kHz}
-- {id: LPSPI0_CLK.outFreq, value: 8 MHz}
-- {id: LPSPI1_CLK.outFreq, value: 8 MHz}
+- {id: LPSPI0_CLK.outFreq, value: 1 MHz}
+- {id: LPSPI1_CLK.outFreq, value: 1 MHz}
 - {id: LPSPI2_CLK.outFreq, value: 8 MHz}
 - {id: LPTMR0_CLK.outFreq, value: 8 MHz}
 - {id: LPUART0_CLK.outFreq, value: 8 MHz}
 - {id: LPUART1_CLK.outFreq, value: 8 MHz}
 - {id: LPUART2_CLK.outFreq, value: 8 MHz}
-- {id: MPU0_CLK.outFreq, value: 112/3 MHz}
-- {id: MSCM0_CLK.outFreq, value: 112/3 MHz}
-- {id: PDB0_CLK.outFreq, value: 112/3 MHz}
-- {id: PDB1_CLK.outFreq, value: 112/3 MHz}
-- {id: PORTA_CLK.outFreq, value: 28/3 MHz}
-- {id: PORTB_CLK.outFreq, value: 28/3 MHz}
-- {id: PORTC_CLK.outFreq, value: 28/3 MHz}
-- {id: PORTD_CLK.outFreq, value: 28/3 MHz}
-- {id: PORTE_CLK.outFreq, value: 28/3 MHz}
-- {id: RTC0_CLK.outFreq, value: 28/3 MHz}
+- {id: MPU0_CLK.outFreq, value: 28 MHz}
+- {id: MSCM0_CLK.outFreq, value: 28 MHz}
+- {id: PDB0_CLK.outFreq, value: 28 MHz}
+- {id: PDB1_CLK.outFreq, value: 28 MHz}
+- {id: PORTA_CLK.outFreq, value: 7 MHz}
+- {id: PORTB_CLK.outFreq, value: 7 MHz}
+- {id: PORTC_CLK.outFreq, value: 7 MHz}
+- {id: PORTD_CLK.outFreq, value: 7 MHz}
+- {id: PORTE_CLK.outFreq, value: 7 MHz}
+- {id: RTC0_CLK.outFreq, value: 7 MHz}
 - {id: RTC_CLK.outFreq, value: 48 MHz}
 - {id: SCGCLKOUT.outFreq, value: 48 MHz}
 - {id: SIRCDIV1_CLK.outFreq, value: 8 MHz}
 - {id: SIRCDIV2_CLK.outFreq, value: 8 MHz}
 - {id: SOSCDIV1_CLK.outFreq, value: 8 MHz}
-- {id: SOSCDIV2_CLK.outFreq, value: 8 MHz}
+- {id: SOSCDIV2_CLK.outFreq, value: 1 MHz}
 - {id: SPLLDIV1_CLK.outFreq, value: 112 MHz}
 - {id: SPLLDIV2_CLK.outFreq, value: 112 MHz}
 - {id: SPLL_CLK_OUT.outFreq, value: 112 MHz}
-- {id: SYS_CLK.outFreq, value: 112/3 MHz}
-- {id: TRACE_CLK.outFreq, value: 112/3 MHz}
+- {id: SYS_CLK.outFreq, value: 28 MHz}
+- {id: TRACE_CLK.outFreq, value: 28 MHz}
 settings:
-- {id: 'HSRUN:SCG.DIVBUS.scale', value: '2', locked: true}
-- {id: 'HSRUN:SCG.DIVCORE.scale', value: '3', locked: true}
+- {id: 'HSRUN:SCG.DIVBUS.scale', value: '4', locked: true}
+- {id: 'HSRUN:SCG.DIVCORE.scale', value: '4', locked: true}
 - {id: 'HSRUN:SCG.DIVSLOW.scale', value: '4', locked: true}
 - {id: 'HSRUN:SCG.SCSSEL.sel', value: SCG.SPLL_CLK}
+- {id: PCC.LPSPI0_CLK_SEL.sel, value: SCG.SOSCDIV2_CLK}
 - {id: PCC.LPSPI1_CLK_SEL.sel, value: SCG.SOSCDIV2_CLK}
 - {id: PCC.LPTMR0_FRAC.scale, value: '1', locked: true}
 - {id: PCC.PREDIV.scale, value: '1', locked: true}
@@ -102,11 +103,11 @@ settings:
 - {id: PCC.TRACE_FRAC.scale, value: '1', locked: true}
 - {id: RTCCLKSEL.sel, value: SCG.FIRCDIV1_CLK}
 - {id: 'RUN:SCG.DIVBUS.scale', value: '4', locked: true}
-- {id: 'RUN:SCG.DIVCORE.scale', value: '3', locked: true}
+- {id: 'RUN:SCG.DIVCORE.scale', value: '4', locked: true}
 - {id: 'RUN:SCG.DIVSLOW.scale', value: '4', locked: true}
 - {id: 'RUN:SCG.SCSSEL.sel', value: SCG.SPLL_CLK}
 - {id: SCG.DIVBUS.scale, value: '4', locked: true}
-- {id: SCG.DIVCORE.scale, value: '3', locked: true}
+- {id: SCG.DIVCORE.scale, value: '4', locked: true}
 - {id: SCG.DIVSLOW.scale, value: '4', locked: true}
 - {id: SCG.FIRCDIV1.scale, value: '1', locked: true}
 - {id: SCG.FIRCDIV2.scale, value: '1', locked: true}
@@ -115,7 +116,7 @@ settings:
 - {id: SCG.SIRCDIV1.scale, value: '1', locked: true}
 - {id: SCG.SIRCDIV2.scale, value: '1', locked: true}
 - {id: SCG.SOSCDIV1.scale, value: '1', locked: true}
-- {id: SCG.SOSCDIV2.scale, value: '1', locked: true}
+- {id: SCG.SOSCDIV2.scale, value: '8', locked: true}
 - {id: SCG.SPLLDIV1.scale, value: '1', locked: true}
 - {id: SCG.SPLLDIV2.scale, value: '1', locked: true}
 - {id: SCG.SPLL_mul.scale, value: '28', locked: true}
@@ -147,7 +148,7 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
     {
         .clockName = LPSPI0_CLK,
         .clkGate = true,
-        .clkSrc = CLK_SRC_SIRC_DIV2,
+        .clkSrc = CLK_SRC_SOSC_DIV2,
         .frac = MULTIPLY_BY_ONE,
         .divider = DIVIDE_BY_ONE,
     },
@@ -357,10 +358,10 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
 };
 /* *************************************************************************
 * Configuration structure for Clock Configuration 0
+* Bus clock: 7mhzcore clocl: 28mhzspi clock: 8mhz
 * ************************************************************************* */
-/*! @brief User Configuration structure clock_managerCfg_0 */
-clock_manager_user_config_t clockMan1_InitConfig0 = {
-    .scgConfig =
+ clock_manager_user_config_t clockMan1_InitConfig0 = {
+     .scgConfig =
     {
         .sircConfig =
         {
@@ -419,7 +420,7 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
             .rccrConfig =
             {
                 .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
-                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_3,/* Core Clock Divider: divided by 3 */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Core Clock Divider: divided by 4 */
                 .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
                 .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
             },
@@ -493,6 +494,285 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
         },
     },
 };
+
+ /* *************************************************************************
+  * Configuration structure for Clock Configuration 1
+  *     Bus clock: 3.5mhz core clocl: 14mhzspi clock: 8mhz
+  * ************************************************************************* */
+ clock_manager_user_config_t clockMan1_InitConfig1 = {
+		 .scgConfig =
+		    {
+		        .sircConfig =
+		        {
+		            .initialize = true,
+		            .enableInStop = true,                 /* Enable SIRC in stop mode */
+		            .enableInLowPower = true,             /* Enable SIRC in low power mode */
+		            .locked = false,                      /* unlocked */
+		            .range = SCG_SIRC_RANGE_HIGH,         /* Slow IRC high range clock (8 MHz) */
+		            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Slow IRC Clock Divider 1: divided by 1 */
+		            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Slow IRC Clock Divider 3: divided by 1 */
+		        },
+		        .fircConfig =
+		        {
+		            .initialize = true,
+		            .regulator = true,                    /* FIRC regulator is enabled */
+		            .locked = false,                      /* unlocked */
+		            .range = SCG_FIRC_RANGE_48M,           /*!< RANGE      */
+		            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Fast IRC Clock Divider 1: divided by 1 */
+		            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Fast IRC Clock Divider 3: divided by 1 */
+		        },
+		        .rtcConfig =
+		        {
+		            .initialize = false,
+		        },
+		        .soscConfig =
+		        {
+		            .initialize = true,
+		            .freq = 8000000U,                     /* System Oscillator frequency: 8000000Hz */
+		            .monitorMode = SCG_SOSC_MONITOR_DISABLE,/* Monitor disabled */
+		            .locked = false,                      /* SOSC disabled */
+		            .extRef = SCG_SOSC_REF_OSC,           /* Internal oscillator of OSC requested. */
+		            .gain = SCG_SOSC_GAIN_LOW,            /* Configure crystal oscillator for low-gain operation */
+		            .range = SCG_SOSC_RANGE_HIGH,         /* High frequency range selected for the crystal oscillator of 8 MHz to 40 MHz. */
+		            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System OSC Clock Divider 1: divided by 1 */
+		            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System OSC Clock Divider 3: divided by 1 */
+		        },
+		        .spllConfig =
+		        {
+		            .initialize = true,
+		            .monitorMode = SCG_SPLL_MONITOR_DISABLE,/* Monitor disabled */
+		            .locked = false,                      /* unlocked */
+		            .prediv = (uint8_t)SCG_SPLL_CLOCK_PREDIV_BY_1,/* Divided by 1 */
+		            .mult = (uint8_t)SCG_SPLL_CLOCK_MULTIPLY_BY_28,/* Multiply Factor is 28 */
+		            .src = 0U,
+		            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System PLL Clock Divider 1: divided by 1 */
+		            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System PLL Clock Divider 3: divided by 1 */
+		        },
+		        .clockOutConfig =
+		        {
+		            .initialize = true,
+		            .source = SCG_CLOCKOUT_SRC_FIRC,      /* Fast IRC. */
+		        },
+		        .clockModeConfig =
+		        {
+		            .initialize = true,
+		            .rccrConfig =
+		            {
+		                .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
+		                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_8,/* Core Clock Divider: divided by 8 */
+		                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
+		                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+		            },
+		            .vccrConfig =
+		            {
+		                .src = SCG_SYSTEM_CLOCK_SRC_SIRC,/* Slow SIRC */
+		                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_2,/* Core Clock Divider: divided by 2 */
+		                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_1,/* Bus Clock Divider: divided by 1 */
+		                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+		            },
+		            .hccrConfig =
+		            {
+		                .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
+		                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Core Clock Divider: divided by 4 */
+		                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
+		                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+		            },
+		        },
+		    },
+		    .pccConfig =
+		    {
+		        .peripheralClocks = peripheralClockConfig0, /*!< Peripheral clock control configurations  */
+		        .count = NUM_OF_PERIPHERAL_CLOCKS_0, /*!< Number of the peripheral clock control configurations  */
+		    },
+		    .simConfig =
+		    {
+		        .clockOutConfig =
+		        {
+		            .initialize = true, /*!< Initialize    */
+		            .enable = true,                       /* enabled */
+		            .source = SIM_CLKOUT_SEL_SYSTEM_SCG_CLKOUT,/* SCG CLKOUT clock select: SCG slow clock */
+		            .divider = SIM_CLKOUT_DIV_BY_1,       /* Divided by 1 */
+		        },
+		        .lpoClockConfig =
+		        {
+		            .initialize = true, /*!< Initialize    */
+		            .enableLpo1k = true, /*!< LPO1KCLKEN    */
+		            .enableLpo32k = true, /*!< LPO32KCLKEN   */
+		            .sourceLpoClk = SIM_LPO_CLK_SEL_LPO_128K,/* 128 kHz LPO clock */
+		            .sourceRtcClk = SIM_RTCCLK_SEL_FIRCDIV1_CLK,/* FIRCDIV1 clock */
+		        },
+		        .platGateConfig =
+		        {
+		            .initialize = true, /*!< Initialize    */
+		            .enableEim = true, /*!< CGCEIM        */
+		            .enableErm = true, /*!< CGCERM        */
+		            .enableDma = true, /*!< CGCDMA        */
+		            .enableMpu = true, /*!< CGCMPU        */
+		            .enableMscm = true, /*!< CGCMSCM       */
+		        },
+		        .tclkConfig =
+		        {
+		            .initialize = false, /*!< Initialize    */
+		        },
+		        .traceClockConfig =
+		        {
+		            .initialize = true, /*!< Initialize    */
+		            .divEnable = true, /*!< TRACEDIVEN    */
+		            .source = CLOCK_TRACE_SRC_CORE_CLK, /*!< TRACECLK_SEL  */
+		            .divider = 0U, /*!< TRACEDIV      */
+		            .divFraction = false, /*!< TRACEFRAC     */
+		        },
+		    },
+		    .pmcConfig =
+		    {
+		        .lpoClockConfig =
+		        {
+		        .initialize = true,  /*!< Initialize    */
+		        .enable = true, /*!< Enable/disable LPO     */
+		        .trimValue = 0, /*!< Trimming value for LPO */
+		        },
+		    },
+		};
+
+ /* *************************************************************************
+ * Configuration structure for Clock Configuration 2
+ *  Bus clock: 7mhzcore clocl: 28mhzspi clock: 1mhz
+ * ************************************************************************* */
+clock_manager_user_config_t clockMan1_InitConfig2 = {
+    .scgConfig =
+    {
+        .sircConfig =
+        {
+            .initialize = true,
+            .enableInStop = true,                 /* Enable SIRC in stop mode */
+            .enableInLowPower = true,             /* Enable SIRC in low power mode */
+            .locked = false,                      /* unlocked */
+            .range = SCG_SIRC_RANGE_HIGH,         /* Slow IRC high range clock (8 MHz) */
+            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Slow IRC Clock Divider 1: divided by 1 */
+            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Slow IRC Clock Divider 3: divided by 1 */
+        },
+        .fircConfig =
+        {
+            .initialize = true,
+            .regulator = true,                    /* FIRC regulator is enabled */
+            .locked = false,                      /* unlocked */
+            .range = SCG_FIRC_RANGE_48M,           /*!< RANGE      */
+            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Fast IRC Clock Divider 1: divided by 1 */
+            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* Fast IRC Clock Divider 3: divided by 1 */
+        },
+        .rtcConfig =
+        {
+            .initialize = false,
+        },
+        .soscConfig =
+        {
+            .initialize = true,
+            .freq = 8000000U,                     /* System Oscillator frequency: 8000000Hz */
+            .monitorMode = SCG_SOSC_MONITOR_DISABLE,/* Monitor disabled */
+            .locked = false,                      /* SOSC disabled */
+            .extRef = SCG_SOSC_REF_OSC,           /* Internal oscillator of OSC requested. */
+            .gain = SCG_SOSC_GAIN_LOW,            /* Configure crystal oscillator for low-gain operation */
+            .range = SCG_SOSC_RANGE_HIGH,         /* High frequency range selected for the crystal oscillator of 8 MHz to 40 MHz. */
+            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System OSC Clock Divider 1: divided by 1 */
+            .div2 = SCG_ASYNC_CLOCK_DIV_BY_8,     /* System OSC Clock Divider 3: divided by 8 */
+        },
+        .spllConfig =
+        {
+            .initialize = true,
+            .monitorMode = SCG_SPLL_MONITOR_DISABLE,/* Monitor disabled */
+            .locked = false,                      /* unlocked */
+            .prediv = (uint8_t)SCG_SPLL_CLOCK_PREDIV_BY_1,/* Divided by 1 */
+            .mult = (uint8_t)SCG_SPLL_CLOCK_MULTIPLY_BY_28,/* Multiply Factor is 28 */
+            .src = 0U,
+            .div1 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System PLL Clock Divider 1: divided by 1 */
+            .div2 = SCG_ASYNC_CLOCK_DIV_BY_1,     /* System PLL Clock Divider 3: divided by 1 */
+        },
+        .clockOutConfig =
+        {
+            .initialize = true,
+            .source = SCG_CLOCKOUT_SRC_FIRC,      /* Fast IRC. */
+        },
+        .clockModeConfig =
+        {
+            .initialize = true,
+            .rccrConfig =
+            {
+                .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Core Clock Divider: divided by 4 */
+                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
+                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+            },
+            .vccrConfig =
+            {
+                .src = SCG_SYSTEM_CLOCK_SRC_SIRC,/* Slow SIRC */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_2,/* Core Clock Divider: divided by 2 */
+                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_1,/* Bus Clock Divider: divided by 1 */
+                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+            },
+            .hccrConfig =
+            {
+                .src = SCG_SYSTEM_CLOCK_SRC_SYS_PLL,/* System PLL */
+                .divCore = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Core Clock Divider: divided by 4 */
+                .divBus = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Bus Clock Divider: divided by 4 */
+                .divSlow = SCG_SYSTEM_CLOCK_DIV_BY_4,/* Slow Clock Divider: divided by 4 */
+            },
+        },
+    },
+    .pccConfig =
+    {
+        .peripheralClocks = peripheralClockConfig0, /*!< Peripheral clock control configurations  */
+        .count = NUM_OF_PERIPHERAL_CLOCKS_0, /*!< Number of the peripheral clock control configurations  */
+    },
+    .simConfig =
+    {
+        .clockOutConfig =
+        {
+            .initialize = true, /*!< Initialize    */
+            .enable = true,                       /* enabled */
+            .source = SIM_CLKOUT_SEL_SYSTEM_SCG_CLKOUT,/* SCG CLKOUT clock select: SCG slow clock */
+            .divider = SIM_CLKOUT_DIV_BY_1,       /* Divided by 1 */
+        },
+        .lpoClockConfig =
+        {
+            .initialize = true, /*!< Initialize    */
+            .enableLpo1k = true, /*!< LPO1KCLKEN    */
+            .enableLpo32k = true, /*!< LPO32KCLKEN   */
+            .sourceLpoClk = SIM_LPO_CLK_SEL_LPO_128K,/* 128 kHz LPO clock */
+            .sourceRtcClk = SIM_RTCCLK_SEL_FIRCDIV1_CLK,/* FIRCDIV1 clock */
+        },
+        .platGateConfig =
+        {
+            .initialize = true, /*!< Initialize    */
+            .enableEim = true, /*!< CGCEIM        */
+            .enableErm = true, /*!< CGCERM        */
+            .enableDma = true, /*!< CGCDMA        */
+            .enableMpu = true, /*!< CGCMPU        */
+            .enableMscm = true, /*!< CGCMSCM       */
+        },
+        .tclkConfig =
+        {
+            .initialize = false, /*!< Initialize    */
+        },
+        .traceClockConfig =
+        {
+            .initialize = true, /*!< Initialize    */
+            .divEnable = true, /*!< TRACEDIVEN    */
+            .source = CLOCK_TRACE_SRC_CORE_CLK, /*!< TRACECLK_SEL  */
+            .divider = 0U, /*!< TRACEDIV      */
+            .divFraction = false, /*!< TRACEFRAC     */
+        },
+    },
+    .pmcConfig =
+    {
+        .lpoClockConfig =
+        {
+        .initialize = true,  /*!< Initialize    */
+        .enable = true, /*!< Enable/disable LPO     */
+        .trimValue = 0, /*!< Trimming value for LPO */
+        },
+    },
+};
+
 
 /*! @brief Array of pointers to User configuration structures */
 clock_manager_user_config_t const * g_clockManConfigsArr[] = {

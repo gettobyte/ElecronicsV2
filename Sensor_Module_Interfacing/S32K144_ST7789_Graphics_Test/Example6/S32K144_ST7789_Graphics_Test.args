@@ -3,10 +3,12 @@
 -Wl,-Map,"S32K144_ST7789_Graphics_Test.map"
 -Xlinker
 --gc-sections
+-mfloat-abi=soft
+-u _printf_float
 -n
 -mcpu=cortex-m4
 -mthumb
--mfloat-abi=hard
+-mfloat-abi=softfp
 -mfpu=fpv4-sp-d16
 -specs=nano.specs
 -specs=nosys.specs

@@ -38,6 +38,8 @@
 
 /*! @brief User configuration structure 0*/
 extern clock_manager_user_config_t clockMan1_InitConfig0;
+extern clock_manager_user_config_t clockMan1_InitConfig1;
+extern clock_manager_user_config_t clockMan1_InitConfig2;
 
 /*! @brief User peripheral configuration structure 0*/
 extern peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0];

@@ -2,7 +2,7 @@
 
 #include "ST7789_low_level.h"
 #include "peripherals_ST7789_Interface.h"
-
+#include "stdio.h"
 #define gb_ST7789_CS_pin_low()  PINS_DRV_WritePin(CS_PORT, CS_PIN, 0) //Slave select pin LOW
 #define gb_ST7789_CS_pin_high() PINS_DRV_WritePin(CS_PORT, CS_PIN, 1 )
 
@@ -323,6 +323,40 @@ void ST7789_WriteString(uint16_t x, uint16_t y, const char *str, FontDef font, u
 		}
 	}
 }
+
+void ST7789_WriteDec(uint16_t x, uint16_t y, uint32_t gb_val, FontDef font, uint16_t color, uint16_t bgcolor)
+		{
+	unsigned char gb_buf[5];
+	int8_t gb_ptr;
+	for(gb_ptr=0;gb_ptr<=4;++gb_ptr)
+	{
+		if (x + font.width >= ST7789_WIDTH)
+				{
+					x = 0;
+					y += font.height;
+					if (y + font.height >= ST7789_HEIGHT)
+					{
+						break;
+					}
+				}
+
+		gb_buf[gb_ptr] = (gb_val % 10) + '0';
+		gb_val /= 10;
+	}
+	for(gb_ptr = gb_ptr-1;gb_ptr>=0;--gb_ptr)
+	{
+		ST7789_WriteChar(x, y, gb_buf[gb_ptr], font, color, bgcolor);
+		x=x+font.width;
+					}
+}
+void ST7789_Float(uint16_t x, uint16_t y, float gb_value, FontDef font, uint16_t color, uint16_t bgcolor)
+{
+	char gb_float_buff[10];
+	sprintf(gb_float_buff,"%.2f",gb_value);
+	ST7789_WriteString(x,y,gb_float_buff,font, color,bgcolor);
+
+}
+
 //void ST7789_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color)
 //{
 //	//SPI start: chip select low

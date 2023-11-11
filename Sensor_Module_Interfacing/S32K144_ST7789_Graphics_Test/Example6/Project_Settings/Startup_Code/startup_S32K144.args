@@ -18,9 +18,11 @@
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/osif"
 -x assembler-with-cpp
 -g3
+-mfloat-abi=soft
+-u _printf_float
 -mcpu=cortex-m4
 -mthumb
--mfloat-abi=hard
+-mfloat-abi=softfp
 -mfpu=fpv4-sp-d16
 -specs=nano.specs
 -specs=nosys.specs
