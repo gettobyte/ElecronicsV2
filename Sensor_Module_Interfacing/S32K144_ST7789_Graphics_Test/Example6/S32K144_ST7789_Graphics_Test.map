@@ -604,10 +604,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./board/clock_config.o
  .data          0x00000000        0x0 ./board/clock_config.o
  .bss           0x00000000        0x0 ./board/clock_config.o
- .data.clockMan1_InitConfig0
-                0x00000000       0x88 ./board/clock_config.o
- .data.clockMan1_InitConfig1
-                0x00000000       0x88 ./board/clock_config.o
  .data.g_clockManConfigsArr
                 0x00000000        0x4 ./board/clock_config.o
  .bss.g_clockManCallbacksArr
@@ -1920,9 +1916,9 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .data.peripheralClockConfig0
                 0x1fff84c0       0xa0 ./board/clock_config.o
                 0x1fff84c0                peripheralClockConfig0
- .data.clockMan1_InitConfig2
+ .data.clockMan1_InitConfig0
                 0x1fff8560       0x88 ./board/clock_config.o
-                0x1fff8560                clockMan1_InitConfig2
+                0x1fff8560                clockMan1_InitConfig0
  .data.g_pin_mux_InitConfigArr0
                 0x1fff85e8       0x78 ./board/pin_mux.o
                 0x1fff85e8                g_pin_mux_InitConfigArr0
@@ -2193,7 +2189,7 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x7c37
+.debug_line     0x00000000     0x7c39
  .debug_line    0x00000000       0x82 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_line    0x00000082      0x66f ./S&M_Driv/src/ST7789_low_level.o
  .debug_line    0x000006f1      0x40d ./S&M_Driv/src/fonts.o
@@ -2217,9 +2213,9 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
  .debug_line    0x0000707e      0x263 ./board/clock_config.o
  .debug_line    0x000072e1      0x35a ./board/peripherals_ST7789_Interface.o
  .debug_line    0x0000763b      0x1c7 ./board/pin_mux.o
- .debug_line    0x00007802      0x435 ./src/example6.o
+ .debug_line    0x00007802      0x437 ./src/example6.o
 
-.debug_info     0x00000000    0x1ac67
+.debug_info     0x00000000    0x1ac1f
  .debug_info    0x00000000       0x26 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_info    0x00000026     0x1c3f ./S&M_Driv/src/ST7789_low_level.o
  .debug_info    0x00001c65      0xe96 ./S&M_Driv/src/fonts.o
@@ -2240,10 +2236,10 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
  .debug_info    0x000146ec     0x1143 ./SDK/platform/drivers/src/pins/pins_driver.o
  .debug_info    0x0001582f      0x862 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
  .debug_info    0x00016091      0x914 ./SDK/rtos/osif/osif_baremetal.o
- .debug_info    0x000169a5     0x12e7 ./board/clock_config.o
- .debug_info    0x00017c8c      0xd6a ./board/peripherals_ST7789_Interface.o
- .debug_info    0x000189f6      0x405 ./board/pin_mux.o
- .debug_info    0x00018dfb     0x1e6c ./src/example6.o
+ .debug_info    0x000169a5     0x12b5 ./board/clock_config.o
+ .debug_info    0x00017c5a      0xd6a ./board/peripherals_ST7789_Interface.o
+ .debug_info    0x000189c4      0x405 ./board/pin_mux.o
+ .debug_info    0x00018dc9     0x1e56 ./src/example6.o
 
 .debug_abbrev   0x00000000     0x2c3a
  .debug_abbrev  0x00000000       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
@@ -2321,7 +2317,7 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
  .debug_aranges
                 0x000010f0       0x20 ./src/example6.o
 
-.debug_str      0x00000000     0x8eac
+.debug_str      0x00000000     0x8e80
  .debug_str     0x00000000       0x99 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_str     0x00000099     0x1992 ./S&M_Driv/src/ST7789_low_level.o
                                0x1b01 (size before relaxing)
@@ -2361,14 +2357,14 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
                                 0x988 (size before relaxing)
  .debug_str     0x00008b35      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
                                0x10f9 (size before relaxing)
- .debug_str     0x00008d09       0x9d ./board/clock_config.o
-                               0x23c8 (size before relaxing)
- .debug_str     0x00008da6       0x49 ./board/peripherals_ST7789_Interface.o
+ .debug_str     0x00008d09       0x71 ./board/clock_config.o
+                               0x239c (size before relaxing)
+ .debug_str     0x00008d7a       0x49 ./board/peripherals_ST7789_Interface.o
                                0x1917 (size before relaxing)
- .debug_str     0x00008def       0x13 ./board/pin_mux.o
+ .debug_str     0x00008dc3       0x13 ./board/pin_mux.o
                                 0x64c (size before relaxing)
- .debug_str     0x00008e02       0xaa ./src/example6.o
-                               0x2d5c (size before relaxing)
+ .debug_str     0x00008dd6       0xaa ./src/example6.o
+                               0x2d30 (size before relaxing)
 
 .debug_ranges   0x00000000      0xf98
  .debug_ranges  0x00000000       0x78 ./S&M_Driv/src/ST7789_low_level.o
