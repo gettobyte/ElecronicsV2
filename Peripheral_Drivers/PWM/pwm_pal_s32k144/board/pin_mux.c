@@ -2,7 +2,7 @@
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 !!GlobalInfo
-product: Pins v10.0
+product: Pins v9.0
 processor: S32K144
 package_id: S32K144_LQFP100
 mcu_data: s32sdk_s32k1xx_rtm_403
@@ -37,40 +37,12 @@ BOARD_InitPins:
 - options: {callFromInitBoot: 'true', coreID: core0}
 - pin_list:
   - {pin_num: '21', peripheral: FTM0, signal: 'ch, 1', pin_signal: PTD16, direction: OUTPUT}
-  - {pin_num: '22', peripheral: FTM0, signal: 'ch, 0', pin_signal: PTD15, direction: OUTPUT}
-  - {pin_num: '4', peripheral: FTM0, signal: 'ch, 2', pin_signal: PTD0, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
 
 /* Generate array of configured pin structures */
 pin_settings_config_t g_pin_mux_InitConfigArr0[NUM_OF_CONFIGURED_PINS0] = {
-    {
-        .base            = PORTD,
-        .pinPortIdx      = 0U,
-        .pullConfig      = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .driveSelect     = PORT_LOW_DRIVE_STRENGTH,
-        .passiveFilter   = false,
-        .mux             = PORT_MUX_ALT2,
-        .pinLock         = false,
-        .intConfig       = PORT_DMA_INT_DISABLED,
-        .clearIntFlag    = false,
-        .gpioBase        = NULL,
-        .digitalFilter   = false,
-    },
-    {
-        .base            = PORTD,
-        .pinPortIdx      = 15U,
-        .pullConfig      = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .driveSelect     = PORT_LOW_DRIVE_STRENGTH,
-        .passiveFilter   = false,
-        .mux             = PORT_MUX_ALT2,
-        .pinLock         = false,
-        .intConfig       = PORT_DMA_INT_DISABLED,
-        .clearIntFlag    = false,
-        .gpioBase        = NULL,
-        .digitalFilter   = false,
-    },
     {
         .base            = PORTD,
         .pinPortIdx      = 16U,
