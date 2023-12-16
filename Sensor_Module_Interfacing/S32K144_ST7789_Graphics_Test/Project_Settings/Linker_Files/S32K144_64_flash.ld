@@ -87,6 +87,16 @@ SECTIONS
     . = ALIGN(4);
   } > m_text
 
+
+.customFlash :
+{
+  __customFlashSection_start__ = .;
+    KEEP(*(.customFlashSection))  /* Keep section even if not referenced. */
+    __customFlashSection_end__ = .;
+  } > m_text
+
+
+
   /* Section used by the libgcc.a library for fvp4 */
   .ARM :
   {

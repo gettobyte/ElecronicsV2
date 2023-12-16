@@ -288,6 +288,39 @@ void ST7789_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t co
 	gb_ST7789_CS_pin_high();
 }
 /**
+ *
+ *  *       (0,0)   -----------------------(239,0)      --> x-axis
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               |*********************|
+ *               (coloumns from 0 to 240)
+ *       (0,80)  |---------------------|(239,80)
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *           R   |-|-|-|-|-|-|-|-|-|-|-|
+ *           O   |-|-|-|-|-|-|-|-|-|-|-|
+ *           W   |-|-|-|-|-|-|-|-|-|-|-|
+ *           S   |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *           F   |-|-|-|-|-|-|-|-|-|-|-|
+ *           R   |-|-|-|-|-|-|-|-|-|-|-|
+ *           O   |-|-|-|-|-|-|-|-|-|-|-|
+ *           M   |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *          80   |-|-|-|-|-|-|-|-|-|-|-|
+ *          to   |-|-|-|-|-|-|-|-|-|-|-|
+ *          319  |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *               |-|-|-|-|-|-|-|-|-|-|-|
+ *      (0,319)  -----------------------(239,319)
+ *
+ *               |
+ *               |^
+ *               y axis
+ *
  * @brief Write a string
  * @param  x&y -> cursor of the start point.
  * @param str -> string to write
@@ -324,6 +357,49 @@ void ST7789_WriteString(uint16_t x, uint16_t y, const char *str, FontDef font, u
 	}
 }
 
+void ST7789_WriteStringBox(uint16_t x, uint16_t y, uint16_t x1, uint16_t y1, const char *str, FontDef font, uint16_t color, uint16_t bgcolor)
+{
+	uint16_t x_temp = x;
+	uint16_t y_temp = y;
+	{
+		{
+			while (*str)
+			{
+				if (x + font.width >= ST7789_WIDTH)
+				{
+					x = 0;
+					y += font.height;
+					if (y + font.height >= ST7789_HEIGHT)
+					{
+						break;
+					}
+
+					if (*str == ' ')
+					{
+						// skip spaces in the beginning of the new line
+						str++;
+						continue;
+					}
+				}
+				ST7789_WriteChar(x, y, *str, font, color, bgcolor);
+				x += font.width;
+				if(x>x1)
+				{
+					x = x_temp;
+					y += font.height;
+				}
+
+				if(y>y1)
+				{
+					x = x_temp;
+					y = y_temp;
+				}
+				str++;
+			}
+		}
+	}
+
+}
 void ST7789_WriteDec(uint16_t x, uint16_t y, uint32_t gb_val, FontDef font, uint16_t color, uint16_t bgcolor)
 		{
 	unsigned char gb_buf[5];

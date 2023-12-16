@@ -11,6 +11,7 @@
 #include "pin_mux.h"
 #include "stdint.h"
 #include "stdbool.h"
+
 typedef uint8_t byte;
 
 typedef enum
@@ -74,6 +75,7 @@ typedef enum
 #define ST77XX_BLACK 0x0000
 #define ST77XX_WHITE 0xFFFF
 #define ST77XX_RED 0xF800
+#define black_white 0xDEDA
 #define ST77XX_GREEN 0x07E0
 #define ST77XX_NEON_GREEN 0xCFF9
 #define ST77XX_BLUE 0x001F
@@ -117,6 +119,7 @@ void ST7789_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint
 void ST7789_InvertColors(uint8_t invert);
 void ST7789_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t color, uint16_t bgcolor);
 void ST7789_WriteString(uint16_t x, uint16_t y, const char *str, FontDef font, uint16_t color, uint16_t bgcolor);
+void ST7789_WriteStringBox(uint16_t x, uint16_t y, uint16_t x1, uint16_t y1, const char *str, FontDef font, uint16_t color, uint16_t bgcolor);
 void ST7789_WriteDec(uint16_t x, uint16_t y, uint32_t gb_val, FontDef font, uint16_t color, uint16_t bgcolor);
 void ST7789_Float(uint16_t x, uint16_t y, float gb_value, FontDef font, uint16_t color, uint16_t bgcolor);
 void ST7789_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);

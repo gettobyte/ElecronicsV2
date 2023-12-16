@@ -34,7 +34,7 @@ extern "C" {
 #define Reset_PORT    PTB
 #define Reset_PIN     12U
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS0 5
+#define NUM_OF_CONFIGURED_PINS0 6
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr0[NUM_OF_CONFIGURED_PINS0];
 
