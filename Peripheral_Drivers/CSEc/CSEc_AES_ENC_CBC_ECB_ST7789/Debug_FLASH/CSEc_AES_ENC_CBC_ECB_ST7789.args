@@ -36,5 +36,5 @@
 "./board/peripherals_flash_1.o"
 "./board/peripherals_osif_1.o"
 "./board/pin_mux.o"
+"./src/CSEC_AES_ECB.o"
 "./src/csec_utils.o"
-"./src/main.o"
