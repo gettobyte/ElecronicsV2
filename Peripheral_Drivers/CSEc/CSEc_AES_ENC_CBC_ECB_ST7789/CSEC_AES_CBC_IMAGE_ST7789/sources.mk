@@ -21,6 +21,7 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Project_Settings/Startup_Code \
+S&M_Driv/src \
 SDK/platform/devices/S32K144/startup \
 SDK/platform/devices \
 SDK/platform/drivers/src/clock/S32K1xx \

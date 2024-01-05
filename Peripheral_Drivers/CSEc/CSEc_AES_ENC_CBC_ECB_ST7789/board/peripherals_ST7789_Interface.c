@@ -73,6 +73,25 @@ instance:
  * The external variables will be used in other source files in application code.
  *
  */
+void GB_MA_SPI_send_byte_conti(uint8_t *val, uint16_t count, uint32_t timeout)
+{
+	static uint8_t rx_value;
+	status_t error;
+	LPSPI_DRV_MasterTransferBlocking(INST_ST7789_INTERFACE,val, &rx_value, count, timeout); //Transfer the data from MOSI to MISO
+
+	//error = LPSPI_DRV_MasterTransfer(INST_ST7789_INTERFACE,val, &rx_value, count); //Transfer the data from MOSI to MISO
+//error = LPSPI_DRV_MasterGetTransferStatus(INST_ST7789_INTERFACE, &rx_value);
+//DEV_ASSERT(error == STATUS_SUCCESS);
+
+}
+
+uint8_t GB_MA_SPI_exchange_byte(uint8_t *val, uint8_t count)
+{
+	static uint8_t rx_value;
+	LPSPI_DRV_MasterTransferBlocking(INST_ST7789_INTERFACE,val, &rx_value, count, 1); //Transfer the data from MOSI to MISO
+	return rx_value;
+
+}
 
 /* Define state structure for current SPI instance */
 lpspi_state_t ST7789_InterfaceState;

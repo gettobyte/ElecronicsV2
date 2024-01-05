@@ -23,8 +23,8 @@ extern "C" {
 
 /*! @brief Definitions/Declarations for BOARD_InitPins Functional Group */
 /*! @brief User definition pins */
-#define reset_PORT    PTB
-#define reset_PIN     12U
+#define Reset_PORT    PTB
+#define Reset_PIN     12U
 #define DC_PORT    PTB
 #define DC_PIN     13U
 #define CLK_PORT    PTB

@@ -390,6 +390,7 @@ status_t CSEC_DRV_VerifyMACAddrMode(csec_key_id_t keyId, const uint8_t *msg,
 /*!
  * @brief Updates an internal key per the SHE specification.
  *
+ *
  * This function updates an internal key per the SHE specification.
  *
  * @param[in] keyId KeyID of the key to be updated.

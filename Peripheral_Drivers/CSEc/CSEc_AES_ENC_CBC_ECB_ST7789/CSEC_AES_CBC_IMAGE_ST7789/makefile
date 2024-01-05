@@ -20,6 +20,7 @@ RM := rm -rf
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
 -include SDK/platform/devices/S32K144/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk
+-include S&M_Driv/src/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
 -include subdir.mk
 -include objects.mk
