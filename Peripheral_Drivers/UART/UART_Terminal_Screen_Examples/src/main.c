@@ -48,14 +48,13 @@ int main(void)
     for(;;)
     {
 
-    	 LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, (uint8_t *) waiTing,strlen(waiTing));
+       LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, (uint8_t *) waiTing,strlen(waiTing));
 
-    	LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+       LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
 
+       LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
 
-  	  LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
-
-  	OSIF_TimeDelay(1000);
+       OSIF_TimeDelay(1000);
 
     }
     return exit_code;

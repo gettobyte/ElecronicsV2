@@ -183,7 +183,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S&amp;M_Driv"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="example2.1.c|example9.c|example8.c|example7.c|Example7.c|example6.c|example5.c|example3.2.c|example4.c|example3.1.c|example2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="main.c|example2.1.c|example9.c|example8.c|example7.c|Example7.c|example6.c|example5.c|example3.2.c|example4.c|example3.1.c|example2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -375,7 +375,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S&amp;M_Driv"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="example2.1.c|example9.c|example8.c|example7.c|example5.c|example6.c|example4.c|example3.2.c|example3.1.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="main.c|Example7.c|example2.1.c|example9.c|example8.c|example7.c|example5.c|example6.c|example4.c|example3.2.c|example3.1.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -1725,7 +1725,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S&amp;M_Driv"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="example2.1.c|example9.c|example7.c|example6.c|example5.c|example4.c|example3.2.c|example3.1.c|example2.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="Example7.c|main.c|example2.1.c|example9.c|example7.c|example6.c|example5.c|example4.c|example3.2.c|example3.1.c|example2.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -2115,7 +2115,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S&amp;M_Driv"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="example2.c|example9.c|example8.c|example7.c|example5.c|example6.c|example4.c|example3.2.c|example3.1.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="main.c|Example7.c|example2.c|example9.c|example8.c|example7.c|example5.c|example6.c|example4.c|example3.2.c|example3.1.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -2144,6 +2144,7 @@
 		<configuration configurationName="Release_RAM">
 			<resource resourceType="PROJECT" workspacePath="/S32K144_ST7789_Graphics_Test"/>
 		</configuration>
+		<configuration configurationName="example2.1"/>
 		<configuration configurationName="Example1">
 			<resource resourceType="PROJECT" workspacePath="/S32K144_ST7789_Graphics_Test"/>
 		</configuration>

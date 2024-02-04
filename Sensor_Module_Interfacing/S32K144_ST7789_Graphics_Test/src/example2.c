@@ -1265,42 +1265,43 @@ int main(void)
 	    	OSIF_TimeDelay(100);
 
 	    	ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
-	    	ST7789_Fill_Color(ST77XX_BLACK);
+	    //	ST7789_Fill_Color(ST77XX_BLACK);
 for(;;)
     {
 
 	ST7789_DrawImage(0,80, 240, 240, tech_enthu);
-	OSIF_TimeDelay(2000);
-	ST7789_Fill_Color(ST77XX_BLACK);
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+	OSIF_TimeDelay(20);
 
-    ST7789_WriteString(0, 80, "Want to start your embedded/automotive journey?", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
-    OSIF_TimeDelay(1000);
-
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
-
-	ST7789_Fill_Color(ST77XX_BLACK);
-   ST7789_WriteString(0, 80, "But struggling to find development board other then traditional boards: Arduino/ESP", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
-    OSIF_TimeDelay(2000);
-
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//	ST7789_Fill_Color(ST77XX_BLACK);
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//
+//    ST7789_WriteString(0, 80, "Want to start your embedded/automotive journey?", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
+//    OSIF_TimeDelay(1000);
+//
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//
+//	ST7789_Fill_Color(ST77XX_BLACK);
+//   ST7789_WriteString(0, 80, "But struggling to find development board other then traditional boards: Arduino/ESP", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
+//    OSIF_TimeDelay(2000);
+//
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
 
 
 	ST7789_DrawImage(0,80, 240, 240, gettobyte);
-	OSIF_TimeDelay(2000);
+	OSIF_TimeDelay(20);
 
-	ST7789_Fill_Color(ST77XX_BLACK);
-	ST7789_WriteString(0+18, 80+40, "Presents", Font_16x26, ST77XX_WHITE, ST77XX_BLACK);
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
-    OSIF_TimeDelay(2000);
+//	ST7789_Fill_Color(ST77XX_BLACK);
+//	ST7789_WriteString(0+18, 80+40, "Presents", Font_16x26, ST77XX_WHITE, ST77XX_BLACK);
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//    OSIF_TimeDelay(2000);
 
 	ST7789_DrawImage(0,80, 240, 240, elecronicsV2);
-	OSIF_TimeDelay(3000);
+	OSIF_TimeDelay(20);
 
-	ST7789_Fill_Color(ST77XX_BLACK);
-	ST7789_WriteString(0, 80+40, "Arduino of      Automotive           world!", Font_16x26, ST77XX_WHITE, ST77XX_BLACK);
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
-    OSIF_TimeDelay(2000);
+//	ST7789_Fill_Color(ST77XX_BLACK);
+//	ST7789_WriteString(0, 80+40, "Arduino of      Automotive           world!", Font_16x26, ST77XX_WHITE, ST77XX_BLACK);
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//    OSIF_TimeDelay(2000);
 
 
 

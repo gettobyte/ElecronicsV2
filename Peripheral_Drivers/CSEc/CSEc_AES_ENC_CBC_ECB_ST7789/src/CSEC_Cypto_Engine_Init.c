@@ -51,9 +51,10 @@ static const flash_user_config_t flash1_InitConfig0 = {
 /* Set this macro-definition to 1 if you want to reset all the keys */
 #define ERASE_ALL_KEYS	0
 
-void initFlashForCsecOperation(void)
+status_t initFlashForCsecOperation(void)
 {
 	flash_ssd_config_t flashSSDConfig;
+	status_t flash_partition;
 
 	FLASH_DRV_Init(&flash1_InitConfig0, &flashSSDConfig);
 
@@ -87,8 +88,11 @@ void initFlashForCsecOperation(void)
 #endif /* FEATURE_FLS_HAS_PROGRAM_PHRASE_CMD */
 		FLASH_DRV_Program(&flashSSDConfig, address, size, unsecure_key);
 
-        FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
-#endif /* FLASH_TARGET */
+		flash_partition = FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
+
+		return flash_partition;
+
+		#endif /* FLASH_TARGET */
 	}
 }
 

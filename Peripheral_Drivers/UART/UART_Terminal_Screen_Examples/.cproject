@@ -410,4 +410,5 @@
 	<storageModule moduleId="com.nxp.s32ds.cle.uct.internal.core.toolchainScriptProfile">
 		<COND_TOOLCHAIN_COMPONENTS_OPTION>COPY=platform.driver.osif;platform.driver.lpuart;platform.driver.osif_baremetal</COND_TOOLCHAIN_COMPONENTS_OPTION>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>

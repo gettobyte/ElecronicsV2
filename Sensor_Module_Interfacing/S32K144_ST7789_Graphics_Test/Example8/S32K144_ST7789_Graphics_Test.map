@@ -1,75 +1,75 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
                               ./S&M_Driv/src/ST7789_low_level.o (__aeabi_f2d)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (exit)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (__libc_init_array)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (memset)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (exit)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (__libc_init_array)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o (memset)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
                               ./S&M_Driv/src/ST7789_low_level.o (sprintf)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o) (_svfprintf_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memchr)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memcpy)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memmove)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_free_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o) (errno)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o) (_sbrk)
-C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
-                              C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o) (_exit)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o) (_svfprintf_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memchr)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memcpy)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (memmove)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_free_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o) (errno)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o) (_sbrk)
+C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+                              C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o) (_exit)
 
 Allocating common symbols
 Common symbol       size              file
 
-errno               0x4               C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+errno               0x4               C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
 
 Discarded input sections
 
- .text          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
- .data          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
- .bss           0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
- .text          0x00000000       0xa4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .data          0x00000000        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .bss           0x00000000       0x1c c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .init_array    0x00000000        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .fini_array    0x00000000        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .eh_frame      0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .jcr           0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .text          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+ .data          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+ .bss           0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+ .text          0x00000000       0xa4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .data          0x00000000        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .bss           0x00000000       0x1c c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .init_array    0x00000000        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .fini_array    0x00000000        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .eh_frame      0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .jcr           0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
  .tm_clone_table
-                0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .comment       0x00000000       0xa1 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+                0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .comment       0x00000000       0xa1 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
  .ARM.attributes
-                0x00000000       0x32 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .text          0x00000000       0x74 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .ARM.extab     0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .ARM.exidx     0x00000000        0x8 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+                0x00000000       0x32 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .text          0x00000000       0x74 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .ARM.extab     0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .ARM.exidx     0x00000000        0x8 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.attributes
-                0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+                0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .data          0x00000000        0x0 ./Project_Settings/Startup_Code/startup_S32K144.o
  .bss           0x00000000        0x0 ./Project_Settings/Startup_Code/startup_S32K144.o
  .text          0x00000000        0x0 ./S&M_Driv/src/ST7789_low_level.o
@@ -84,6 +84,8 @@ Discarded input sections
                 0x00000000      0x110 ./S&M_Driv/src/ST7789_low_level.o
  .text.ST7789_WriteString
                 0x00000000       0x8c ./S&M_Driv/src/ST7789_low_level.o
+ .text.ST7789_WriteStringBox
+                0x00000000       0xc8 ./S&M_Driv/src/ST7789_low_level.o
  .text.ST7789_WriteDec
                 0x00000000       0xe0 ./S&M_Driv/src/ST7789_low_level.o
  .text.ST7789_Float
@@ -107,8 +109,8 @@ Discarded input sections
  .debug_abbrev  0x00000000      0x13c ./S&M_Driv/src/fonts.o
  .debug_aranges
                 0x00000000       0x18 ./S&M_Driv/src/fonts.o
- .debug_line    0x00000000      0x40d ./S&M_Driv/src/fonts.o
- .debug_str     0x00000000     0x1433 ./S&M_Driv/src/fonts.o
+ .debug_line    0x00000000      0x48c ./S&M_Driv/src/fonts.o
+ .debug_str     0x00000000     0x144f ./S&M_Driv/src/fonts.o
  .comment       0x00000000       0xa1 ./S&M_Driv/src/fonts.o
  .ARM.attributes
                 0x00000000       0x37 ./S&M_Driv/src/fonts.o
@@ -617,195 +619,195 @@ Discarded input sections
                 0x00000000        0x1 ./src/example8.o
  .data.MADCTL_SetRotation3
                 0x00000000        0x1 ./src/example8.o
- .text          0x00000000      0x378 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
- .data          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
- .bss           0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00000000       0xac c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000      0x378 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000       0xac c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000000       0x22 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
- .text.exit     0x00000000       0x28 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
- .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+                0x00000000       0x22 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
  .data.impure_data
-                0x00000000       0x60 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                0x00000000       0x60 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
  .text.__libc_init_array
-                0x00000000       0x48 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+                0x00000000       0x48 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
- .text.memset   0x00000000       0x10 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+ .text.memset   0x00000000       0x10 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
  .text._sprintf_r
-                0x00000000       0x40 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
- .text.sprintf  0x00000000       0x48 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00000000       0x70 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+                0x00000000       0x40 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+ .text.sprintf  0x00000000       0x48 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00000000       0x70 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sprintf.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .text.__ssputs_r
-                0x00000000       0xb6 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000       0xb6 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .text.__ssprint_r
-                0x00000000       0xf4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000       0xf4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .text._svfprintf_r
-                0x00000000      0x1e8 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000      0x1e8 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._svfprintf_r.str1.1
-                0x00000000       0x11 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00000000       0x90 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000       0x11 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x00000000       0x90 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .text._printf_common
-                0x00000000       0xec C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000       0xec C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .text._printf_i
-                0x00000000      0x240 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000      0x240 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata._printf_i.str1.1
-                0x00000000       0x22 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00000000       0x60 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000       0x22 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00000000       0x60 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .text          0x00000000       0xa0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x00000000       0xa0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
  .ARM.attributes
-                0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
- .text.memcpy   0x00000000       0x16 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memchr.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x00000000       0x16 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
- .text.memmove  0x00000000       0x34 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
- .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0x34 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00000000       0x28 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
- .text._free_r  0x00000000       0x9c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000000       0x38 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .text._free_r  0x00000000       0x9c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00000000       0x38 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x00000000       0xbc C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000       0xbc C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
  .bss.__malloc_free_list
-                0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
  .bss.__malloc_sbrk_start
-                0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
  .text._realloc_r
-                0x00000000       0x4c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00000000       0x3c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+                0x00000000       0x4c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00000000       0x3c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
  .text.__malloc_lock
-                0x00000000        0x2 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+                0x00000000        0x2 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
  .text.__malloc_unlock
-                0x00000000        0x2 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00000000       0x30 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+                0x00000000        0x2 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000000       0x30 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
  .text._malloc_usable_size_r
-                0x00000000       0x12 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+                0x00000000       0x12 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
  .text.cleanup_glue
-                0x00000000       0x1a C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+                0x00000000       0x1a C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
  .text._reclaim_reent
-                0x00000000       0xb8 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00000000       0x5c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+                0x00000000       0xb8 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000000       0x5c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
- COMMON         0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .text._sbrk    0x00000000       0x1c C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+ COMMON         0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-reent.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .text._sbrk    0x00000000       0x1c C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
  .bss.heap_end.5365
-                0x00000000        0x4 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+                0x00000000        0x4 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .text          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
- .data          0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
- .bss           0x00000000        0x0 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
- .text._exit    0x00000000        0x2 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
- .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .text          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .text._exit    0x00000000        0x2 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .debug_frame   0x00000000       0x20 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
  .ARM.attributes
-                0x00000000       0x32 C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
- .text          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .data          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .bss           0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .eh_frame      0x00000000        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .jcr           0x00000000        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+                0x00000000       0x32 C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .text          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .data          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .bss           0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .eh_frame      0x00000000        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .jcr           0x00000000        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
  .tm_clone_table
-                0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .comment       0x00000000       0xa1 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+                0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .comment       0x00000000       0xa1 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
  .ARM.attributes
-                0x00000000       0x32 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
- .text          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
- .data          0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
- .bss           0x00000000        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
- .init          0x00000000        0x8 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
- .fini          0x00000000        0x8 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+                0x00000000       0x32 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .text          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .data          0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .bss           0x00000000        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .init          0x00000000        0x8 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .fini          0x00000000        0x8 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
  .ARM.attributes
-                0x00000000       0x22 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+                0x00000000       0x22 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
 
 Memory Configuration
 
@@ -819,9 +821,9 @@ m_data_2         0x20000000         0x00007000         rw
 
 Linker script and memory map
 
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
 LOAD ./Project_Settings/Startup_Code/startup_S32K144.o
 LOAD ./S&M_Driv/src/ST7789_low_level.o
 LOAD ./S&M_Driv/src/fonts.o
@@ -847,21 +849,21 @@ LOAD ./board/peripherals_ST7789_Interface.o
 LOAD ./board/pin_mux.o
 LOAD ./src/example8.o
 START GROUP
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
 END GROUP
 START GROUP
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a
 END GROUP
 START GROUP
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
-LOAD C:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a
+LOAD C:/NXP/S32DS.3.4(879)/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a
 END GROUP
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
-LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+LOAD c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
                 0x00000400                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x400
                 0x00000400                STACK_SIZE = DEFINED (__stack_size__)?__stack_size__:0x400
                 0x00000400                M_VECTOR_RAM_SIZE = DEFINED (__flash_vector_table__)?0x0:0x400
@@ -1675,10 +1677,10 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x0006e4e4     0xfd20 ./src/example8.o
                 0x0006e4e4                photo6
  *(.init)
- .init          0x0007e204        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+ .init          0x0007e204        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
                 0x0007e204                _init
  *(.fini)
- .fini          0x0007e208        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+ .fini          0x0007e208        0x4 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
                 0x0007e208                _fini
  *(.eh_frame)
                 0x0007e20c                . = ALIGN (0x4)
@@ -1696,10 +1698,15 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .v4_bx         0x0007e20c        0x0 linker stubs
 
 .iplt           0x0007e20c        0x0
- .iplt          0x0007e20c        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .iplt          0x0007e20c        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
 .rel.dyn        0x0007e20c        0x0
- .rel.iplt      0x0007e20c        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .rel.iplt      0x0007e20c        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+
+.customFlash    0x0007e20c        0x0
+                0x0007e20c                __customFlashSection_start__ = .
+ *(.customFlashSection)
+                0x0007e20c                __customFlashSection_end__ = .
 
 .ARM            0x0007e20c        0x0
                 0x0007e20c                __exidx_start = .
@@ -1722,7 +1729,7 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x1fff8000                __VECTOR_RAM = DEFINED (__flash_vector_table__)?ORIGIN (m_interrupts):__VECTOR_RAM__
                 0x00000400                __RAM_VECTOR_TABLE_SIZE = DEFINED (__flash_vector_table__)?0x0:(__interrupts_ram_end__ - __interrupts_ram_start__)
 
-.data           0x1fff8400      0x254 load address 0x0007e20c
+.data           0x1fff8400      0x26c load address 0x0007e20c
                 0x1fff8400                . = ALIGN (0x4)
                 0x1fff8400                __DATA_RAM = .
                 0x1fff8400                __data_start__ = .
@@ -1745,42 +1752,42 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x1fff8550       0x88 ./board/clock_config.o
                 0x1fff8550                clockMan1_InitConfig0
  .data.g_pin_mux_InitConfigArr0
-                0x1fff85d8       0x78 ./board/pin_mux.o
+                0x1fff85d8       0x90 ./board/pin_mux.o
                 0x1fff85d8                g_pin_mux_InitConfigArr0
  .data.MADCTL_SetRotation0
-                0x1fff8650        0x1 ./src/example8.o
-                0x1fff8650                MADCTL_SetRotation0
+                0x1fff8668        0x1 ./src/example8.o
+                0x1fff8668                MADCTL_SetRotation0
  .data.MADCTL_SetRotation1
-                0x1fff8651        0x1 ./src/example8.o
-                0x1fff8651                MADCTL_SetRotation1
-                0x1fff8654                . = ALIGN (0x4)
- *fill*         0x1fff8652        0x2 
-                0x1fff8654                __data_end__ = .
-                0x0007e460                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
-                0x0007e460                __CODE_ROM = __DATA_END
+                0x1fff8669        0x1 ./src/example8.o
+                0x1fff8669                MADCTL_SetRotation1
+                0x1fff866c                . = ALIGN (0x4)
+ *fill*         0x1fff866a        0x2 
+                0x1fff866c                __data_end__ = .
+                0x0007e478                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x0007e478                __CODE_ROM = __DATA_END
 
-.igot.plt       0x1fff8654        0x0 load address 0x0007e460
- .igot.plt      0x1fff8654        0x0 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.igot.plt       0x1fff866c        0x0 load address 0x0007e478
+ .igot.plt      0x1fff866c        0x0 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.code           0x1fff8654        0x0 load address 0x0007e460
-                0x1fff8654                . = ALIGN (0x4)
-                0x1fff8654                __CODE_RAM = .
-                0x1fff8654                __code_start__ = .
-                0x1fff8654                __code_ram_start__ = .
+.code           0x1fff866c        0x0 load address 0x0007e478
+                0x1fff866c                . = ALIGN (0x4)
+                0x1fff866c                __CODE_RAM = .
+                0x1fff866c                __code_start__ = .
+                0x1fff866c                __code_ram_start__ = .
  *(.code_ram)
-                0x1fff8654                . = ALIGN (0x4)
-                0x1fff8654                __code_end__ = .
-                0x1fff8654                __code_ram_end__ = .
-                0x0007e460                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
-                0x0007e460                __CUSTOM_ROM = __CODE_END
+                0x1fff866c                . = ALIGN (0x4)
+                0x1fff866c                __code_end__ = .
+                0x1fff866c                __code_ram_end__ = .
+                0x0007e478                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
+                0x0007e478                __CUSTOM_ROM = __CODE_END
 
 .customSectionBlock
-                0x20000000        0x0 load address 0x0007e460
+                0x20000000        0x0 load address 0x0007e478
                 0x20000000                __customSection_start__ = .
  *(.customSection)
                 0x20000000                __customSection_end__ = .
-                0x0007e460                __CUSTOM_END = (__CUSTOM_ROM + (__customSection_end__ - __customSection_start__))
-                0x0007e460                __rom_end = __CUSTOM_END
+                0x0007e478                __CUSTOM_END = (__CUSTOM_ROM + (__customSection_end__ - __customSection_start__))
+                0x0007e478                __rom_end = __CUSTOM_END
 
 .bss            0x20000000       0x74
                 0x20000000                . = ALIGN (0x4)
@@ -1858,7 +1865,7 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000000       0x2e
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x22 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+                0x00000000       0x22 c:/nxp/s32ds.3.4(879)/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
  .ARM.attributes
                 0x00000022       0x1f ./Project_Settings/Startup_Code/startup_S32K144.o
  .ARM.attributes
@@ -1909,55 +1916,55 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x7825
+.debug_line     0x00000000     0x7de0
  .debug_line    0x00000000       0x82 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_line    0x00000082      0x66f ./S&M_Driv/src/ST7789_low_level.o
- .debug_line    0x000006f1      0x27e ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_line    0x0000096f      0x1a8 ./SDK/platform/devices/startup.o
- .debug_line    0x00000b17     0x1704 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_line    0x0000221b      0x9b2 ./SDK/platform/drivers/src/csec/csec_driver.o
- .debug_line    0x00002bcd      0x35e ./SDK/platform/drivers/src/csec/csec_hw_access.o
- .debug_line    0x00002f2b      0xc07 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_line    0x00003b32      0x3b0 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_line    0x00003ee2      0x330 ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_line    0x00004212      0x39e ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_line    0x000045b0      0x496 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
- .debug_line    0x00004a46      0x314 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
- .debug_line    0x00004d5a      0x75a ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
- .debug_line    0x000054b4      0x43c ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
- .debug_line    0x000058f0      0x662 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
- .debug_line    0x00005f52      0x630 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_line    0x00006582      0x2f8 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_line    0x0000687a      0x3f7 ./SDK/rtos/osif/osif_baremetal.o
- .debug_line    0x00006c71      0x263 ./board/clock_config.o
- .debug_line    0x00006ed4      0x35a ./board/peripherals_ST7789_Interface.o
- .debug_line    0x0000722e      0x1c7 ./board/pin_mux.o
- .debug_line    0x000073f5      0x430 ./src/example8.o
+ .debug_line    0x00000082      0x722 ./S&M_Driv/src/ST7789_low_level.o
+ .debug_line    0x000007a4      0x2a9 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_line    0x00000a4d      0x1b2 ./SDK/platform/devices/startup.o
+ .debug_line    0x00000bff     0x1746 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_line    0x00002345      0x9f9 ./SDK/platform/drivers/src/csec/csec_driver.o
+ .debug_line    0x00002d3e      0x389 ./SDK/platform/drivers/src/csec/csec_hw_access.o
+ .debug_line    0x000030c7      0xc53 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_line    0x00003d1a      0x3d6 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_line    0x000040f0      0x356 ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_line    0x00004446      0x3e0 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_line    0x00004826      0x4dd ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+ .debug_line    0x00004d03      0x35b ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+ .debug_line    0x0000505e      0x7a6 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+ .debug_line    0x00005804      0x483 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+ .debug_line    0x00005c87      0x6ae ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+ .debug_line    0x00006335      0x672 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_line    0x000069a7      0x31e ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_line    0x00006cc5      0x43e ./SDK/rtos/osif/osif_baremetal.o
+ .debug_line    0x00007103      0x2a5 ./board/clock_config.o
+ .debug_line    0x000073a8      0x3a1 ./board/peripherals_ST7789_Interface.o
+ .debug_line    0x00007749      0x1ed ./board/pin_mux.o
+ .debug_line    0x00007936      0x4aa ./src/example8.o
 
-.debug_info     0x00000000    0x19d5c
+.debug_info     0x00000000    0x19e03
  .debug_info    0x00000000       0x26 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_info    0x00000026     0x1c3f ./S&M_Driv/src/ST7789_low_level.o
- .debug_info    0x00001c65      0x51e ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_info    0x00002183      0x46d ./SDK/platform/devices/startup.o
- .debug_info    0x000025f0     0x403f ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_info    0x0000662f     0x2063 ./SDK/platform/drivers/src/csec/csec_driver.o
- .debug_info    0x00008692      0xe4a ./SDK/platform/drivers/src/csec/csec_hw_access.o
- .debug_info    0x000094dc     0x2a15 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_info    0x0000bef1      0x936 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_info    0x0000c827      0x53e ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_info    0x0000cd65      0x9a7 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_info    0x0000d70c     0x11e7 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
- .debug_info    0x0000e8f3      0x741 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
- .debug_info    0x0000f034     0x1fa7 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
- .debug_info    0x00010fdb      0xc15 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
- .debug_info    0x00011bf0     0x1c66 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
- .debug_info    0x00013856     0x1143 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_info    0x00014999      0x862 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_info    0x000151fb      0x914 ./SDK/rtos/osif/osif_baremetal.o
- .debug_info    0x00015b0f     0x12b5 ./board/clock_config.o
- .debug_info    0x00016dc4      0xd6a ./board/peripherals_ST7789_Interface.o
- .debug_info    0x00017b2e      0x405 ./board/pin_mux.o
- .debug_info    0x00017f33     0x1e29 ./src/example8.o
+ .debug_info    0x00000026     0x1ce6 ./S&M_Driv/src/ST7789_low_level.o
+ .debug_info    0x00001d0c      0x51e ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_info    0x0000222a      0x46d ./SDK/platform/devices/startup.o
+ .debug_info    0x00002697     0x403f ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_info    0x000066d6     0x2063 ./SDK/platform/drivers/src/csec/csec_driver.o
+ .debug_info    0x00008739      0xe4a ./SDK/platform/drivers/src/csec/csec_hw_access.o
+ .debug_info    0x00009583     0x2a15 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_info    0x0000bf98      0x936 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_info    0x0000c8ce      0x53e ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_info    0x0000ce0c      0x9a7 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_info    0x0000d7b3     0x11e7 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+ .debug_info    0x0000e99a      0x741 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+ .debug_info    0x0000f0db     0x1fa7 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+ .debug_info    0x00011082      0xc15 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+ .debug_info    0x00011c97     0x1c66 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+ .debug_info    0x000138fd     0x1143 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_info    0x00014a40      0x862 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_info    0x000152a2      0x914 ./SDK/rtos/osif/osif_baremetal.o
+ .debug_info    0x00015bb6     0x12b5 ./board/clock_config.o
+ .debug_info    0x00016e6b      0xd6a ./board/peripherals_ST7789_Interface.o
+ .debug_info    0x00017bd5      0x405 ./board/pin_mux.o
+ .debug_info    0x00017fda     0x1e29 ./src/example8.o
 
 .debug_abbrev   0x00000000     0x2afe
  .debug_abbrev  0x00000000       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
@@ -1984,122 +1991,122 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
  .debug_abbrev  0x000028a1       0xca ./board/pin_mux.o
  .debug_abbrev  0x0000296b      0x193 ./src/example8.o
 
-.debug_aranges  0x00000000     0x10f8
+.debug_aranges  0x00000000     0x1100
  .debug_aranges
                 0x00000000       0x20 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_aranges
-                0x00000020       0x88 ./S&M_Driv/src/ST7789_low_level.o
+                0x00000020       0x90 ./S&M_Driv/src/ST7789_low_level.o
  .debug_aranges
-                0x000000a8       0x30 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                0x000000b0       0x30 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
  .debug_aranges
-                0x000000d8       0x20 ./SDK/platform/devices/startup.o
+                0x000000e0       0x20 ./SDK/platform/devices/startup.o
  .debug_aranges
-                0x000000f8      0x498 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                0x00000100      0x498 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
  .debug_aranges
-                0x00000590      0x198 ./SDK/platform/drivers/src/csec/csec_driver.o
+                0x00000598      0x198 ./SDK/platform/drivers/src/csec/csec_driver.o
  .debug_aranges
-                0x00000728       0x50 ./SDK/platform/drivers/src/csec/csec_hw_access.o
+                0x00000730       0x50 ./SDK/platform/drivers/src/csec/csec_hw_access.o
  .debug_aranges
-                0x00000778      0x220 ./SDK/platform/drivers/src/edma/edma_driver.o
+                0x00000780      0x220 ./SDK/platform/drivers/src/edma/edma_driver.o
  .debug_aranges
-                0x00000998       0x88 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+                0x000009a0       0x88 ./SDK/platform/drivers/src/edma/edma_hw_access.o
  .debug_aranges
-                0x00000a20       0xa8 ./SDK/platform/drivers/src/edma/edma_irq.o
+                0x00000a28       0xa8 ./SDK/platform/drivers/src/edma/edma_irq.o
  .debug_aranges
-                0x00000ac8       0x70 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                0x00000ad0       0x70 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
  .debug_aranges
-                0x00000b38       0x80 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+                0x00000b40       0x80 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
  .debug_aranges
-                0x00000bb8       0x30 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+                0x00000bc0       0x30 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
  .debug_aranges
-                0x00000be8      0x100 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+                0x00000bf0      0x100 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
  .debug_aranges
-                0x00000ce8       0x70 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+                0x00000cf0       0x70 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
  .debug_aranges
-                0x00000d58       0xc0 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+                0x00000d60       0xc0 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
  .debug_aranges
-                0x00000e18      0x188 ./SDK/platform/drivers/src/pins/pins_driver.o
+                0x00000e20      0x188 ./SDK/platform/drivers/src/pins/pins_driver.o
  .debug_aranges
-                0x00000fa0       0x48 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+                0x00000fa8       0x48 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
  .debug_aranges
-                0x00000fe8       0x98 ./SDK/rtos/osif/osif_baremetal.o
+                0x00000ff0       0x98 ./SDK/rtos/osif/osif_baremetal.o
  .debug_aranges
-                0x00001080       0x18 ./board/clock_config.o
+                0x00001088       0x18 ./board/clock_config.o
  .debug_aranges
-                0x00001098       0x28 ./board/peripherals_ST7789_Interface.o
+                0x000010a0       0x28 ./board/peripherals_ST7789_Interface.o
  .debug_aranges
-                0x000010c0       0x18 ./board/pin_mux.o
+                0x000010c8       0x18 ./board/pin_mux.o
  .debug_aranges
-                0x000010d8       0x20 ./src/example8.o
+                0x000010e0       0x20 ./src/example8.o
 
-.debug_str      0x00000000     0x8e09
- .debug_str     0x00000000       0x99 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_str     0x00000099     0x1981 ./S&M_Driv/src/ST7789_low_level.o
-                               0x1af0 (size before relaxing)
- .debug_str     0x00001a1a      0x1cc ./SDK/platform/devices/S32K144/startup/system_S32K144.o
-                                0x484 (size before relaxing)
- .debug_str     0x00001be6      0x20c ./SDK/platform/devices/startup.o
-                                0x518 (size before relaxing)
- .debug_str     0x00001df2     0x3258 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
-                               0x3a2e (size before relaxing)
- .debug_str     0x0000504a      0xa3f ./SDK/platform/drivers/src/csec/csec_driver.o
-                               0x1f77 (size before relaxing)
- .debug_str     0x00005a89       0xfb ./SDK/platform/drivers/src/csec/csec_hw_access.o
+.debug_str      0x00000000     0x8e44
+ .debug_str     0x00000000       0xb5 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_str     0x000000b5     0x19a5 ./S&M_Driv/src/ST7789_low_level.o
+                               0x1b30 (size before relaxing)
+ .debug_str     0x00001a5a      0x1cc ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                                0x4a0 (size before relaxing)
+ .debug_str     0x00001c26      0x20c ./SDK/platform/devices/startup.o
+                                0x534 (size before relaxing)
+ .debug_str     0x00001e32     0x3258 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                               0x3a4a (size before relaxing)
+ .debug_str     0x0000508a      0xa3f ./SDK/platform/drivers/src/csec/csec_driver.o
+                               0x1f93 (size before relaxing)
+ .debug_str     0x00005ac9       0xf6 ./SDK/platform/drivers/src/csec/csec_hw_access.o
+                                0xc01 (size before relaxing)
+ .debug_str     0x00005bbf     0x1748 ./SDK/platform/drivers/src/edma/edma_driver.o
+                               0x2cf7 (size before relaxing)
+ .debug_str     0x00007307      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+                                0x851 (size before relaxing)
+ .debug_str     0x0000747d      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
+                                0x51e (size before relaxing)
+ .debug_str     0x000075df      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
                                 0xbe5 (size before relaxing)
- .debug_str     0x00005b84     0x1748 ./SDK/platform/drivers/src/edma/edma_driver.o
-                               0x2cdb (size before relaxing)
- .debug_str     0x000072cc      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
-                                0x835 (size before relaxing)
- .debug_str     0x00007442      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
-                                0x502 (size before relaxing)
- .debug_str     0x000075a4      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
-                                0xbc9 (size before relaxing)
- .debug_str     0x0000777a      0x4e6 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
-                               0x1d52 (size before relaxing)
- .debug_str     0x00007c60       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
-                                0xb3c (size before relaxing)
- .debug_str     0x00007cc4      0x3dd ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
-                               0x247c (size before relaxing)
- .debug_str     0x000080a1      0x12f ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
-                               0x1109 (size before relaxing)
- .debug_str     0x000081d0      0x183 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
-                               0x22ce (size before relaxing)
- .debug_str     0x00008353      0x591 ./SDK/platform/drivers/src/pins/pins_driver.o
-                               0x1440 (size before relaxing)
- .debug_str     0x000088e4      0x1f1 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
-                                0x977 (size before relaxing)
- .debug_str     0x00008ad5      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
-                               0x10e8 (size before relaxing)
- .debug_str     0x00008ca9       0x71 ./board/clock_config.o
-                               0x238b (size before relaxing)
- .debug_str     0x00008d1a       0x49 ./board/peripherals_ST7789_Interface.o
-                               0x1906 (size before relaxing)
- .debug_str     0x00008d63       0x13 ./board/pin_mux.o
-                                0x63b (size before relaxing)
- .debug_str     0x00008d76       0x93 ./src/example8.o
-                               0x2d0a (size before relaxing)
+ .debug_str     0x000077b5      0x4e6 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+                               0x1d6e (size before relaxing)
+ .debug_str     0x00007c9b       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+                                0xb58 (size before relaxing)
+ .debug_str     0x00007cff      0x3dd ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+                               0x2498 (size before relaxing)
+ .debug_str     0x000080dc      0x12f ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+                               0x1125 (size before relaxing)
+ .debug_str     0x0000820b      0x183 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+                               0x22ea (size before relaxing)
+ .debug_str     0x0000838e      0x591 ./SDK/platform/drivers/src/pins/pins_driver.o
+                               0x145c (size before relaxing)
+ .debug_str     0x0000891f      0x1f1 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+                                0x993 (size before relaxing)
+ .debug_str     0x00008b10      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
+                               0x1104 (size before relaxing)
+ .debug_str     0x00008ce4       0x71 ./board/clock_config.o
+                               0x23a7 (size before relaxing)
+ .debug_str     0x00008d55       0x49 ./board/peripherals_ST7789_Interface.o
+                               0x1922 (size before relaxing)
+ .debug_str     0x00008d9e       0x13 ./board/pin_mux.o
+                                0x657 (size before relaxing)
+ .debug_str     0x00008db1       0x93 ./src/example8.o
+                               0x2d26 (size before relaxing)
 
-.debug_ranges   0x00000000      0xf98
- .debug_ranges  0x00000000       0x78 ./S&M_Driv/src/ST7789_low_level.o
- .debug_ranges  0x00000078       0x20 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_ranges  0x00000098       0x10 ./SDK/platform/devices/startup.o
- .debug_ranges  0x000000a8      0x488 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_ranges  0x00000530      0x1a0 ./SDK/platform/drivers/src/csec/csec_driver.o
- .debug_ranges  0x000006d0       0x40 ./SDK/platform/drivers/src/csec/csec_hw_access.o
- .debug_ranges  0x00000710      0x210 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_ranges  0x00000920       0x78 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_ranges  0x00000998       0x98 ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_ranges  0x00000a30       0x60 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_ranges  0x00000a90       0x70 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
- .debug_ranges  0x00000b00       0x20 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
- .debug_ranges  0x00000b20       0xf0 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
- .debug_ranges  0x00000c10       0x78 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
- .debug_ranges  0x00000c88       0xb0 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
- .debug_ranges  0x00000d38      0x178 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_ranges  0x00000eb0       0x38 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_ranges  0x00000ee8       0x88 ./SDK/rtos/osif/osif_baremetal.o
- .debug_ranges  0x00000f70       0x18 ./board/peripherals_ST7789_Interface.o
- .debug_ranges  0x00000f88       0x10 ./src/example8.o
+.debug_ranges   0x00000000      0xfa0
+ .debug_ranges  0x00000000       0x80 ./S&M_Driv/src/ST7789_low_level.o
+ .debug_ranges  0x00000080       0x20 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_ranges  0x000000a0       0x10 ./SDK/platform/devices/startup.o
+ .debug_ranges  0x000000b0      0x488 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_ranges  0x00000538      0x1a0 ./SDK/platform/drivers/src/csec/csec_driver.o
+ .debug_ranges  0x000006d8       0x40 ./SDK/platform/drivers/src/csec/csec_hw_access.o
+ .debug_ranges  0x00000718      0x210 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_ranges  0x00000928       0x78 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_ranges  0x000009a0       0x98 ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_ranges  0x00000a38       0x60 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_ranges  0x00000a98       0x70 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+ .debug_ranges  0x00000b08       0x20 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+ .debug_ranges  0x00000b28       0xf0 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+ .debug_ranges  0x00000c18       0x78 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+ .debug_ranges  0x00000c90       0xb0 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+ .debug_ranges  0x00000d40      0x178 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_ranges  0x00000eb8       0x38 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_ranges  0x00000ef0       0x88 ./SDK/rtos/osif/osif_baremetal.o
+ .debug_ranges  0x00000f78       0x18 ./board/peripherals_ST7789_Interface.o
+ .debug_ranges  0x00000f90       0x10 ./src/example8.o
 
 .comment        0x00000000       0xa0
  .comment       0x00000000       0xa0 ./S&M_Driv/src/ST7789_low_level.o
@@ -2126,24 +2133,24 @@ OUTPUT(S32K144_ST7789_Graphics_Test.elf elf32-littlearm)
  .comment       0x000000a0       0xa1 ./board/pin_mux.o
  .comment       0x000000a0       0xa1 ./src/example8.o
 
-.debug_frame    0x00000000     0x471c
- .debug_frame   0x00000000      0x238 ./S&M_Driv/src/ST7789_low_level.o
- .debug_frame   0x00000238       0x80 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_frame   0x000002b8       0x38 ./SDK/platform/devices/startup.o
- .debug_frame   0x000002f0     0x15d8 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_frame   0x000018c8      0x6dc ./SDK/platform/drivers/src/csec/csec_driver.o
- .debug_frame   0x00001fa4      0x128 ./SDK/platform/drivers/src/csec/csec_hw_access.o
- .debug_frame   0x000020cc      0x9bc ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_frame   0x00002a88      0x23c ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_frame   0x00002cc4      0x21c ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_frame   0x00002ee0      0x1b8 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_frame   0x00003098      0x218 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
- .debug_frame   0x000032b0       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
- .debug_frame   0x00003314      0x46c ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
- .debug_frame   0x00003780      0x1bc ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
- .debug_frame   0x0000393c      0x344 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
- .debug_frame   0x00003c80      0x6dc ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_frame   0x0000435c       0xf8 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_frame   0x00004454      0x23c ./SDK/rtos/osif/osif_baremetal.o
- .debug_frame   0x00004690       0x58 ./board/peripherals_ST7789_Interface.o
- .debug_frame   0x000046e8       0x34 ./src/example8.o
+.debug_frame    0x00000000     0x4744
+ .debug_frame   0x00000000      0x260 ./S&M_Driv/src/ST7789_low_level.o
+ .debug_frame   0x00000260       0x80 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_frame   0x000002e0       0x38 ./SDK/platform/devices/startup.o
+ .debug_frame   0x00000318     0x15d8 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_frame   0x000018f0      0x6dc ./SDK/platform/drivers/src/csec/csec_driver.o
+ .debug_frame   0x00001fcc      0x128 ./SDK/platform/drivers/src/csec/csec_hw_access.o
+ .debug_frame   0x000020f4      0x9bc ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_frame   0x00002ab0      0x23c ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_frame   0x00002cec      0x21c ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_frame   0x00002f08      0x1b8 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_frame   0x000030c0      0x218 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+ .debug_frame   0x000032d8       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+ .debug_frame   0x0000333c      0x46c ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+ .debug_frame   0x000037a8      0x1bc ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+ .debug_frame   0x00003964      0x344 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+ .debug_frame   0x00003ca8      0x6dc ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_frame   0x00004384       0xf8 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_frame   0x0000447c      0x23c ./SDK/rtos/osif/osif_baremetal.o
+ .debug_frame   0x000046b8       0x58 ./board/peripherals_ST7789_Interface.o
+ .debug_frame   0x00004710       0x34 ./src/example8.o

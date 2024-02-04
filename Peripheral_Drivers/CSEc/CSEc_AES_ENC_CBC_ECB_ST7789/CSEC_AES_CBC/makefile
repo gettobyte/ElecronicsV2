@@ -41,7 +41,7 @@ CSEc_AES_ENC_CBC_ECB_ST7789.siz \
 all: CSEc_AES_ENC_CBC_ECB_ST7789.elf secondary-outputs
 
 # Tool invocations
-CSEc_AES_ENC_CBC_ECB_ST7789.elf: $(OBJS) C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CSEc_AES_ENC_CBC_ECB_ST7789/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+CSEc_AES_ENC_CBC_ECB_ST7789.elf: $(OBJS) C:/Users/nxf86731/Documents/elecronicsv2/ElecronicsV2/Peripheral_Drivers/CSEc/CSEc_AES_ENC_CBC_ECB_ST7789/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "CSEc_AES_ENC_CBC_ECB_ST7789.elf" "@CSEc_AES_ENC_CBC_ECB_ST7789.args"  $(USER_OBJS) $(LIBS)
