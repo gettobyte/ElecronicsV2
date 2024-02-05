@@ -27,23 +27,24 @@ static const flash_user_config_t flash1_InitConfig0 = {
     .CallBack    = NULL_CALLBACK
 };
 
-#define EVB
-
-#ifdef EVB
     #define LED_PORT       PTD
     #define LED_OK         16U
     #define LED_ERROR      15U
-#endif
 
-/* Set this macro-definition to 1 if you want to reset all the keys */
-#define ERASE_ALL_KEYS	0
+#define CSEc_FLASH_PARTION_ALREADY_DONE 0xAA
+#define CSEC_FLASH_PARTION_NOT_DONE 0x55
+#define ERASE_ALL_KEYS	1
 
-void initFlashForCsecOperation(void)
+status_t initFlashForCsecOperation(void)
 {
 	flash_ssd_config_t flashSSDConfig;
+	status_t flash_partition, flash_init;
 
-	FLASH_DRV_Init(&flash1_InitConfig0, &flashSSDConfig);
+	flash_init = FLASH_DRV_Init(&flash1_InitConfig0, &flashSSDConfig);
 
+	/* If EEESize variable is equal to 0, it means that  Flash memory partitioning for
+	 * emulated EEEPROM is not done. And Flash memory partitioning is mandatory step to do
+	 * CSEc Operation. */
 	if (flashSSDConfig.EEESize == 0)
 	{
 #ifdef FLASH_TARGET
@@ -52,6 +53,9 @@ void initFlashForCsecOperation(void)
 		 * this example should be ran from RAM, in order to enable CSEc operation. Please
 		 * refer to the documentation for more information. */
 		PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+
+		//If flash configuration is selected then memory partitioning cant be done
+		flash_partition = CSEC_FLASH_PARTION_NOT_DONE;
 #else
 		uint32_t address;
 		uint32_t size;
@@ -74,18 +78,20 @@ void initFlashForCsecOperation(void)
 #endif /* FEATURE_FLS_HAS_PROGRAM_PHRASE_CMD */
 		FLASH_DRV_Program(&flashSSDConfig, address, size, unsecure_key);
 
-        FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
-#endif /* FLASH_TARGET */
+		flash_partition = FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
+
+		#endif /* FLASH_TARGET */
+	} else if (flashSSDConfig.EEESize != 0)
+	{
+		// Means flash partitioning is already done
+		flash_partition = CSEc_FLASH_PARTION_ALREADY_DONE;
 	}
+
+	return flash_partition;
+
 }
 
-
-uint32_t starttime __attribute__((section (".customSection")));
-
-uint32_t timetaken =0;
-uint32_t elapsedtime =0;
-
-const uint8_t Iv[] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F };
+uint8_t key_counter = 0;
 
 int main(void)
 {
@@ -97,99 +103,29 @@ int main(void)
 						g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
+  status_t flash_init_for_csec;
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 
   /* Turn off the leds */
   PINS_DRV_SetPins(LED_PORT, (1 << LED_ERROR) | (1 << LED_OK));
 
-  bool keyLoaded;
-  uint8_t key[16] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-              0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
 
-  /* Initialize CSEc driver */
-  CSEC_DRV_Init(&csecState);
+    /* Initialize CSEc driver */
+    CSEC_DRV_Init(&csecState);
 
-  /* Initialize Flash for CSEc operation */
-  initFlashForCsecOperation();
+    /* Initialize Flash for CSEc operation */
+    flash_init_for_csec = initFlashForCsecOperation();
 
-  /* Load the MASTER_ECU key with a known value, which will be used as Authorization
-   * key (a secret key known by the application in order to configure other user keys) */
-  setAuthKey();
+    /* Load the MASTER_ECU key with a known value, which will be used as Authorization
+     * key (a secret key known by the application in order to configure other user keys) */
+    setAuthKey();
 
-  /* Load the selected key */
-  /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 2);
-
-  if (keyLoaded)
-  {
-      /* Test an encryption using the loaded key.
-       *
-       * key        = 000102030405060708090a0b0c0d0e0f
-       * plaintext  = 00112233445566778899aabbccddeeff
-       * ciphertext = 69c4e0d86a7b0430d8cdb78070b4c55a
-       *
-       * The values are extracted from the SHE Spec 1.1 test vectors.
-       */
-      uint8_t i;
-
-      status_t stat;
-      bool encryptionOk = true;
-      uint8_t cipherText[16];
-      uint8_t cipherText_encrypted[16];
-      uint8_t plainText[16] = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88,
-      0x99, 0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff};
-
-      uint8_t expectedCipherText[16] = {0x69, 0xc4, 0xe0, 0xd8, 0x6a, 0x7b, 0x04,
-      0x30, 0xd8, 0xcd, 0xb7, 0x80, 0x70, 0xb4, 0xc5, 0x5a};
-
-      starttime = OSIF_GetMilliseconds();
-      // stat = CSEC_DRV_EncryptECB(CSEC_KEY_1, plainText, 16U, cipherText, 1U);
-
-      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
-
-
-      elapsedtime = OSIF_GetMilliseconds();
-    timetaken = elapsedtime-starttime;
-
-    	starttime = OSIF_GetMilliseconds();
-      stat = CSEC_DRV_DecryptECB(CSEC_KEY_1, cipherText, 16U, cipherText_encrypted, 1U);
-  	elapsedtime = OSIF_GetMilliseconds();
-  	timetaken = elapsedtime-starttime;
-
-
-      if (stat == STATUS_SUCCESS)
-      {
-          /* Check if the cipher text is the one expected */
-          for (i = 0; i < 16; i++)
-          {
-              if (cipherText[i] != expectedCipherText[i])
-              {
-                  encryptionOk = false;
-                  break;
-              }
-          }
-      }
-
-      if (encryptionOk)
-      {
-          PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
-      }
-  }
-  else
-  {
-      PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
-  }
-
-
-#if ERASE_ALL_KEYS
-  if (eraseKeys())
-  {
-      PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
-      PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
-  }
-#endif
-
+      if (eraseKeys())
+       {
+           PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+           PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
+       }
 
   for(;;) {
     if(exit_code != 0) {

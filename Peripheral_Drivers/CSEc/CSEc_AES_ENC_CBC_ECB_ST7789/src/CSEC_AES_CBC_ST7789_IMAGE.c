@@ -1,17 +1,8 @@
 /*
- * Copyright 2020 NXP
+ * Copyright 2022 Gettobyte
  * All rights reserved.
  *
- * NXP Confidential. This software is owned or controlled by NXP and may only be
- * used strictly in accordance with the applicable license terms. By expressly
- * accepting such terms or by downloading, installing, activating and/or otherwise
- * using the software, you are agreeing that you have read, and that you agree to
- * comply with and are bound by, such license terms. If you do not agree to be
- * bound by the applicable license terms, then you may not retain, install,
- * activate or otherwise use the software. The production use license in
- * Section 2.3 is expressly granted for this software.
  */
-
 
 /* Including needed modules to compile this module/procedure */
 #include "sdk_project_config.h"
@@ -128,12 +119,15 @@ const uint8_t gettobyte[] = {
 
 };
 uint8_t gettobyte_encrypted[11250]__attribute__((section (".cryto_encrypted")));
+#define CSEc_FLASH_PARTION_ALREADY_DONE 0xAA   // CSEc memory partionting is already done, previous time. To do it again with new value, run CSEC_Crypto_Erase_Keys.c example
+#define CSEC_FLASH_PARTION_CANT_BE_DONE 0x55   // CSEc memory partionting to EEEPROM cant be done because RAM configuration is selected or CSEc flash configuration is not done yet, run CSEC_Vrypto_Engine_Init.c example
 /* Set this macro-definition to 1 if you want to reset all the keys */
 #define ERASE_ALL_KEYS	0
 
-void initFlashForCsecOperation(void)
+status_t initFlashForCsecOperation(void)
 {
 	flash_ssd_config_t flashSSDConfig;
+	status_t flash_partition, flash_init;
 
 	FLASH_DRV_Init(&flash1_InitConfig0, &flashSSDConfig);
 
@@ -145,6 +139,9 @@ void initFlashForCsecOperation(void)
 		 * this example should be ran from RAM, in order to enable CSEc operation. Please
 		 * refer to the documentation for more information. */
 		PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+		//If flash configuration is selected then memory partitioning cant be done
+		flash_partition = CSEC_FLASH_PARTION_CANT_BE_DONE;
+
 #else
 		uint32_t address;
 		uint32_t size;
@@ -169,25 +166,17 @@ void initFlashForCsecOperation(void)
 
         FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
 #endif /* FLASH_TARGET */
+	}else if (flashSSDConfig.EEESize != 0)
+	{
+		// Means flash partitioning is already done
+		flash_partition = CSEc_FLASH_PARTION_ALREADY_DONE;
 	}
+
+	return flash_partition;
+
 }
-
-/*!
-  \brief The main function for the project.
-  \details The startup initialization sequence is the following:
- * - __start (startup asm routine)
- * - __init_hardware()
- * - main()
- *   - PE_low_level_init()
- *     - Common_Init()
- *     - Peripherals_Init()
-*/
-
 uint32_t starttime __attribute__((section (".customSection")));
 
-uint32_t timetaken =0;
-uint32_t elapsedtime =0;
-uint32_t msg[100];
 const uint8_t Iv[] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F };
 
 
@@ -200,6 +189,10 @@ int main(void)
 	 CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
 	  CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 	  /* Initialize pins */
+
+	  status_t flash_init_for_csec;
+
+
 	  PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 	  /* Turn off the leds */
 	  PINS_DRV_SetPins(LED_PORT, (1 << LED_ERROR) | (1 << LED_OK));
@@ -227,14 +220,16 @@ int main(void)
 
 	  /* Initialize CSEc driver */
 	  CSEC_DRV_Init(&csecState);
+
 	  /* Initialize Flash for CSEc operation */
-	  initFlashForCsecOperation();
+	  flash_init_for_csec = initFlashForCsecOperation();
+
 	  /* Load the MASTER_ECU key with a known value, which will be used as Authorization
 	   * key (a secret key known by the application in order to configure other user keys) */
 	  setAuthKey();
 	  /* Load the selected key */
 	  /* First load => counter == 1 */
-	  keyLoaded = loadKey(CSEC_KEY_1, key, 6);
+	  keyLoaded = loadKey(CSEC_KEY_1, key, 4);
 
   if (keyLoaded)
   {

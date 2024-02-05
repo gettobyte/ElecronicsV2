@@ -27,20 +27,21 @@ static const flash_user_config_t flash1_InitConfig0 = {
     .CallBack    = NULL_CALLBACK
 };
 
-#define EVB
 
-#ifdef EVB
     #define LED_PORT       PTD
     #define LED_OK         16U
     #define LED_ERROR      15U
-#endif
 
+
+#define CSEc_FLASH_PARTION_ALREADY_DONE 0xAA   // CSEc memory partionting is already done, previous time. To do it again with new value, run CSEC_Crypto_Erase_Keys.c example
+#define CSEC_FLASH_PARTION_CANT_BE_DONE 0x55   // CSEc memory partionting to EEEPROM cant be done because RAM configuration is selected or CSEc flash configuration is not done yet, run CSEC_Vrypto_Engine_Init.c example
 /* Set this macro-definition to 1 if you want to reset all the keys */
 #define ERASE_ALL_KEYS	0
 
-void initFlashForCsecOperation(void)
+status_t initFlashForCsecOperation(void)
 {
 	flash_ssd_config_t flashSSDConfig;
+	status_t flash_partition, flash_init;
 
 	FLASH_DRV_Init(&flash1_InitConfig0, &flashSSDConfig);
 
@@ -52,6 +53,9 @@ void initFlashForCsecOperation(void)
 		 * this example should be ran from RAM, in order to enable CSEc operation. Please
 		 * refer to the documentation for more information. */
 		PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+
+		//If flash configuration is selected then memory partitioning cant be done
+		flash_partition = CSEC_FLASH_PARTION_CANT_BE_DONE;
 #else
 		uint32_t address;
 		uint32_t size;
@@ -76,14 +80,17 @@ void initFlashForCsecOperation(void)
 
         FLASH_DRV_DEFlashPartition(&flashSSDConfig, 0x2, 0x4, 0x3, false, true);
 #endif /* FLASH_TARGET */
+	} else if (flashSSDConfig.EEESize != 0)
+	{
+		// Means flash partitioning is already done
+		flash_partition = CSEc_FLASH_PARTION_ALREADY_DONE;
 	}
+
+	return flash_partition;
 }
 
 
 uint32_t starttime __attribute__((section (".customSection")));
-
-uint32_t timetaken =0;
-uint32_t elapsedtime =0;
 
 const uint8_t Iv[] = {
 		0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
@@ -99,6 +106,8 @@ int main(void)
 						g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
+  status_t flash_init_for_csec;
+
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 
@@ -113,7 +122,7 @@ int main(void)
   CSEC_DRV_Init(&csecState);
 
   /* Initialize Flash for CSEc operation */
-  initFlashForCsecOperation();
+  flash_init_for_csec = initFlashForCsecOperation();
 
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
@@ -121,7 +130,7 @@ int main(void)
 
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 8);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 1);
   if (keyLoaded)
   {
       /* Test an encryption using the loaded key.
@@ -171,15 +180,6 @@ int main(void)
   {
       PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
   }
-
-
-#if ERASE_ALL_KEYS
-  if (eraseKeys())
-  {
-      PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
-      PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
-  }
-#endif
 
 
   for(;;) {
