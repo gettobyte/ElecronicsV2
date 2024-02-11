@@ -229,7 +229,7 @@ int main(void)
 	  setAuthKey();
 	  /* Load the selected key */
 	  /* First load => counter == 1 */
-	  keyLoaded = loadKey(CSEC_KEY_1, key, 4);
+	  keyLoaded = loadKey(CSEC_KEY_1, key, 8);
 
   if (keyLoaded)
   {

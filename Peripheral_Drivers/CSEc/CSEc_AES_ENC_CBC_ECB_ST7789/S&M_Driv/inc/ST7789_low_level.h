@@ -102,6 +102,9 @@ void GB_ST7789_SendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numD
 void GB_ST7789_SendData( uint8_t *data, uint32_t data_size);
 void GB_ST7789_SendDataIm( const uint8_t *data, uint32_t data_size);
 void GB_ST7789_Init(void);
+
+void GB_STT7789_SPI_CS_low(void);
+void GB_STT7789_SPI_CS_high(void);
 /*
  * Reference from: https://github.com/Floyd-Fish/ST7789-STM32/blob/master/ST7789/st7789.c
  */
