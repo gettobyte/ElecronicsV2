@@ -1,0 +1,27 @@
+-c
+-I../SDK/platform/drivers/inc
+-I../SDK/platform/drivers/src/lpuart
+-I../SDK/rtos/osif
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/board"
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/SDK/platform/devices/common"
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/SDK/platform/devices"
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/SDK/platform/devices/S32K144/include"
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/SDK/platform/drivers/inc"
+-I"C:/Users/Rohan/workspaceS32DS.3.4/GITHUB/ElecronicsV2-main/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/SDK/platform/drivers/src/clock/S32K1xx"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/common"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/S32K144/include"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/S32K144/startup"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/drivers/inc"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/pal/inc"
+-I"D:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/osif"
+-x assembler-with-cpp
+-g3
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=nano.specs
+-specs=nosys.specs
+--sysroot="D:/NXP/S32DS.3.4/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
