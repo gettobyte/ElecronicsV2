@@ -38,6 +38,12 @@ int main(void)
 {
     /* Write your code here */
 
+	/* Configure clocks for PORT */
+	CLOCK_DRV_Init(&clockMan1_InitConfig0);
+
+    PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
+
+
     FLEXCAN_DRV_Init(INST_FLEXCAN_CONFIG_1, &flexcanState0, &flexcanInitConfig0);
 
     flexcan_data_info_t dataInfo =
@@ -53,22 +59,28 @@ int main(void)
 
 //    FLEXCAN_DRV_GetDefaultConfig()
 //
-    FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo , TX_MSG_ID);
-
-    FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 1000 );
-
-
-    FLEXCAN_DRV_ConfigRxMb(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &dataInfo, RX_MSG_ID);
-
-
-    FLEXCAN_DRV_Receive(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &recvBuff);
+//    FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo , TX_MSG_ID);
+//
+//    FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 1000 );
+//
+//
+//    FLEXCAN_DRV_ConfigRxMb(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &dataInfo, RX_MSG_ID);
+//
+//
+//    FLEXCAN_DRV_Receive(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &recvBuff);
 
     for(;;)
     {
-        if(exit_code != 0)
-        {
-            break;
-        }
+        FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo , TX_MSG_ID);
+
+        FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 1000 );
+
+//        FLEXCAN_DRV_ConfigRxMb(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &dataInfo, RX_MSG_ID);
+//
+//
+//        FLEXCAN_DRV_Receive(INST_FLEXCAN_CONFIG_1, RX_MAILBOX, &recvBuff);
+
+
     }
     return exit_code;
 }
