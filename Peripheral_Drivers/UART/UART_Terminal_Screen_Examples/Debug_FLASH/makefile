@@ -39,7 +39,7 @@ UART_Terminal_Screen_Examples.siz \
 all: UART_Terminal_Screen_Examples.elf secondary-outputs
 
 # Tool invocations
-UART_Terminal_Screen_Examples.elf: $(OBJS) C:/Users/nxf86731/Documents/elecronicsv2/ElecronicsV2/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+UART_Terminal_Screen_Examples.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "UART_Terminal_Screen_Examples.elf" "@UART_Terminal_Screen_Examples.args"  $(USER_OBJS) $(LIBS)

@@ -1,5 +1,5 @@
 -T
-"C:/Users/gettobyte_kunal/Documents/s32k144_programs/UART_Terminal_Screen_Examples/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/UART/UART_Terminal_Screen_Examples/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"UART_Terminal_Screen_Examples.map"
 -Xlinker
 --gc-sections
