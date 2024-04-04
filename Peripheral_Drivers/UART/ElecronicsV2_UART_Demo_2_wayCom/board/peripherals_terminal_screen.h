@@ -22,7 +22,7 @@
 /*******************************************************************************
  * Definitions 
  ******************************************************************************/
-#define INST_TERMINAL_SCREEN  0
+#define INST_TERMINAL_SCREEN  1
 
 extern lpuart_state_t terminal_screen_state;
 

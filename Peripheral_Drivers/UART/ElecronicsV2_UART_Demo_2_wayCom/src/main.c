@@ -18,6 +18,8 @@
 uint8_t rxBuff[20];
 #define welcomeMsg "Welcome to Gettobyte\n"
 #define waiTing " Input the data, to print it\n"
+
+uint8_t data[5] = "ratgy";
 /* User includes */
 
 /* User includes */
@@ -43,18 +45,23 @@ int main(void)
 		  error = LPUART_DRV_Init(INST_TERMINAL_SCREEN, &terminal_screen_state, &terminal_screen_InitConfig);
 		  DEV_ASSERT(error == STATUS_SUCCESS);
 
-		  LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, (uint8_t *) welcomeMsg , strlen(welcomeMsg));
+		  error = LPUART_DRV_Init(INST_TERMINAL_SCREEN_2, &terminal_screen_2_state, &terminal_screen_2_InitConfig);
+		  DEV_ASSERT(error == STATUS_SUCCESS);
+
 
 		  OSIF_TimeDelay(1000);
     for(;;)
     {
-    	 LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, (uint8_t *) waiTing,strlen(waiTing));
 
-    	       LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+    	error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN_2, data, 5);
 
-    	       LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+    	//error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, data, 5);
 
-    	       OSIF_TimeDelay(1000);
+    	//error = LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+
+    	//error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+
+    	      // OSIF_TimeDelay(1000);
 
     }
 

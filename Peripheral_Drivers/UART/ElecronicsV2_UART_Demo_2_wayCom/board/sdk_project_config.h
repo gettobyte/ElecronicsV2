@@ -20,6 +20,7 @@
 #include "pin_mux.h"
 #include "peripherals_ST7789_Interface.h"
 #include "peripherals_terminal_screen.h"
+#include "peripherals_terminal_screen_2.h"
 
 
 #endif /* SDK_PROJECT_CONFIG_H_ */

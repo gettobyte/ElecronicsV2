@@ -23,7 +23,8 @@ src/main.o: ../src/main.c \
  ../SDK/platform/drivers/inc/lpspi_shared_function.h \
  C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/board/peripherals_terminal_screen.h \
  ../SDK/platform/drivers/inc/lpuart_driver.h \
- ../SDK/platform/drivers/inc/interrupt_manager.h
+ ../SDK/platform/drivers/inc/interrupt_manager.h \
+ C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/board/peripherals_terminal_screen_2.h
 
 C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/board/sdk_project_config.h:
 
@@ -74,3 +75,5 @@ C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/boar
 ../SDK/platform/drivers/inc/lpuart_driver.h:
 
 ../SDK/platform/drivers/inc/interrupt_manager.h:
+
+C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/board/peripherals_terminal_screen_2.h:

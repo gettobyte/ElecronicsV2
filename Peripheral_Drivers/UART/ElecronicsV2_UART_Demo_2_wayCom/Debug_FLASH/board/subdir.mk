@@ -7,18 +7,21 @@ C_SRCS += \
 ../board/clock_config.c \
 ../board/peripherals_ST7789_Interface.c \
 ../board/peripherals_terminal_screen.c \
+../board/peripherals_terminal_screen_2.c \
 ../board/pin_mux.c 
 
 OBJS += \
 ./board/clock_config.o \
 ./board/peripherals_ST7789_Interface.o \
 ./board/peripherals_terminal_screen.o \
+./board/peripherals_terminal_screen_2.o \
 ./board/pin_mux.o 
 
 C_DEPS += \
 ./board/clock_config.d \
 ./board/peripherals_ST7789_Interface.d \
 ./board/peripherals_terminal_screen.d \
+./board/peripherals_terminal_screen_2.d \
 ./board/pin_mux.d 
 
 

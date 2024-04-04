@@ -36,7 +36,7 @@ instance:
 - custom_name_enabled: 'true'
 - type_id: 'lpuart'
 - functional_group: 'BOARD_InitPeripherals'
-- peripheral: 'LPUART_0'
+- peripheral: 'LPUART_1'
 - config_sets:
   - lpuart_driver:
     - lpuart_state_name: 'terminal_screen_state'

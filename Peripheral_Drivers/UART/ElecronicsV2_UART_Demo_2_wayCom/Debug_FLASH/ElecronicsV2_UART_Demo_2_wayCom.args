@@ -33,5 +33,6 @@
 "./board/clock_config.o"
 "./board/peripherals_ST7789_Interface.o"
 "./board/peripherals_terminal_screen.o"
+"./board/peripherals_terminal_screen_2.o"
 "./board/pin_mux.o"
 "./src/main.o"
