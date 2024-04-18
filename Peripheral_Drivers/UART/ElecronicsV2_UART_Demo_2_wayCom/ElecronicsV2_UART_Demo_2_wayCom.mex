@@ -77,12 +77,12 @@
                         <pin_feature name="direction" value="OUTPUT"/>
                      </pin_features>
                   </pin>
+                  <pin peripheral="LPUART0" signal="rxd" pin_num="54" pin_signal="PTB0"/>
                   <pin peripheral="LPUART0" signal="txd" pin_num="53" pin_signal="PTB1">
                      <pin_features>
                         <pin_feature name="direction" value="OUTPUT"/>
                      </pin_features>
                   </pin>
-                  <pin peripheral="LPUART0" signal="rxd" pin_num="54" pin_signal="PTB0"/>
                </pins>
             </function>
          </functions_list>
@@ -298,6 +298,24 @@
                <options/>
                <dependencies/>
                <instances>
+                  <instance name="terminal_screen" uuid="cde96153-aa98-4e90-b6ac-e1a4f44ee83f" type="lpuart_config" type_id="lpuart" mode="general" peripheral="LPUART_1" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
+                     <config_set name="lpuart_driver">
+                        <setting name="lpuart_state_name" value="terminal_screen_state"/>
+                        <array name="lpuart_configuration">
+                           <struct name="0">
+                              <setting name="name" value="terminal_screen_InitConfig"/>
+                              <setting name="readonly" value="true"/>
+                              <setting name="transferType" value="LPUART_USING_INTERRUPTS"/>
+                              <setting name="baudRate" value="9600"/>
+                              <setting name="parityMode" value="LPUART_PARITY_DISABLED"/>
+                              <setting name="stopBitCount" value="LPUART_ONE_STOP_BIT"/>
+                              <setting name="bitCountPerChar" value="LPUART_8_BITS_PER_CHAR"/>
+                              <setting name="rxDMAChannel" value="0"/>
+                              <setting name="txDMAChannel" value="0"/>
+                           </struct>
+                        </array>
+                     </config_set>
+                  </instance>
                   <instance name="ST7789_Interface" uuid="81ad5579-cc16-400e-90f9-fa876c236c25" type="lpspi_config" type_id="lpspi" mode="general_soft" peripheral="LPSPI_0" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
                      <config_set name="lpspi">
                         <array name="lpspiMasterConfig">
@@ -323,25 +341,7 @@
                         <array name="lpspiSlaveConfig"/>
                      </config_set>
                   </instance>
-                  <instance name="terminal_screen" uuid="cde96153-aa98-4e90-b6ac-e1a4f44ee83f" type="lpuart_config" type_id="lpuart" mode="general" peripheral="LPUART_1" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
-                     <config_set name="lpuart_driver">
-                        <setting name="lpuart_state_name" value="terminal_screen_state"/>
-                        <array name="lpuart_configuration">
-                           <struct name="0">
-                              <setting name="name" value="terminal_screen_InitConfig"/>
-                              <setting name="readonly" value="true"/>
-                              <setting name="transferType" value="LPUART_USING_INTERRUPTS"/>
-                              <setting name="baudRate" value="9600"/>
-                              <setting name="parityMode" value="LPUART_PARITY_DISABLED"/>
-                              <setting name="stopBitCount" value="LPUART_ONE_STOP_BIT"/>
-                              <setting name="bitCountPerChar" value="LPUART_8_BITS_PER_CHAR"/>
-                              <setting name="rxDMAChannel" value="0"/>
-                              <setting name="txDMAChannel" value="0"/>
-                           </struct>
-                        </array>
-                     </config_set>
-                  </instance>
-                  <instance name="terminal_screen_2" uuid="08e04f6d-3584-4d01-93e4-2dd9b268129c" type="lpuart_config" type_id="lpuart" mode="general" peripheral="LPUART_0" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
+                  <instance name="terminal_screen_2" uuid="5cb9513c-e7c8-48c8-aca1-84e4b1d8bc80" type="lpuart_config" type_id="lpuart" mode="general" peripheral="LPUART_0" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
                      <config_set name="lpuart_driver">
                         <setting name="lpuart_state_name" value="terminal_screen_2_state"/>
                         <array name="lpuart_configuration">

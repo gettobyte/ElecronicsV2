@@ -50,8 +50,8 @@ BOARD_InitPins:
   - {pin_num: '67', peripheral: PORTB, signal: 'port, 13', pin_signal: PTB13, direction: OUTPUT}
   - {pin_num: '68', peripheral: PORTB, signal: 'port, 12', pin_signal: PTB12, direction: OUTPUT}
   - {pin_num: '49', peripheral: PORTC, signal: 'port, 13', pin_signal: PTC13, direction: OUTPUT}
-  - {pin_num: '53', peripheral: LPUART0, signal: txd, pin_signal: PTB1, direction: OUTPUT}
   - {pin_num: '54', peripheral: LPUART0, signal: rxd, pin_signal: PTB0}
+  - {pin_num: '53', peripheral: LPUART0, signal: txd, pin_signal: PTB1, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */

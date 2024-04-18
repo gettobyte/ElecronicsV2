@@ -18,8 +18,8 @@
 /* Include header files for all configured components */
 #include "clock_config.h"
 #include "pin_mux.h"
-#include "peripherals_ST7789_Interface.h"
 #include "peripherals_terminal_screen.h"
+#include "peripherals_ST7789_Interface.h"
 #include "peripherals_terminal_screen_2.h"
 
 

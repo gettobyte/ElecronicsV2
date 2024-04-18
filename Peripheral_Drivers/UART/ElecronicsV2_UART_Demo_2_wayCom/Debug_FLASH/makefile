@@ -40,7 +40,7 @@ ElecronicsV2_UART_Demo_2_wayCom.siz \
 all: ElecronicsV2_UART_Demo_2_wayCom.elf secondary-outputs
 
 # Tool invocations
-ElecronicsV2_UART_Demo_2_wayCom.elf: $(OBJS) C:/Users/gettobyte_kunal/workspaceS32DS.3.4/ElecronicsV2_UART_Demo_2_wayCom/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+ElecronicsV2_UART_Demo_2_wayCom.elf: $(OBJS) C:/Users/nxf86731/Documents/elecronicsv2/ElecronicsV2/Peripheral_Drivers/UART/ElecronicsV2_UART_Demo_2_wayCom/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "ElecronicsV2_UART_Demo_2_wayCom.elf" "@ElecronicsV2_UART_Demo_2_wayCom.args"  $(USER_OBJS) $(LIBS)

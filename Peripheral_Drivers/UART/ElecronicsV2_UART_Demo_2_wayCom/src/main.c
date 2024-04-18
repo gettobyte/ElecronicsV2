@@ -53,15 +53,15 @@ int main(void)
     for(;;)
     {
 
-    	error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN_2, data, 5);
+    	//error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN_2, data, 5);
 
     	//error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, data, 5);
 
-    	//error = LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
+    	error = LPUART_DRV_ReceiveDataPolling(INST_TERMINAL_SCREEN_2, &rxBuff, 5);
 
     	//error = LPUART_DRV_SendDataPolling(INST_TERMINAL_SCREEN, &rxBuff, 5);
 
-    	      // OSIF_TimeDelay(1000);
+    	    //  OSIF_TimeDelay(1000);
 
     }
 
