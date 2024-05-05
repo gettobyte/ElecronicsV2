@@ -54,7 +54,7 @@
 #define configIDLE_SHOULD_YIELD                     1
 #define configUSE_PREEMPTION                        1
 #define configNUM_THREAD_LOCAL_STORAGE_POINTERS     0
-#define configUSE_PORT_OPTIMISED_TASK_SELECTION     1
+#define configUSE_PORT_OPTIMISED_TASK_SELECTION     0
 #define configUSE_TASK_NOTIFICATIONS                1
 #define configUSE_TIME_SLICING                      1
 #define configUSE_NEWLIB_REENTRANT                  0
@@ -77,17 +77,17 @@ PRIORITY THAN THIS! (higher priorities are lower numeric values. */
 #define configAPPLICATION_ALLOCATED_HEAP            0
 
 /* Hook function related definitions. */
-#define configUSE_IDLE_HOOK                         1
-#define configUSE_TICK_HOOK                         1
-#define configUSE_MALLOC_FAILED_HOOK                1
-#define configCHECK_FOR_STACK_OVERFLOW              2
+#define configUSE_IDLE_HOOK                         0
+#define configUSE_TICK_HOOK                         0
+#define configUSE_MALLOC_FAILED_HOOK                0
+#define configCHECK_FOR_STACK_OVERFLOW              0
 #define configUSE_DAEMON_TASK_STARTUP_HOOK          0
 
 /* Run time and task stats gathering related definitions. */
 #define configGENERATE_RUN_TIME_STATS               0
 #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()    
 #define portGET_RUN_TIME_COUNTER_VALUE()            xTaskGetTickCount()
-#define configUSE_TRACE_FACILITY                    0
+#define configUSE_TRACE_FACILITY                    1
 #define configUSE_STATS_FORMATTING_FUNCTIONS        1
 
 /* Co-routine related definitions. */
@@ -109,7 +109,7 @@ PRIORITY THAN THIS! (higher priorities are lower numeric values. */
 #define configUSE_TICKLESS_IDLE                     0
 
 /* QUEUE */
-#define configQUEUE_REGISTRY_SIZE                   8
+#define configQUEUE_REGISTRY_SIZE                   2
 #define configUSE_QUEUE_SETS                        0
 
 /* Optional functions - most linkers will remove unused functions anyway. */

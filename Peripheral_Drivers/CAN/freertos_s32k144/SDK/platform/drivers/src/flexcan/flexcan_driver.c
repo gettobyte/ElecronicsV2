@@ -689,11 +689,9 @@ status_t FLEXCAN_DRV_Init(
    flexcan_state_t *state,
    const flexcan_user_config_t *data)
 {
-
     DEV_ASSERT(instance < CAN_INSTANCE_COUNT);
     DEV_ASSERT(state != NULL);
     DEV_ASSERT(g_flexcanStatePtr[instance] == NULL);
-
 #ifdef ERRATA_E10595
     if (instance != 0U)
     {

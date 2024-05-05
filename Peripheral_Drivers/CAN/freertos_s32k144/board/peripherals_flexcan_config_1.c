@@ -43,28 +43,20 @@ instance:
       - name: 'flexcanInitConfig0'
       - readonly: 'false'
       - flexcan_cfg_flexcanMode: 'FLEXCAN_NORMAL_MODE'
-      - flexcan_cfg_fd_enable: 'true'
+      - flexcan_cfg_fd_enable: 'false'
       - flexcan_cfg_payload: 'FLEXCAN_PAYLOAD_SIZE_8'
-      - flexcan_cfg_max_num_mb: '16'
+      - flexcan_cfg_max_num_mb: '10'
       - flexcan_cfg_num_id_filters: 'FLEXCAN_RX_FIFO_ID_FILTERS_8'
       - flexcan_cfg_is_rx_fifo_needed: 'false'
       - flexcan_cfg_transfer_type: 'FLEXCAN_RXFIFO_USING_INTERRUPTS'
       - flexcan_cfg_rxFifoDMAChannel: '0'
-      - flexcan_cfg_pe_clock: 'FLEXCAN_CLK_SOURCE_OSC'
-      - flexcan_bitrate2ts: 'false'
-      - flexcan_cfg_time_segments1:
+      - flexcan_cfg_pe_clock: 'FLEXCAN_CLK_SOURCE_PERIPH'
+      - flexcan_bitrate2ts: 'true'
+      - flexcan_cfg_time_segments2:
         - flexcan_cfg_bitrate:
-          - flexcan_cfg_propSeg: '7'
-          - flexcan_cfg_phaseSeg1: '4'
-          - flexcan_cfg_phaseSeg2: '1'
-          - flexcan_cfg_preDivider: '5'
           - flexcan_cfg_rJumpwidth: '1'
-        - flexcan_cfg_bitrate_cbt:
-          - flexcan_cfg_propSeg: '23'
-          - flexcan_cfg_phaseSeg1: '3'
-          - flexcan_cfg_phaseSeg2: '3'
-          - flexcan_cfg_preDivider: '2'
-          - flexcan_cfg_rJumpwidth: '1'
+          - input_nominal_bitrate: '500'
+          - input_nominal_sampling: '87.5'
     - flexcanPN:
       - pnOn: 'false'
     - flexcan_state_name: 'flexcanState0'
@@ -84,26 +76,19 @@ flexcan_state_t flexcanState0;
 
 flexcan_user_config_t flexcanInitConfig0 = {
   .flexcanMode = FLEXCAN_NORMAL_MODE,
-  .fd_enable = true,
+  .fd_enable = false,
   .payload = FLEXCAN_PAYLOAD_SIZE_8,
-  .max_num_mb = 16UL,
+  .max_num_mb = 10UL,
   .num_id_filters = FLEXCAN_RX_FIFO_ID_FILTERS_8,
   .is_rx_fifo_needed = false,
   .transfer_type = FLEXCAN_RXFIFO_USING_INTERRUPTS,
   .rxFifoDMAChannel = 0U,
-  .pe_clock = FLEXCAN_CLK_SOURCE_OSC,
+  .pe_clock = FLEXCAN_CLK_SOURCE_PERIPH,
   .bitrate = {
     .propSeg = 7UL,
     .phaseSeg1 = 4UL,
     .phaseSeg2 = 1UL,
     .preDivider = 5UL,
-    .rJumpwidth = 1UL
-  },
-  .bitrate_cbt = {
-    .propSeg = 23UL,
-    .phaseSeg1 = 3UL,
-    .phaseSeg2 = 3UL,
-    .preDivider = 2UL,
     .rJumpwidth = 1UL
   }
 };

@@ -62,6 +62,8 @@
                         <pin_feature name="direction" value="OUTPUT"/>
                      </pin_features>
                   </pin>
+                  <pin peripheral="CAN0" signal="rxd, rxd" pin_num="9" pin_signal="PTE4"/>
+                  <pin peripheral="CAN0" signal="txd, txd" pin_num="8" pin_signal="PTE5"/>
                </pins>
             </function>
          </functions_list>
@@ -241,16 +243,6 @@
       </quadspi>
       <periphs name="Peripherals" version="10.0" enabled="true" update_project_code="true">
          <dependencies>
-            <dependency resourceType="SWComponent" resourceId="platform.os.freertos" description="freertos not found in the toolchain/IDE project. Project will not compile!" problem_level="2" source="Peripherals">
-               <feature name="enabled" evaluation="equal">
-                  <data type="Boolean">true</data>
-               </feature>
-            </dependency>
-            <dependency resourceType="SWComponent" resourceId="platform.os.freertos" description="Unsupported version of the freertos in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. Project might not compile correctly." problem_level="1" source="Peripherals">
-               <feature name="version" evaluation="equivalent">
-                  <data type="Version">1.0.0</data>
-               </feature>
-            </dependency>
             <dependency resourceType="SWComponent" resourceId="platform.driver.flexcan" description="FLEXCAN Driver not found in the toolchain/IDE project. Project will not compile!" problem_level="2" source="Peripherals">
                <feature name="enabled" evaluation="equal">
                   <data type="Boolean">true</data>
@@ -261,13 +253,23 @@
                   <data type="Version">1.0.0</data>
                </feature>
             </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.os.freertos" description="freertos not found in the toolchain/IDE project. Project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.os.freertos" description="Unsupported version of the freertos in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. Project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">1.0.0</data>
+               </feature>
+            </dependency>
          </dependencies>
          <generated_project_files>
             <file path="board/FreeRTOSConfig.h" update_enabled="true"/>
-            <file path="board/peripherals_FreeRTOS.c" update_enabled="true"/>
-            <file path="board/peripherals_FreeRTOS.h" update_enabled="true"/>
             <file path="board/peripherals_flexcan_config_1.c" update_enabled="true"/>
             <file path="board/peripherals_flexcan_config_1.h" update_enabled="true"/>
+            <file path="board/peripherals_freertos_1.c" update_enabled="true"/>
+            <file path="board/peripherals_freertos_1.h" update_enabled="true"/>
             <file path="board/sdk_project_config.h" update_enabled="true"/>
          </generated_project_files>
          <peripherals_profile>
@@ -279,8 +281,37 @@
                <options/>
                <dependencies/>
                <instances>
-                  <instance name="FreeRTOS" uuid="3764ec2a-3fb0-43a9-97d1-658492790812" type="freertos" type_id="freertos" mode="general" enabled="true" comment="" custom_name_enabled="true" editing_lock="false">
-                     <config_set name="freertos_driver">
+                  <instance name="flexcan_config_1" uuid="7e2dbf27-7928-4223-b3f4-a8691c77fe27" type="flexcan_config" type_id="flexcan" mode="general" peripheral="CAN0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="flexcan">
+                        <struct name="flexcanCfg">
+                           <setting name="name" value="flexcanInitConfig0"/>
+                           <setting name="readonly" value="false"/>
+                           <setting name="flexcan_cfg_flexcanMode" value="FLEXCAN_NORMAL_MODE"/>
+                           <setting name="flexcan_cfg_fd_enable" value="false"/>
+                           <setting name="flexcan_cfg_payload" value="FLEXCAN_PAYLOAD_SIZE_8"/>
+                           <setting name="flexcan_cfg_max_num_mb" value="10"/>
+                           <setting name="flexcan_cfg_num_id_filters" value="FLEXCAN_RX_FIFO_ID_FILTERS_8"/>
+                           <setting name="flexcan_cfg_is_rx_fifo_needed" value="false"/>
+                           <setting name="flexcan_cfg_transfer_type" value="FLEXCAN_RXFIFO_USING_INTERRUPTS"/>
+                           <setting name="flexcan_cfg_rxFifoDMAChannel" value="0"/>
+                           <setting name="flexcan_cfg_pe_clock" value="FLEXCAN_CLK_SOURCE_PERIPH"/>
+                           <setting name="flexcan_bitrate2ts" value="true"/>
+                           <struct name="flexcan_cfg_time_segments2">
+                              <struct name="flexcan_cfg_bitrate">
+                                 <setting name="flexcan_cfg_rJumpwidth" value="1"/>
+                                 <setting name="input_nominal_bitrate" value="500"/>
+                                 <setting name="input_nominal_sampling" value="87.5"/>
+                              </struct>
+                           </struct>
+                        </struct>
+                        <struct name="flexcanPN">
+                           <setting name="pnOn" value="false"/>
+                        </struct>
+                        <setting name="flexcan_state_name" value="flexcanState0"/>
+                     </config_set>
+                  </instance>
+                  <instance name="freertos_1" uuid="66571561-a3e8-4eda-af8b-17158fd8162b" type="freertos" type_id="freertos" mode="general" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="freertos_driver" quick_selection="default_freeRTOS">
                         <struct name="general_tab">
                            <setting name="configCPU_CLOCK_HZ" value="48000000"/>
                            <setting name="configTICK_RATE_HZ" value="1000"/>
@@ -292,7 +323,7 @@
                            <setting name="configIDLE_SHOULD_YIELD" value="true"/>
                            <setting name="configUSE_PREEMPTION" value="true"/>
                            <setting name="configNUM_THREAD_LOCAL_STORAGE_POINTERS" value="0"/>
-                           <setting name="configUSE_PORT_OPTIMISED_TASK_SELECTION" value="true"/>
+                           <setting name="configUSE_PORT_OPTIMISED_TASK_SELECTION" value="false"/>
                            <setting name="configUSE_TASK_NOTIFICATIONS" value="true"/>
                            <setting name="configUSE_TIME_SLICING" value="true"/>
                            <setting name="configUSE_NEWLIB_REENTRANT" value="false"/>
@@ -312,10 +343,10 @@
                            <setting name="configAPPLICATION_ALLOCATED_HEAP" value="false"/>
                         </struct>
                         <struct name="hook_tab">
-                           <setting name="configUSE_IDLE_HOOK" value="true"/>
-                           <setting name="configUSE_TICK_HOOK" value="true"/>
-                           <setting name="configUSE_MALLOC_FAILED_HOOK" value="true"/>
-                           <setting name="configCHECK_FOR_STACK_OVERFLOW" value="2"/>
+                           <setting name="configUSE_IDLE_HOOK" value="false"/>
+                           <setting name="configUSE_TICK_HOOK" value="false"/>
+                           <setting name="configUSE_MALLOC_FAILED_HOOK" value="false"/>
+                           <setting name="configCHECK_FOR_STACK_OVERFLOW" value="0"/>
                            <setting name="configUSE_DAEMON_TASK_STARTUP_HOOK" value="false"/>
                         </struct>
                         <struct name="rttsgrd_tab">
@@ -324,7 +355,7 @@
                               <setting name="portCONFIGURE_TIMER_FOR_RUN_TIME_STATS" value=""/>
                               <setting name="portGET_RUN_TIME_COUNTER_VALUE" value="xTaskGetTickCount()"/>
                            </struct>
-                           <setting name="configUSE_TRACE_FACILITY" value="false"/>
+                           <setting name="configUSE_TRACE_FACILITY" value="true"/>
                            <setting name="configUSE_STATS_FORMATTING_FUNCTIONS" value="true"/>
                         </struct>
                         <struct name="co_routines_tab">
@@ -349,7 +380,7 @@
                            <setting name="configPOST_SLEEP_PROCESSING" value=""/>
                         </struct>
                         <struct name="queue_tab">
-                           <setting name="configQUEUE_REGISTRY_SIZE" value="8"/>
+                           <setting name="configQUEUE_REGISTRY_SIZE" value="2"/>
                            <setting name="configUSE_QUEUE_SETS" value="false"/>
                         </struct>
                         <struct name="api_tab">
@@ -374,44 +405,6 @@
                         <struct name="us_tab">
                            <setting name="configUSER_SETTINGS" value=""/>
                         </struct>
-                     </config_set>
-                  </instance>
-                  <instance name="flexcan_config_1" uuid="7e2dbf27-7928-4223-b3f4-a8691c77fe27" type="flexcan_config" type_id="flexcan" mode="general" peripheral="CAN0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
-                     <config_set name="flexcan">
-                        <struct name="flexcanCfg">
-                           <setting name="name" value="flexcanInitConfig0"/>
-                           <setting name="readonly" value="false"/>
-                           <setting name="flexcan_cfg_flexcanMode" value="FLEXCAN_NORMAL_MODE"/>
-                           <setting name="flexcan_cfg_fd_enable" value="true"/>
-                           <setting name="flexcan_cfg_payload" value="FLEXCAN_PAYLOAD_SIZE_8"/>
-                           <setting name="flexcan_cfg_max_num_mb" value="16"/>
-                           <setting name="flexcan_cfg_num_id_filters" value="FLEXCAN_RX_FIFO_ID_FILTERS_8"/>
-                           <setting name="flexcan_cfg_is_rx_fifo_needed" value="false"/>
-                           <setting name="flexcan_cfg_transfer_type" value="FLEXCAN_RXFIFO_USING_INTERRUPTS"/>
-                           <setting name="flexcan_cfg_rxFifoDMAChannel" value="0"/>
-                           <setting name="flexcan_cfg_pe_clock" value="FLEXCAN_CLK_SOURCE_OSC"/>
-                           <setting name="flexcan_bitrate2ts" value="false"/>
-                           <struct name="flexcan_cfg_time_segments1">
-                              <struct name="flexcan_cfg_bitrate">
-                                 <setting name="flexcan_cfg_propSeg" value="7"/>
-                                 <setting name="flexcan_cfg_phaseSeg1" value="4"/>
-                                 <setting name="flexcan_cfg_phaseSeg2" value="1"/>
-                                 <setting name="flexcan_cfg_preDivider" value="5"/>
-                                 <setting name="flexcan_cfg_rJumpwidth" value="1"/>
-                              </struct>
-                              <struct name="flexcan_cfg_bitrate_cbt">
-                                 <setting name="flexcan_cfg_propSeg" value="23"/>
-                                 <setting name="flexcan_cfg_phaseSeg1" value="3"/>
-                                 <setting name="flexcan_cfg_phaseSeg2" value="3"/>
-                                 <setting name="flexcan_cfg_preDivider" value="2"/>
-                                 <setting name="flexcan_cfg_rJumpwidth" value="1"/>
-                              </struct>
-                           </struct>
-                        </struct>
-                        <struct name="flexcanPN">
-                           <setting name="pnOn" value="false"/>
-                        </struct>
-                        <setting name="flexcan_state_name" value="flexcanState0"/>
                      </config_set>
                   </instance>
                </instances>

@@ -18,8 +18,8 @@
 /* Include header files for all configured components */
 #include "clock_config.h"
 #include "pin_mux.h"
-#include "peripherals_FreeRTOS.h"
 #include "peripherals_flexcan_config_1.h"
+#include "peripherals_freertos_1.h"
 
 
 #endif /* SDK_PROJECT_CONFIG_H_ */

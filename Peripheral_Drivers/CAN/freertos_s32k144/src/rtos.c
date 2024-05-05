@@ -80,16 +80,42 @@
 #include "BoardDefines.h"
 
 #define TX_MAILBOX 1UL
+#define TX_MAILBOX_2 1UL
 #define TX_MSG_ID 1UL
-#define RX_MAILBOX 1UL
-#define RX_MSG_ID 0x400
+
+#define TX_MSG_ID_2 44UL
+
 #define size 5UL
 
-uint8_t data[] = "Kunal";
+uint8_t Data_NFC_Alert_Message[8] = {0xCA, 0x01, 0x00, 0x02, 0x00, 0x01, 0xCC, 0xCC};
+uint8_t Data_NFC_Details_Message[18] = {0xCA, 0x02, 0x00, 0x0A, 0x00, 0x01, 0x12, 0xAB, 0xC3, 0x34, 0x56, 0x2F, 0x11, 0x10, 0xCC, 0xCC};
 
+//uint8_t Data_NFC_Alert_Message[8] = {0xCA, 0x01, 0x00, 0x02, 0x00, 0x01, 0xCC, 0xCC};
+//uint8_t Data_NFC_Details_Message[8] = {0xCA, 0x02, 0x00, 0x0A, 0x00, 0x01, 0x12};
+
+flexcan_data_info_t dataInfoNFC_Details =
+ {
+         .data_length = sizeof(Data_NFC_Details_Message),
+         .msg_id_type = FLEXCAN_MSG_ID_STD,
+         .enable_brs  = true,
+         .fd_enable   = true,
+         .fd_padding  = 0U
+ };
+
+
+ flexcan_data_info_t dataInfoNFC_Message =
+ {
+         .data_length = sizeof(Data_NFC_Alert_Message),
+         .msg_id_type = FLEXCAN_MSG_ID_STD,
+         .enable_brs  = true,
+         .fd_enable   = true,
+         .fd_padding  = 0U
+ };
+
+ status_t NFC_CAN_Status;
 
 /* Priorities at which the tasks are created. */
-#define mainQUEUE_RECEIVE_TASK_PRIORITY		( tskIDLE_PRIORITY + 2 )
+#define mainQUEUE_RECEIVE_TASK_PRIORITY		( tskIDLE_PRIORITY + 1 )
 #define	mainQUEUE_SEND_TASK_PRIORITY		( tskIDLE_PRIORITY + 1 )
 
 /* The rate at which data is sent to the queue, specified in milliseconds, and
@@ -162,19 +188,19 @@ void rtos_start( void )
 		/* Start the two tasks as described in the comments at the top of this
 		file. */
 
-		xTaskCreate( prvQueueReceiveTask, "RX", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
-		xTaskCreate( prvQueueSendTask, "TX", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL );
+		xTaskCreate( prvQueueReceiveTask, "RX=NFC-Message", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
+		//xTaskCreate( prvQueueSendTask, "CAN-NFC-Alert", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL );
 
 
 		/* Create the software timer that is responsible for turning off the LED
 		if the button is not pushed within 5000ms, as described at the top of
 		this file. */
-		xButtonLEDTimer = xTimerCreate( "ButtonLEDTimer", 			/* A text name, purely to help debugging. */
-									mainBUTTON_LED_TIMER_PERIOD_MS,	/* The timer period, in this case 5000ms (5s). */
-									pdFALSE,						/* This is a one shot timer, so xAutoReload is set to pdFALSE. */
-									( void * ) 0,					/* The ID is not used, so can be set to anything. */
-									prvButtonLEDTimerCallback		/* The callback function that switches the LED off. */
-								);
+//		xButtonLEDTimer = xTimerCreate( "ButtonLEDTimer", 			/* A text name, purely to help debugging. */
+//									mainBUTTON_LED_TIMER_PERIOD_MS,	/* The timer period, in this case 5000ms (5s). */
+//									pdFALSE,						/* This is a one shot timer, so xAutoReload is set to pdFALSE. */
+//									( void * ) 0,					/* The ID is not used, so can be set to anything. */
+//									prvButtonLEDTimerCallback		/* The callback function that switches the LED off. */
+//								);
 
 		/* Start the tasks and timer running. */
 		vTaskStartScheduler();
@@ -236,64 +262,67 @@ const unsigned long ulValueToSend = 100UL;
 
 
 	/* Initialise xNextWakeTime - this only needs to be done once. */
-	xNextWakeTime = xTaskGetTickCount();
+	//xNextWakeTime = xTaskGetTickCount();
 
-	for( ;; )
-	{
-	    flexcan_data_info_t dataInfo =
-	    {
-	            .data_length = size,
-	            .msg_id_type = FLEXCAN_MSG_ID_STD,
-	            .enable_brs  = false,
-	            .fd_enable   = false,
-	            .fd_padding  = 0U
-	    };
+    flexcan_data_info_t dataInfo =
+    {
+            .data_length = sizeof(Data_NFC_Alert_Message),
+            .msg_id_type = FLEXCAN_MSG_ID_STD,
+            .enable_brs  = false,
+            .fd_enable   = false,
+            .fd_padding  = 0U
+    };
 
-	    flexcan_msgbuff_t recvBuff;
+    flexcan_msgbuff_t recvBuff;
 
-	    status_t x;
+    status_t x;
+
+//	for( ;; )
+//	{
 
 	    x =  FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo , TX_MSG_ID);
 
-	     x = FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 1000 );
+	     x = FLEXCAN_DRV_Send(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  Data_NFC_Alert_Message);
 
+
+	    	OSIF_TimeDelay(1000);
 
 		/* Place this task in the blocked state until it is time to run again.
 		The block time is specified in ticks, the constant used converts ticks
 		to ms.  While in the Blocked state this task will not consume any CPU
 		time. */
-		vTaskDelayUntil( &xNextWakeTime, mainQUEUE_SEND_FREQUENCY_MS );
+		//vTaskDelayUntil( &xNextWakeTime, mainQUEUE_SEND_FREQUENCY_MS );
 
 		/* Send to the queue - causing the queue receive task to unblock and
 		toggle an LED.  0 is used as the block time so the sending operation
 		will not block - it shouldn't need to block as the queue should always
 		be empty at this point in the code. */
-		xQueueSend( xQueue, &ulValueToSend, mainDONT_BLOCK );
-	}
+		//xQueueSend( xQueue, &ulValueToSend, mainDONT_BLOCK );
+	//}
 }
 /*-----------------------------------------------------------*/
 
 static void prvQueueReceiveTask( void *pvParameters )
 {
-unsigned long ulReceivedValue;
 
 	/* Casting pvParameters to void because it is unused */
 	(void)pvParameters;
 
-	for( ;; )
-	{
-		/* Wait until something arrives in the queue - this task will block
-		indefinitely provided INCLUDE_vTaskSuspend is set to 1 in
-		FreeRTOSConfig.h. */
-		xQueueReceive( xQueue, &ulReceivedValue, portMAX_DELAY );
+//	NFC_CAN_Status =  FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfoNFC_Details , TX_MSG_ID);
+//
+//	NFC_CAN_Status = FLEXCAN_DRV_Send(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfoNFC_Details, TX_MSG_ID,  Data_NFC_Details_Message);
 
-		/*  To get here something must have been received from the queue, but
-		is it the expected value?  If it is, toggle the LED. */
-		if( ulReceivedValue == 100UL )
-		{
-		    PINS_DRV_TogglePins(LED_GPIO, (1 << LED2));
-		}
-	}
+//	OSIF_TimeDelay(1000);
+
+
+
+	NFC_CAN_Status =  FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX_2, &dataInfoNFC_Message , TX_MSG_ID_2);
+
+	NFC_CAN_Status = FLEXCAN_DRV_Send(INST_FLEXCAN_CONFIG_1, TX_MAILBOX_2, &dataInfoNFC_Message, TX_MSG_ID_2,  Data_NFC_Alert_Message);
+
+//	OSIF_TimeDelay(1000);
+
+
 }
 /*-----------------------------------------------------------*/
 
@@ -307,6 +336,8 @@ static void prvSetupHardware( void )
     CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
                    g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
     CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
+
+    PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 
     boardSetup();
 
