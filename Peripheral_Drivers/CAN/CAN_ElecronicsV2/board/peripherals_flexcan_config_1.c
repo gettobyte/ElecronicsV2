@@ -45,12 +45,12 @@ instance:
       - flexcan_cfg_flexcanMode: 'FLEXCAN_NORMAL_MODE'
       - flexcan_cfg_fd_enable: 'false'
       - flexcan_cfg_payload: 'FLEXCAN_PAYLOAD_SIZE_8'
-      - flexcan_cfg_max_num_mb: '10'
+      - flexcan_cfg_max_num_mb: '16'
       - flexcan_cfg_num_id_filters: 'FLEXCAN_RX_FIFO_ID_FILTERS_8'
       - flexcan_cfg_is_rx_fifo_needed: 'false'
       - flexcan_cfg_transfer_type: 'FLEXCAN_RXFIFO_USING_INTERRUPTS'
       - flexcan_cfg_rxFifoDMAChannel: '0'
-      - flexcan_cfg_pe_clock: 'FLEXCAN_CLK_SOURCE_OSC'
+      - flexcan_cfg_pe_clock: 'FLEXCAN_CLK_SOURCE_PERIPH'
       - flexcan_bitrate2ts: 'true'
       - flexcan_cfg_time_segments2:
         - flexcan_cfg_bitrate:
@@ -78,17 +78,17 @@ flexcan_user_config_t flexcanInitConfig0 = {
   .flexcanMode = FLEXCAN_NORMAL_MODE,
   .fd_enable = false,
   .payload = FLEXCAN_PAYLOAD_SIZE_8,
-  .max_num_mb = 10UL,
+  .max_num_mb = 16UL,
   .num_id_filters = FLEXCAN_RX_FIFO_ID_FILTERS_8,
   .is_rx_fifo_needed = false,
   .transfer_type = FLEXCAN_RXFIFO_USING_INTERRUPTS,
   .rxFifoDMAChannel = 0U,
-  .pe_clock = FLEXCAN_CLK_SOURCE_OSC,
+  .pe_clock = FLEXCAN_CLK_SOURCE_PERIPH,
   .bitrate = {
     .propSeg = 7UL,
     .phaseSeg1 = 4UL,
     .phaseSeg2 = 1UL,
-    .preDivider = 0UL,
+    .preDivider = 5UL,
     .rJumpwidth = 1UL
   }
 };

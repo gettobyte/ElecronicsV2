@@ -1,8 +1,9 @@
 -std=c99
 -DCPU_S32K144HFT0VLLT
 -DCPU_S32K144
--I../SDK/platform/drivers/inc
 -I../SDK/rtos/osif
+-I../SDK/platform/drivers/inc
+-I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/S&M_Driv/inc"
 -I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/board"
 -I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/SDK/platform/devices/common"
 -I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/SDK/platform/devices"
@@ -17,7 +18,7 @@
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/drivers/inc"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/pal/inc"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/osif"
--O1
+-O0
 -fshort-enums
 -fno-jump-tables
 -funsigned-char
