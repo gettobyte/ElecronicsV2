@@ -1,0 +1,8 @@
+/Project_Settings/
+/SDK/
+/board/
+/freertos_s32k144.args
+/makefile
+/objects.mk
+/sources.mk
+/src/

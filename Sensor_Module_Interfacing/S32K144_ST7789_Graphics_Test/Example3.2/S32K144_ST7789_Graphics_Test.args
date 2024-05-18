@@ -1,5 +1,5 @@
 -T
-"C:/Users/gettobyte_kunal/Documents/s32k144_programs/S32K144_ST7789_Graphics_Test/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Sensor_Module_Interfacing/S32K144_ST7789_Graphics_Test/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"S32K144_ST7789_Graphics_Test.map"
 -Xlinker
 --gc-sections

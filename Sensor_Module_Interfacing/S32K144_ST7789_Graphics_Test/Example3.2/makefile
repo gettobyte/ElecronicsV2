@@ -41,7 +41,7 @@ S32K144_ST7789_Graphics_Test.siz \
 all: S32K144_ST7789_Graphics_Test.elf secondary-outputs
 
 # Tool invocations
-S32K144_ST7789_Graphics_Test.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/s32k144_programs/S32K144_ST7789_Graphics_Test/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+S32K144_ST7789_Graphics_Test.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Sensor_Module_Interfacing/S32K144_ST7789_Graphics_Test/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K144_ST7789_Graphics_Test.elf" "@S32K144_ST7789_Graphics_Test.args"  $(USER_OBJS) $(LIBS)

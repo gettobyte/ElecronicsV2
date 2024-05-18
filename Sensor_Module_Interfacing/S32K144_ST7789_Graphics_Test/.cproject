@@ -752,6 +752,9 @@
 							<tool id="com.freescale.s32ds.cross.gnu.disassembler.772461684" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.46346079.1988549289.1149148853.1917095797.941628353" name="main.c" rcbsApplicability="disable" resourcePath="src/main.c" toolsToInvoke="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1756054335.2104979514">
+						<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1756054335.2104979514" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1756054335"/>
+					</fileInfo>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.46346079.1988549289.1149148853.1917095797.Project_Settings/Debugger" name="Debugger" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger" toolsToInvoke=""/>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.46346079.1988549289.1149148853.1917095797.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
 					<sourceEntries>
@@ -759,7 +762,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S&amp;M_Driv"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="example2.1.c|example9.c|example8.c|example7.c|example6.c|example5.c|example4.c|example3.1.c|example2.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="main.c|Example7.c|example2.1.c|example9.c|example8.c|example7.c|example6.c|example5.c|example4.c|example3.1.c|example2.c|example1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
