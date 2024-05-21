@@ -215,15 +215,15 @@ void rtos_start( void )
 }
 /*-----------------------------------------------------------*/
 
-static void prvButtonLEDTimerCallback( TimerHandle_t xTimer )
-{
-	/* Casting xTimer to void because it is unused */
-	(void)xTimer;
-
-	/* The timer has expired - so no button pushes have occurred in the last
-	five seconds - turn the LED off. */
-	PINS_DRV_SetPins(LED_GPIO, (1 << LED1));
-}
+//static void prvButtonLEDTimerCallback( TimerHandle_t xTimer )
+//{
+//	/* Casting xTimer to void because it is unused */
+//	(void)xTimer;
+//
+//	/* The timer has expired - so no button pushes have occurred in the last
+//	five seconds - turn the LED off. */
+//	PINS_DRV_SetPins(LED_GPIO, (1 << LED1));
+//}
 /*-----------------------------------------------------------*/
 
 /* The ISR executed when the user button is pushed. */
@@ -314,14 +314,14 @@ static void prvQueueReceiveTask( void *pvParameters )
 
 //	OSIF_TimeDelay(1000);
 
-
-
+for( ;; )
+{
 	NFC_CAN_Status =  FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX_2, &dataInfoNFC_Message , TX_MSG_ID_2);
 
-	NFC_CAN_Status = FLEXCAN_DRV_Send(INST_FLEXCAN_CONFIG_1, TX_MAILBOX_2, &dataInfoNFC_Message, TX_MSG_ID_2,  Data_NFC_Alert_Message);
+	NFC_CAN_Status = FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX_2, &dataInfoNFC_Message, TX_MSG_ID_2,  Data_NFC_Alert_Message, 1000);
 
 //	OSIF_TimeDelay(1000);
-
+}
 
 }
 /*-----------------------------------------------------------*/

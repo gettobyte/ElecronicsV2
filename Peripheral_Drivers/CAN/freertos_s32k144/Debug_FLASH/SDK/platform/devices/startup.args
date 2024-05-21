@@ -2,10 +2,10 @@
 -DCPU_S32K144HFT0VLLT
 -DDEV_ERROR_DETECT
 -DUSING_OS_FREERTOS
--I../SDK/platform/drivers/inc
--I../SDK/rtos/FreeRTOS/Source/include
--I../SDK/rtos/osif
 -I../SDK/rtos/FreeRTOS/Source/portable/GCC/ARM_CM4F
+-I../SDK/rtos/FreeRTOS/Source/include
+-I../SDK/platform/drivers/inc
+-I../SDK/rtos/osif
 -I"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/CAN/freertos_s32k144/src"
 -I"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/CAN/freertos_s32k144/board"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/FreeRTOS_S32K/Source/include"
@@ -17,7 +17,7 @@
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/drivers/inc"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/drivers/src/clock/S32K1xx"
--O1
+-O0
 -g3
 -Wall
 -c

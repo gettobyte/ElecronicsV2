@@ -28,9 +28,8 @@ volatile int exit_code = 0;
 */
 
 #define TX_MAILBOX 1UL
-#define TX_MSG_ID 0x400
-#define RX_MAILBOX 0UL
-#define RX_MSG_ID 0x800
+#define TX_MSG_ID 0x800
+
 #define size 5UL
 
 status_t error;
@@ -62,22 +61,23 @@ int main(void)
     FLEXCAN_DRV_Init(INST_FLEXCAN_CONFIG_1, &flexcanState0, &flexcanInitConfig0);
     error =  LPSPI_DRV_MasterInit(INST_ST7789_INTERFACE, &ST7789_InterfaceState, &ST7789_SPI_Config);
 
-    GB_ST7789_Init();
-    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
-    ST7789_Fill_Color(ST77XX_BLACK);
-    ST7789_WriteString(0, 80, "CAN Transmission with ElecronicsV2", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
-
+//    GB_ST7789_Init();
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//    ST7789_Fill_Color(ST77XX_BLACK);
+//    ST7789_WriteString(0, 80, "CAN Transmission with ElecronicsV2", Font_16x26, ST77XX_NEON_GREEN, ST77XX_BLACK);
+//    ST7789_SetAddressWindow(ST7789_XStart,ST7789_YStart, ST7789_XEnd, ST7789_YEnd);
+//    ST7789_Fill_Color(ST77XX_BLACK);
     for(;;)
     {
 
-    	ST7789_WriteString(32, 80, "CAN Transmiting", Font_11x18, ST77XX_NEON_GREEN, ST77XX_BLACK);
+    	ST7789_WriteString(0, 80, "CAN Transmiting", Font_11x18, ST77XX_NEON_GREEN, ST77XX_BLACK);
 
     	data_Send = FLEXCAN_DRV_ConfigTxMb(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo , TX_MSG_ID);
-    	data_Send=  FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 10000 );
 
-    	OSIF_TimeDelay(1000);
+	  	ST7789_WriteString(32, 110, "Transmitted CAN Data", Font_11x18, ST77XX_NEON_GREEN, ST77XX_BLACK);
 
-    	ST7789_WriteString(32, 120, &data, Font_11x18, ST77XX_NEON_GREEN, ST77XX_BLACK);
+    	if(FLEXCAN_DRV_SendBlocking(INST_FLEXCAN_CONFIG_1, TX_MAILBOX, &dataInfo, TX_MSG_ID,  data, 10000 ) == STATUS_SUCCESS);
+    	ST7789_WriteString(32, 170, &data, Font_11x18, ST77XX_NEON_GREEN, ST77XX_BLACK);
 
     }
     return exit_code;

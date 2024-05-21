@@ -5,20 +5,20 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../board/clock_config.c \
-../board/peripherals_FreeRTOS.c \
 ../board/peripherals_flexcan_config_1.c \
+../board/peripherals_freertos_1.c \
 ../board/pin_mux.c 
 
 OBJS += \
 ./board/clock_config.o \
-./board/peripherals_FreeRTOS.o \
 ./board/peripherals_flexcan_config_1.o \
+./board/peripherals_freertos_1.o \
 ./board/pin_mux.o 
 
 C_DEPS += \
 ./board/clock_config.d \
-./board/peripherals_FreeRTOS.d \
 ./board/peripherals_flexcan_config_1.d \
+./board/peripherals_freertos_1.d \
 ./board/pin_mux.d 
 
 
