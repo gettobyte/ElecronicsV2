@@ -1,8 +1,8 @@
 -std=c99
 -DCPU_S32K144HFT0VLLT
 -DDEV_ERROR_DETECT
--I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/hello_world_s32k144/src"
--I"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/hello_world_s32k144/board"
+-I"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/GPIO/hello_world_s32k144/src"
+-I"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Peripheral_Drivers/GPIO/hello_world_s32k144/board"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/S32K144/include"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/S32K144/startup"
 -I"C:/NXP/S32DS.3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/S32K144"

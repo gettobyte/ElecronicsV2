@@ -1,0 +1,9 @@
+Example 3
+This examples demonstrate the FreeMaster Application use with GPIO Peripheral.
+FreeMAster Application is integrated over the GPIO Example 1.
+In GPIO Example 1: We have configured 2 pins as input, which are used as switches.
+And we have configured 2 pins as outputs, which are used as LEDS.
+when we press the swicthes, LEDs attached to 2 Pins of MCU are made to Glow On and Off.
+
+The States of LEDS are stored in a variable: Red_Led_State and Green_Led_State.
+These 2 variables are mapped on FreeMaster in its oscillscope and recorder event.

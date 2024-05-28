@@ -785,6 +785,9 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .fini          0x000016a8        0x4 c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
                 0x000016a8                _fini
  *(.eh_frame)
+                0x000016ac                __cryto_encrypted__Start__ = .
+ *(.cryto_encrypted)
+                0x000016ac                __cryto_encrypted__end__ = .
                 0x000016ac                . = ALIGN (0x4)
 
 .glue_7         0x000016ac        0x0
@@ -939,7 +942,7 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(hello_world_s32k144.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x378b
+.debug_line     0x00000000     0x37a7
  .debug_line    0x00000000       0xcc ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_line    0x000000cc      0x423 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
  .debug_line    0x000004ef      0x3b1 ./SDK/platform/devices/startup.o
@@ -948,7 +951,7 @@ OUTPUT(hello_world_s32k144.elf elf32-littlearm)
  .debug_line    0x0000249e      0x5b0 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
  .debug_line    0x00002a4e      0x451 ./board/clock_config.o
  .debug_line    0x00002e9f      0x3ea ./board/pin_mux.o
- .debug_line    0x00003289      0x502 ./src/example1.o
+ .debug_line    0x00003289      0x51e ./src/example1.o
 
 .debug_info     0x00000000     0xb708
  .debug_info    0x00000000       0x26 ./Project_Settings/Startup_Code/startup_S32K144.o
@@ -992,24 +995,24 @@ OUTPUT(hello_world_s32k144.elf elf32-littlearm)
  .debug_aranges
                 0x000002e8       0x20 ./src/example1.o
 
-.debug_str      0x00000000    0x6e96e
- .debug_str     0x00000000       0xc5 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_str     0x000000c5    0x69397 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+.debug_str      0x00000000    0x6e98a
+ .debug_str     0x00000000       0xe1 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_str     0x000000e1    0x69397 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
                               0x6951d (size before relaxing)
- .debug_str     0x0006945c      0x399 ./SDK/platform/devices/startup.o
+ .debug_str     0x00069478      0x399 ./SDK/platform/devices/startup.o
                               0x6968f (size before relaxing)
- .debug_str     0x000697f5     0x41bc ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_str     0x00069811     0x41bc ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
                               0x6d82c (size before relaxing)
- .debug_str     0x0006d9b1      0x9dc ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_str     0x0006d9cd      0x9dc ./SDK/platform/drivers/src/pins/pins_driver.o
                               0x6a7eb (size before relaxing)
- .debug_str     0x0006e38d      0x1d4 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_str     0x0006e3a9      0x1d4 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
                               0x69cd3 (size before relaxing)
- .debug_str     0x0006e561       0xda ./board/clock_config.o
-                              0x6b5d0 (size before relaxing)
- .debug_str     0x0006e63b       0x53 ./board/pin_mux.o
-                              0x6999d (size before relaxing)
- .debug_str     0x0006e68e      0x2e0 ./src/example1.o
-                              0x6bb48 (size before relaxing)
+ .debug_str     0x0006e57d       0xda ./board/clock_config.o
+                              0x6b5ec (size before relaxing)
+ .debug_str     0x0006e657       0x53 ./board/pin_mux.o
+                              0x699b9 (size before relaxing)
+ .debug_str     0x0006e6aa      0x2e0 ./src/example1.o
+                              0x6bb64 (size before relaxing)
 
 .debug_loc      0x00000000     0x607e
  .debug_loc     0x00000000       0xeb ./SDK/platform/devices/S32K144/startup/system_S32K144.o
