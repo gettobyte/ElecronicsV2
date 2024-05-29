@@ -18,6 +18,8 @@
 	#define RED_LED_PIN  15
 	#define GREEN_LED_PORT PTD
 	#define GREEN_LED_PIN  16
+    #define BLUE_LED_PORT PTD
+    #define BLUE_LED_PIN 0
 
     #define SWITCH2_PORT PTC
     #define SWITCH2_PIN 13
@@ -52,11 +54,23 @@ int main(void)
 {
   status_t error;
   /* Configure clocks for PORT */
+
+  /* Variables used for processing FreeMASATER application commands */
+  static FMSTR_APPCMD_CODE cmd;
+  static FMSTR_APPCMD_PDATA cmdDataP;
+  static FMSTR_SIZE cmdSize;
+
+
   error = CLOCK_DRV_Init(&clockMan1_InitConfig0);
   DEV_ASSERT(error == STATUS_SUCCESS);
   /* Set pins as GPIO */
   error = PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
   DEV_ASSERT(error == STATUS_SUCCESS);
+
+  /* Initialize LPUART instance */
+  LPUART_DRV_Init(INST_LPUART_1, &lpUartState1, &lpuart_1_InitConfig0);
+  INT_SYS_InstallHandler(LPUART1_RxTx_IRQn, FMSTR_Isr, NULL);
+
 
   /* Initialize FreeMASTER driver */
   FMSTR_Init();
@@ -83,6 +97,56 @@ int main(void)
 		  GREEN_LED_LOW;  //Green LED Low
 	  }
 
+      /* Process FreeMASTER application commands */
+            cmd = FMSTR_GetAppCmd(); // Command Code
+            if (cmd != FMSTR_APPCMDRESULT_NOCMD) {
+            cmdDataP = FMSTR_GetAppCmdData(&cmdSize); // arguments or data with command
+            switch (cmd)
+       {
+
+            case 0:
+			  PINS_DRV_TogglePins(BLUE_LED_PORT, 1 << BLUE_LED_PIN);
+			  OSIF_TimeDelay(1000);
+			  PINS_DRV_TogglePins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+			  OSIF_TimeDelay(1000);
+			  PINS_DRV_TogglePins(RED_LED_PORT, 1 << RED_LED_PIN);
+			  OSIF_TimeDelay(1000);
+		        /* Acknowledge the command */
+		                FMSTR_AppCmdAck(0);
+            break;
+
+            case 1:
+  			  PINS_DRV_TogglePins(RED_LED_PORT, 1 << RED_LED_PIN);
+  			  OSIF_TimeDelay(1000);
+  			  PINS_DRV_TogglePins(BLUE_LED_PORT, 1 << BLUE_LED_PIN);
+  			  OSIF_TimeDelay(1000);
+  			  PINS_DRV_TogglePins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+  			  OSIF_TimeDelay(1000);
+  	        /* Acknowledge the command */
+  	                FMSTR_AppCmdAck(0);
+            break;
+
+            case 2:
+
+              PINS_DRV_TogglePins(GREEN_LED_PORT, 1 << GREEN_LED_PIN);
+              OSIF_TimeDelay(1000);
+
+        	  PINS_DRV_TogglePins(RED_LED_PORT, 1 << RED_LED_PIN);
+              OSIF_TimeDelay(1000);
+
+              PINS_DRV_TogglePins(BLUE_LED_PORT, 1 << BLUE_LED_PIN);
+              OSIF_TimeDelay(1000);
+              /* Acknowledge the command */
+              FMSTR_AppCmdAck(0);
+            break;
+
+            default:
+                /* Acknowledge the command with failure */
+                         FMSTR_AppCmdAck(1);
+            break;
+
+         }
+            }
       /* Handle the protocol decoding and execution */
       FMSTR_Poll();
   }
