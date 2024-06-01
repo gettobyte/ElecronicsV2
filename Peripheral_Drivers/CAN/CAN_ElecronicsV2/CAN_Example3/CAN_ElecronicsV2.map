@@ -699,7 +699,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 ./board/peripherals_osif_1.o
  .debug_line    0x00000000       0x1d ./board/peripherals_osif_1.o
- .debug_str     0x00000000      0x244 ./board/peripherals_osif_1.o
+ .debug_str     0x00000000      0x24c ./board/peripherals_osif_1.o
  .comment       0x00000000       0xa1 ./board/peripherals_osif_1.o
  .ARM.attributes
                 0x00000000       0x39 ./board/peripherals_osif_1.o
@@ -2168,33 +2168,33 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(CAN_ElecronicsV2.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x87aa
+.debug_line     0x00000000     0x8912
  .debug_line    0x00000000       0x82 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_line    0x00000082      0x64e ./S&M_Driv/src/ST7789_low_level.o
- .debug_line    0x000006d0      0x3bd ./S&M_Driv/src/fonts.o
- .debug_line    0x00000a8d      0x26a ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_line    0x00000cf7      0x1a8 ./SDK/platform/devices/startup.o
- .debug_line    0x00000e9f     0x16dc ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_line    0x0000257b      0xbdf ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_line    0x0000315a      0x39c ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_line    0x000034f6      0x31c ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_line    0x00003812      0xeb6 ./SDK/platform/drivers/src/flexcan/flexcan_driver.o
- .debug_line    0x000046c8      0x9eb ./SDK/platform/drivers/src/flexcan/flexcan_hw_access.o
- .debug_line    0x000050b3      0x13c ./SDK/platform/drivers/src/flexcan/flexcan_irq.o
- .debug_line    0x000051ef      0x376 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_line    0x00005565      0x46e ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
- .debug_line    0x000059d3      0x2ec ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
- .debug_line    0x00005cbf      0x732 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
- .debug_line    0x000063f1      0x414 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
- .debug_line    0x00006805      0x63a ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
- .debug_line    0x00006e3f      0x608 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_line    0x00007447      0x2e4 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_line    0x0000772b      0x3cf ./SDK/rtos/osif/osif_baremetal.o
- .debug_line    0x00007afa      0x23b ./board/clock_config.o
- .debug_line    0x00007d35      0x332 ./board/peripherals_ST7789_Interface.o
- .debug_line    0x00008067      0x18c ./board/peripherals_flexcan_config_1.o
- .debug_line    0x000081f3      0x1b3 ./board/pin_mux.o
- .debug_line    0x000083a6      0x404 ./src/CAN_Ex3.o
+ .debug_line    0x00000082      0x66e ./S&M_Driv/src/ST7789_low_level.o
+ .debug_line    0x000006f0      0x3dd ./S&M_Driv/src/fonts.o
+ .debug_line    0x00000acd      0x272 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_line    0x00000d3f      0x1a8 ./SDK/platform/devices/startup.o
+ .debug_line    0x00000ee7     0x16ec ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_line    0x000025d3      0xbef ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_line    0x000031c2      0x3a4 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_line    0x00003566      0x324 ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_line    0x0000388a      0xec6 ./SDK/platform/drivers/src/flexcan/flexcan_driver.o
+ .debug_line    0x00004750      0x9fb ./SDK/platform/drivers/src/flexcan/flexcan_hw_access.o
+ .debug_line    0x0000514b      0x13c ./SDK/platform/drivers/src/flexcan/flexcan_irq.o
+ .debug_line    0x00005287      0x386 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_line    0x0000560d      0x47e ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+ .debug_line    0x00005a8b      0x2fc ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+ .debug_line    0x00005d87      0x742 ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+ .debug_line    0x000064c9      0x424 ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+ .debug_line    0x000068ed      0x64a ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+ .debug_line    0x00006f37      0x618 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_line    0x0000754f      0x2ec ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_line    0x0000783b      0x3df ./SDK/rtos/osif/osif_baremetal.o
+ .debug_line    0x00007c1a      0x24b ./board/clock_config.o
+ .debug_line    0x00007e65      0x342 ./board/peripherals_ST7789_Interface.o
+ .debug_line    0x000081a7      0x18c ./board/peripherals_flexcan_config_1.o
+ .debug_line    0x00008333      0x1bb ./board/pin_mux.o
+ .debug_line    0x000084ee      0x424 ./src/CAN_Ex3.o
 
 .debug_info     0x00000000    0x1d5cb
  .debug_info    0x00000000       0x26 ./Project_Settings/Startup_Code/startup_S32K144.o
@@ -2306,58 +2306,58 @@ OUTPUT(CAN_ElecronicsV2.elf elf32-littlearm)
  .debug_aranges
                 0x00001448       0x20 ./src/CAN_Ex3.o
 
-.debug_str      0x00000000     0xa31b
- .debug_str     0x00000000       0x89 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_str     0x00000089     0x19ae ./S&M_Driv/src/ST7789_low_level.o
-                               0x1b02 (size before relaxing)
- .debug_str     0x00001a37       0x55 ./S&M_Driv/src/fonts.o
-                               0x1421 (size before relaxing)
- .debug_str     0x00001a8c      0x1cc ./SDK/platform/devices/S32K144/startup/system_S32K144.o
-                                0x472 (size before relaxing)
- .debug_str     0x00001c58      0x20c ./SDK/platform/devices/startup.o
-                                0x506 (size before relaxing)
- .debug_str     0x00001e64     0x324a ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
-                               0x3a1c (size before relaxing)
- .debug_str     0x000050ae     0x1743 ./SDK/platform/drivers/src/edma/edma_driver.o
-                               0x2cc9 (size before relaxing)
- .debug_str     0x000067f1      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
-                                0x823 (size before relaxing)
- .debug_str     0x00006967      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
-                                0x4f0 (size before relaxing)
- .debug_str     0x00006ac9     0x18b6 ./SDK/platform/drivers/src/flexcan/flexcan_driver.o
-                               0x2f93 (size before relaxing)
- .debug_str     0x0000837f      0x5b9 ./SDK/platform/drivers/src/flexcan/flexcan_hw_access.o
-                               0x18d3 (size before relaxing)
- .debug_str     0x00008938      0x17c ./SDK/platform/drivers/src/flexcan/flexcan_irq.o
-                                0x3ab (size before relaxing)
- .debug_str     0x00008ab4      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
-                                0xbb7 (size before relaxing)
- .debug_str     0x00008c8a      0x4e6 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
-                               0x1d40 (size before relaxing)
- .debug_str     0x00009170       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
-                                0xb2a (size before relaxing)
- .debug_str     0x000091d4      0x3dd ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
-                               0x246a (size before relaxing)
- .debug_str     0x000095b1      0x12f ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
-                               0x10f7 (size before relaxing)
- .debug_str     0x000096e0      0x183 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
-                               0x22bc (size before relaxing)
- .debug_str     0x00009863      0x58b ./SDK/platform/drivers/src/pins/pins_driver.o
-                               0x142e (size before relaxing)
- .debug_str     0x00009dee      0x1ec ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
-                                0x965 (size before relaxing)
- .debug_str     0x00009fda      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
-                               0x10d6 (size before relaxing)
- .debug_str     0x0000a1ae       0x71 ./board/clock_config.o
-                               0x2379 (size before relaxing)
- .debug_str     0x0000a21f       0x49 ./board/peripherals_ST7789_Interface.o
-                               0x18f4 (size before relaxing)
- .debug_str     0x0000a268       0x49 ./board/peripherals_flexcan_config_1.o
-                                0x996 (size before relaxing)
- .debug_str     0x0000a2b1       0x13 ./board/pin_mux.o
-                                0x629 (size before relaxing)
- .debug_str     0x0000a2c4       0x57 ./src/CAN_Ex3.o
-                               0x340e (size before relaxing)
+.debug_str      0x00000000     0xa323
+ .debug_str     0x00000000       0x91 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_str     0x00000091     0x19ae ./S&M_Driv/src/ST7789_low_level.o
+                               0x1b0a (size before relaxing)
+ .debug_str     0x00001a3f       0x55 ./S&M_Driv/src/fonts.o
+                               0x1429 (size before relaxing)
+ .debug_str     0x00001a94      0x1cc ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                                0x47a (size before relaxing)
+ .debug_str     0x00001c60      0x20c ./SDK/platform/devices/startup.o
+                                0x50e (size before relaxing)
+ .debug_str     0x00001e6c     0x324a ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                               0x3a24 (size before relaxing)
+ .debug_str     0x000050b6     0x1743 ./SDK/platform/drivers/src/edma/edma_driver.o
+                               0x2cd1 (size before relaxing)
+ .debug_str     0x000067f9      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+                                0x82b (size before relaxing)
+ .debug_str     0x0000696f      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
+                                0x4f8 (size before relaxing)
+ .debug_str     0x00006ad1     0x18b6 ./SDK/platform/drivers/src/flexcan/flexcan_driver.o
+                               0x2f9b (size before relaxing)
+ .debug_str     0x00008387      0x5b9 ./SDK/platform/drivers/src/flexcan/flexcan_hw_access.o
+                               0x18db (size before relaxing)
+ .debug_str     0x00008940      0x17c ./SDK/platform/drivers/src/flexcan/flexcan_irq.o
+                                0x3b3 (size before relaxing)
+ .debug_str     0x00008abc      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                                0xbbf (size before relaxing)
+ .debug_str     0x00008c92      0x4e6 ./SDK/platform/drivers/src/lpspi/lpspi_hw_access.o
+                               0x1d48 (size before relaxing)
+ .debug_str     0x00009178       0x64 ./SDK/platform/drivers/src/lpspi/lpspi_irq.o
+                                0xb32 (size before relaxing)
+ .debug_str     0x000091dc      0x3dd ./SDK/platform/drivers/src/lpspi/lpspi_master_driver.o
+                               0x2472 (size before relaxing)
+ .debug_str     0x000095b9      0x12f ./SDK/platform/drivers/src/lpspi/lpspi_shared_function.o
+                               0x10ff (size before relaxing)
+ .debug_str     0x000096e8      0x183 ./SDK/platform/drivers/src/lpspi/lpspi_slave_driver.o
+                               0x22c4 (size before relaxing)
+ .debug_str     0x0000986b      0x58b ./SDK/platform/drivers/src/pins/pins_driver.o
+                               0x1436 (size before relaxing)
+ .debug_str     0x00009df6      0x1ec ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+                                0x96d (size before relaxing)
+ .debug_str     0x00009fe2      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
+                               0x10de (size before relaxing)
+ .debug_str     0x0000a1b6       0x71 ./board/clock_config.o
+                               0x2381 (size before relaxing)
+ .debug_str     0x0000a227       0x49 ./board/peripherals_ST7789_Interface.o
+                               0x18fc (size before relaxing)
+ .debug_str     0x0000a270       0x49 ./board/peripherals_flexcan_config_1.o
+                                0x99e (size before relaxing)
+ .debug_str     0x0000a2b9       0x13 ./board/pin_mux.o
+                                0x631 (size before relaxing)
+ .debug_str     0x0000a2cc       0x57 ./src/CAN_Ex3.o
+                               0x3416 (size before relaxing)
 
 .debug_ranges   0x00000000     0x12b0
  .debug_ranges  0x00000000       0x80 ./S&M_Driv/src/ST7789_low_level.o

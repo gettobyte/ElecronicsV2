@@ -41,7 +41,7 @@ CAN_ElecronicsV2.siz \
 all: CAN_ElecronicsV2.elf secondary-outputs
 
 # Tool invocations
-CAN_ElecronicsV2.elf: $(OBJS) C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+CAN_ElecronicsV2.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/s32k144_programs/CAN_ElecronicsV2/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "CAN_ElecronicsV2.elf" "@CAN_ElecronicsV2.args"  $(USER_OBJS) $(LIBS)

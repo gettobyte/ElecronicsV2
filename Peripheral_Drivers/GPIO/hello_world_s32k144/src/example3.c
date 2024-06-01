@@ -75,6 +75,7 @@ int main(void)
   /* Initialize FreeMASTER driver */
   FMSTR_Init();
 
+
   for (;;)
   {
       if(ReadSwitch1 & 0x01) // Switch1 HIGH

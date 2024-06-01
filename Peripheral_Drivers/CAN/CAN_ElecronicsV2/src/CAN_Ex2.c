@@ -28,7 +28,7 @@ volatile int exit_code = 0;
 */
 
 #define TX_MAILBOX 1UL
-#define TX_MSG_ID 0x400
+#define TX_MSG_ID 0x800
 #define RX_MAILBOX 0UL
 #define RX_MSG_ID 0x800
 #define size 5UL

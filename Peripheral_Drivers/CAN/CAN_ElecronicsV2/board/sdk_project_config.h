@@ -21,6 +21,7 @@
 #include "peripherals_flexcan_config_1.h"
 #include "peripherals_osif_1.h"
 #include "peripherals_ST7789_Interface.h"
+#include "peripherals_lpuart_1.h"
 
 
 #endif /* SDK_PROJECT_CONFIG_H_ */

@@ -1,5 +1,5 @@
 -T
-"C:/Users/gettobyte_kunal/workspaceS32DS.3.4/CAN_ElecronicsV2/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"C:/Users/gettobyte_kunal/Documents/s32k144_programs/CAN_ElecronicsV2/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"CAN_ElecronicsV2.map"
 -Xlinker
 --gc-sections
