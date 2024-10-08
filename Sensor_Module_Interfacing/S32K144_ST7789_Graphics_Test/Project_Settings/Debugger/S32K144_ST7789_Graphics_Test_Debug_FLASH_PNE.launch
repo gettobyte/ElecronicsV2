@@ -126,7 +126,7 @@
 <stringAttribute key="com.pemicro.debug.gdbjtag.pne.sda.CYCLONE_IP" value=""/>
 <booleanAttribute key="com.pemicro.debug.gdbjtag.pne.sda.DO_RESET_DELAY" value="false"/>
 <intAttribute key="com.pemicro.debug.gdbjtag.pne.sda.INTERFACE_PORT" value="0"/>
-<stringAttribute key="com.pemicro.debug.gdbjtag.pne.sda.INTERFACE_PORT_STRING" value="USB1"/>
+<stringAttribute key="com.pemicro.debug.gdbjtag.pne.sda.INTERFACE_PORT_STRING" value=""/>
 <stringAttribute key="com.pemicro.debug.gdbjtag.pne.sda.NETWORK_CARD_IP" value=""/>
 <stringAttribute key="com.pemicro.debug.gdbjtag.pne.sda.POWER_DOWN_DELAY" value=""/>
 <booleanAttribute key="com.pemicro.debug.gdbjtag.pne.sda.POWER_OFF" value="false"/>
@@ -205,7 +205,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug_FLASH/S32K144_ST7789_Graphics_Test.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="S32K144_ST7789_Graphics_Test"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.46346079"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/S32K144_ST7789_Graphics_Test"/>
 </listAttribute>
