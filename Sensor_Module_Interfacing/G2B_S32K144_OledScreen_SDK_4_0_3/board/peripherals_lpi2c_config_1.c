@@ -54,7 +54,7 @@ instance:
       - 1:
         - name: 'lpi2c0_MasterConfig1'
         - readonly: 'false'
-        - lpi2c_master_cfg_slaveAddress: '0x29'
+        - lpi2c_master_cfg_slaveAddress: '0x28'
         - lpi2c_master_cfg_is10bitAddr: 'false'
         - lpi2c_master_cfg_operatingMode: 'LPI2C_STANDARD_MODE'
         - lpi2c_master_cfg_baudRate: '100000'
@@ -87,7 +87,7 @@ lpi2c_master_user_config_t lpi2c0_MasterConfig0 = {
 };
 
 lpi2c_master_user_config_t lpi2c0_MasterConfig1 = {
-  .slaveAddress = 41U,
+  .slaveAddress = 40U,
   .is10bitAddr = false,
   .operatingMode = LPI2C_STANDARD_MODE,
   .baudRate = 100000UL,

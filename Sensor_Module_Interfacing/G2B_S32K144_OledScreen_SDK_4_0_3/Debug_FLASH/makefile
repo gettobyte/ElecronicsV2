@@ -40,7 +40,7 @@ G2B_S32K144_OledScreen_SDK_4_0_3.siz \
 all: G2B_S32K144_OledScreen_SDK_4_0_3.elf secondary-outputs
 
 # Tool invocations
-G2B_S32K144_OledScreen_SDK_4_0_3.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/elecronicsv2_autosarMCAL_Workspace/G2B_S32K144_OledScreen_SDK_4_0_3/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+G2B_S32K144_OledScreen_SDK_4_0_3.elf: $(OBJS) C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Sensor_Module_Interfacing/G2B_S32K144_OledScreen_SDK_4_0_3/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "G2B_S32K144_OledScreen_SDK_4_0_3.elf" "@G2B_S32K144_OledScreen_SDK_4_0_3.args"  $(USER_OBJS) $(LIBS)

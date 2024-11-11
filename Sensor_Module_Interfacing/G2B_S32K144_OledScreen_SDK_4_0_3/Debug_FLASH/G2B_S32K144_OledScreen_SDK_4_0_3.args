@@ -1,5 +1,5 @@
 -T
-"C:/Users/gettobyte_kunal/Documents/elecronicsv2_autosarMCAL_Workspace/G2B_S32K144_OledScreen_SDK_4_0_3/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"C:/Users/gettobyte_kunal/Documents/ElecronicsV2/Sensor_Module_Interfacing/G2B_S32K144_OledScreen_SDK_4_0_3/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"G2B_S32K144_OledScreen_SDK_4_0_3.map"
 -Xlinker
 --gc-sections

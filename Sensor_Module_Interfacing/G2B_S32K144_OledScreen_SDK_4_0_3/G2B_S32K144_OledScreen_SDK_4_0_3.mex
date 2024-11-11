@@ -255,7 +255,7 @@
                            <struct name="1">
                               <setting name="name" value="lpi2c0_MasterConfig1"/>
                               <setting name="readonly" value="false"/>
-                              <setting name="lpi2c_master_cfg_slaveAddress" value="0x29"/>
+                              <setting name="lpi2c_master_cfg_slaveAddress" value="0x28"/>
                               <setting name="lpi2c_master_cfg_is10bitAddr" value="false"/>
                               <setting name="lpi2c_master_cfg_operatingMode" value="LPI2C_STANDARD_MODE"/>
                               <setting name="lpi2c_master_cfg_baudRate" value="100000"/>

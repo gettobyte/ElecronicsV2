@@ -1837,7 +1837,7 @@ LOAD c:/nxp/s32ds.3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(G2B_S32K144_OledScreen_SDK_4_0_3.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x147ea
+.debug_info     0x00000000    0x147dc
  .debug_info    0x00000000     0x2631 ./Drivers/src/GB_SSD1306.o
  .debug_info    0x00002631       0x26 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_info    0x00002657      0x51e ./SDK/platform/devices/S32K144/startup/system_S32K144.o
@@ -1856,9 +1856,9 @@ OUTPUT(G2B_S32K144_OledScreen_SDK_4_0_3.elf elf32-littlearm)
  .debug_info    0x00010cf1     0x12b5 ./board/clock_config.o
  .debug_info    0x00011fa6      0x1e1 ./board/peripherals_lpi2c_config_1.o
  .debug_info    0x00012187      0x405 ./board/pin_mux.o
- .debug_info    0x0001258c     0x225e ./src/main.o
+ .debug_info    0x0001258c     0x2250 ./src/main.o
 
-.debug_abbrev   0x00000000     0x1eb6
+.debug_abbrev   0x00000000     0x1ea0
  .debug_abbrev  0x00000000      0x2e7 ./Drivers/src/GB_SSD1306.o
  .debug_abbrev  0x000002e7       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_abbrev  0x000002fb      0x122 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
@@ -1877,7 +1877,7 @@ OUTPUT(G2B_S32K144_OledScreen_SDK_4_0_3.elf elf32-littlearm)
  .debug_abbrev  0x000019df      0x122 ./board/clock_config.o
  .debug_abbrev  0x00001b01       0xa5 ./board/peripherals_lpi2c_config_1.o
  .debug_abbrev  0x00001ba6       0xca ./board/pin_mux.o
- .debug_abbrev  0x00001c70      0x246 ./src/main.o
+ .debug_abbrev  0x00001c70      0x230 ./src/main.o
 
 .debug_aranges  0x00000000     0x1050
  .debug_aranges
@@ -1936,66 +1936,66 @@ OUTPUT(G2B_S32K144_OledScreen_SDK_4_0_3.elf elf32-littlearm)
  .debug_ranges  0x00000e58       0x88 ./SDK/rtos/osif/osif_baremetal.o
  .debug_ranges  0x00000ee0       0x18 ./src/main.o
 
-.debug_line     0x00000000     0x64c4
- .debug_line    0x00000000      0x755 ./Drivers/src/GB_SSD1306.o
- .debug_line    0x00000755       0x82 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_line    0x000007d7      0x294 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_line    0x00000a6b      0x1a8 ./SDK/platform/devices/startup.o
- .debug_line    0x00000c13     0x1730 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
- .debug_line    0x00002343      0xc33 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_line    0x00002f76      0x3c6 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_line    0x0000333c      0x346 ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_line    0x00003682      0x3ca ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_line    0x00003a4c      0xf17 ./SDK/platform/drivers/src/lpi2c/lpi2c_driver.o
- .debug_line    0x00004963      0x219 ./SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o
- .debug_line    0x00004b7c       0x72 ./SDK/platform/drivers/src/lpi2c/lpi2c_irq.o
- .debug_line    0x00004bee      0x65c ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_line    0x0000524a      0x30e ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
- .debug_line    0x00005558      0x423 ./SDK/rtos/osif/osif_baremetal.o
- .debug_line    0x0000597b      0x28f ./board/clock_config.o
- .debug_line    0x00005c0a      0x1f6 ./board/peripherals_lpi2c_config_1.o
- .debug_line    0x00005e00      0x1dd ./board/pin_mux.o
- .debug_line    0x00005fdd      0x4e7 ./src/main.o
+.debug_line     0x00000000     0x6530
+ .debug_line    0x00000000      0x761 ./Drivers/src/GB_SSD1306.o
+ .debug_line    0x00000761       0x82 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_line    0x000007e3      0x298 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_line    0x00000a7b      0x1a8 ./SDK/platform/devices/startup.o
+ .debug_line    0x00000c23     0x1738 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_line    0x0000235b      0xc3b ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_line    0x00002f96      0x3ca ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_line    0x00003360      0x34a ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_line    0x000036aa      0x3d2 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_line    0x00003a7c      0xf1f ./SDK/platform/drivers/src/lpi2c/lpi2c_driver.o
+ .debug_line    0x0000499b      0x21d ./SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o
+ .debug_line    0x00004bb8       0x72 ./SDK/platform/drivers/src/lpi2c/lpi2c_irq.o
+ .debug_line    0x00004c2a      0x664 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_line    0x0000528e      0x312 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_line    0x000055a0      0x42b ./SDK/rtos/osif/osif_baremetal.o
+ .debug_line    0x000059cb      0x297 ./board/clock_config.o
+ .debug_line    0x00005c62      0x1fa ./board/peripherals_lpi2c_config_1.o
+ .debug_line    0x00005e5c      0x1e1 ./board/pin_mux.o
+ .debug_line    0x0000603d      0x4f3 ./src/main.o
 
-.debug_str      0x00000000     0x8fb9
- .debug_str     0x00000000     0x2cf8 ./Drivers/src/GB_SSD1306.o
-                               0x2e10 (size before relaxing)
- .debug_str     0x00002cf8       0x3f ./Project_Settings/Startup_Code/startup_S32K144.o
-                                 0xb2 (size before relaxing)
- .debug_str     0x00002d37      0x1f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
-                                0x49b (size before relaxing)
- .debug_str     0x00002f29      0x20c ./SDK/platform/devices/startup.o
-                                0x52f (size before relaxing)
- .debug_str     0x00003135     0x1a7b ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
-                               0x3a45 (size before relaxing)
- .debug_str     0x00004bb0     0x1d0b ./SDK/platform/drivers/src/edma/edma_driver.o
-                               0x2cf2 (size before relaxing)
- .debug_str     0x000068bb      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
-                                0x84c (size before relaxing)
- .debug_str     0x00006a31      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
-                                0x519 (size before relaxing)
- .debug_str     0x00006b93      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
-                                0xbe0 (size before relaxing)
- .debug_str     0x00006d69     0x16d8 ./SDK/platform/drivers/src/lpi2c/lpi2c_driver.o
-                               0x334b (size before relaxing)
- .debug_str     0x00008441       0x7a ./SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o
-                                0x430 (size before relaxing)
- .debug_str     0x000084bb       0x5f ./SDK/platform/drivers/src/lpi2c/lpi2c_irq.o
-                                0x2bd (size before relaxing)
- .debug_str     0x0000851a      0x591 ./SDK/platform/drivers/src/pins/pins_driver.o
-                               0x1457 (size before relaxing)
- .debug_str     0x00008aab      0x1f1 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
-                                0x98e (size before relaxing)
- .debug_str     0x00008c9c      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
-                               0x10ff (size before relaxing)
- .debug_str     0x00008e70       0x18 ./board/clock_config.o
-                               0x23a2 (size before relaxing)
- .debug_str     0x00008e88       0x26 ./board/peripherals_lpi2c_config_1.o
-                                0x41d (size before relaxing)
- .debug_str     0x00008eae       0x13 ./board/pin_mux.o
-                                0x652 (size before relaxing)
- .debug_str     0x00008ec1       0xf8 ./src/main.o
-                               0x2b7b (size before relaxing)
+.debug_str      0x00000000     0x8fbd
+ .debug_str     0x00000000     0x2cfc ./Drivers/src/GB_SSD1306.o
+                               0x2e14 (size before relaxing)
+ .debug_str     0x00002cfc       0x3f ./Project_Settings/Startup_Code/startup_S32K144.o
+                                 0xb6 (size before relaxing)
+ .debug_str     0x00002d3b      0x1f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                                0x49f (size before relaxing)
+ .debug_str     0x00002f2d      0x20c ./SDK/platform/devices/startup.o
+                                0x533 (size before relaxing)
+ .debug_str     0x00003139     0x1a7b ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                               0x3a49 (size before relaxing)
+ .debug_str     0x00004bb4     0x1d0b ./SDK/platform/drivers/src/edma/edma_driver.o
+                               0x2cf6 (size before relaxing)
+ .debug_str     0x000068bf      0x176 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+                                0x850 (size before relaxing)
+ .debug_str     0x00006a35      0x162 ./SDK/platform/drivers/src/edma/edma_irq.o
+                                0x51d (size before relaxing)
+ .debug_str     0x00006b97      0x1d6 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                                0xbe4 (size before relaxing)
+ .debug_str     0x00006d6d     0x16d8 ./SDK/platform/drivers/src/lpi2c/lpi2c_driver.o
+                               0x334f (size before relaxing)
+ .debug_str     0x00008445       0x7a ./SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o
+                                0x434 (size before relaxing)
+ .debug_str     0x000084bf       0x5f ./SDK/platform/drivers/src/lpi2c/lpi2c_irq.o
+                                0x2c1 (size before relaxing)
+ .debug_str     0x0000851e      0x591 ./SDK/platform/drivers/src/pins/pins_driver.o
+                               0x145b (size before relaxing)
+ .debug_str     0x00008aaf      0x1f1 ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+                                0x992 (size before relaxing)
+ .debug_str     0x00008ca0      0x1d4 ./SDK/rtos/osif/osif_baremetal.o
+                               0x1103 (size before relaxing)
+ .debug_str     0x00008e74       0x18 ./board/clock_config.o
+                               0x23a6 (size before relaxing)
+ .debug_str     0x00008e8c       0x26 ./board/peripherals_lpi2c_config_1.o
+                                0x421 (size before relaxing)
+ .debug_str     0x00008eb2       0x13 ./board/pin_mux.o
+                                0x656 (size before relaxing)
+ .debug_str     0x00008ec5       0xf8 ./src/main.o
+                               0x2b6a (size before relaxing)
 
 .comment        0x00000000       0xa0
  .comment       0x00000000       0xa0 ./Drivers/src/GB_SSD1306.o
