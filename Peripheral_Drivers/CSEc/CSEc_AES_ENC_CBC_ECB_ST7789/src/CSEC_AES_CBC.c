@@ -93,8 +93,19 @@ status_t initFlashForCsecOperation(void)
 uint32_t starttime __attribute__((section (".customSection")));
 
 const uint8_t Iv[] = {
-		0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
-};
+		0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
+
+
+bool verifystatus;
+
+const uint8_t chall[] = {
+		0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F };
+
+
+uint8_t uid[15];
+uint8_t mac[16];
+uint8_t status_reg[16];
+
 
 int main(void)
 {
@@ -124,23 +135,20 @@ int main(void)
   /* Initialize Flash for CSEc operation */
   flash_init_for_csec = initFlashForCsecOperation();
 
+
+
+  CSEC_DRV_GetID(chall,uid,  status_reg, mac);
+
+
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
   setAuthKey();
 
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 1);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 14);
   if (keyLoaded)
   {
-      /* Test an encryption using the loaded key.
-       *
-       * key        = 000102030405060708090a0b0c0d0e0f
-       * plaintext  = 00112233445566778899aabbccddeeff
-       * ciphertext = 69c4e0d86a7b0430d8cdb78070b4c55a
-       *
-       * The values are extracted from the SHE Spec 1.1 test vectors.
-       */
       uint8_t i;
 
       status_t stat;
@@ -154,22 +162,28 @@ int main(void)
       0x30, 0xd8, 0xcd, 0xb7, 0x80, 0x70, 0xb4, 0xc5, 0x5a};
 
       starttime = OSIF_GetMilliseconds();
-      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+//      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+//
+//      stat = CSEC_DRV_DecryptCBC(CSEC_KEY_1, cipherText, 16U, Iv, cipherText_encrypted, 1U);
+//
+//      if (stat == STATUS_SUCCESS)
+//      {
+//          /* Check if the decrypted cipher text is same as plain text */
+//          for (i = 0; i < 16; i++)
+//          {
+//              if (cipherText_encrypted[i] != plainText[i])
+//              {
+//                  encryptionOk = false;
+//                  break;
+//              }
+//          }
+//      }
 
-      stat = CSEC_DRV_DecryptCBC(CSEC_KEY_1, cipherText, 16U, Iv, cipherText_encrypted, 1U);
 
-      if (stat == STATUS_SUCCESS)
-      {
-          /* Check if the decrypted cipher text is same as plain text */
-          for (i = 0; i < 16; i++)
-          {
-              if (cipherText_encrypted[i] != plainText[i])
-              {
-                  encryptionOk = false;
-                  break;
-              }
-          }
-      }
+      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 1U);
+
+
+    stat = CSEC_DRV_VerifyMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 16U, &verifystatus, 1U );
 
       if (encryptionOk)
       {

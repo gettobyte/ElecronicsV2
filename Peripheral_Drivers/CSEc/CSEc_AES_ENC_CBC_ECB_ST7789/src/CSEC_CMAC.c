@@ -27,12 +27,16 @@ static const flash_user_config_t flash1_InitConfig0 = {
     .CallBack    = NULL_CALLBACK
 };
 
-#define LED_PORT       PTD
-#define LED_OK         16U
-#define LED_ERROR      15U
+
+    #define LED_PORT       PTD
+    #define LED_OK         16U
+    #define LED_ERROR      15U
+
 
 #define CSEc_FLASH_PARTION_ALREADY_DONE 0xAA   // CSEc memory partionting is already done, previous time. To do it again with new value, run CSEC_Crypto_Erase_Keys.c example
 #define CSEC_FLASH_PARTION_CANT_BE_DONE 0x55   // CSEc memory partionting to EEEPROM cant be done because RAM configuration is selected or CSEc flash configuration is not done yet, run CSEC_Vrypto_Engine_Init.c example
+/* Set this macro-definition to 1 if you want to reset all the keys */
+#define ERASE_ALL_KEYS	0
 
 status_t initFlashForCsecOperation(void)
 {
@@ -49,9 +53,9 @@ status_t initFlashForCsecOperation(void)
 		 * this example should be ran from RAM, in order to enable CSEc operation. Please
 		 * refer to the documentation for more information. */
 		PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+
 		//If flash configuration is selected then memory partitioning cant be done
 		flash_partition = CSEC_FLASH_PARTION_CANT_BE_DONE;
-
 #else
 		uint32_t address;
 		uint32_t size;
@@ -83,11 +87,23 @@ status_t initFlashForCsecOperation(void)
 	}
 
 	return flash_partition;
-
 }
 
 
 uint32_t starttime __attribute__((section (".customSection")));
+
+const uint8_t Iv[] = {
+		0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
+
+const uint8_t chall[] = {
+		0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F };
+
+
+uint8_t uid[15];
+uint8_t mac[16];
+uint8_t status_reg[15];
+
+bool verifystatus;
 
 int main(void)
 {
@@ -100,7 +116,6 @@ int main(void)
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
   status_t flash_init_for_csec;
-
 
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
@@ -116,15 +131,18 @@ int main(void)
   CSEC_DRV_Init(&csecState);
 
   /* Initialize Flash for CSEc operation */
-    flash_init_for_csec = initFlashForCsecOperation();
+  flash_init_for_csec = initFlashForCsecOperation();
 
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
   setAuthKey();
 
+
+  CSEC_DRV_GetID(chall,uid,  status_reg, mac);
+
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 3);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 15);
   if (keyLoaded)
   {
       uint8_t i;
@@ -132,29 +150,56 @@ int main(void)
       status_t stat;
       bool encryptionOk = true;
       uint8_t cipherText[16];
+      uint8_t *Mac_Generated;
       uint8_t cipherText_encrypted[16];
       uint8_t plainText[16] = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88,
       0x99, 0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff};
 
+      uint8_t message[32];
+
+      uint8_t expectedCipherText[16] = {0x69, 0xc4, 0xe0, 0xd8, 0x6a, 0x7b, 0x04,
+      0x30, 0xd8, 0xcd, 0xb7, 0x80, 0x70, 0xb4, 0xc5, 0x5a};
+
       starttime = OSIF_GetMilliseconds();
+//      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+//
+//      stat = CSEC_DRV_DecryptCBC(CSEC_KEY_1, cipherText, 16U, Iv, cipherText_encrypted, 1U);
+//
+//      if (stat == STATUS_SUCCESS)
+//      {
+//          /* Check if the decrypted cipher text is same as plain text */
+//          for (i = 0; i < 16; i++)
+//          {
+//              if (cipherText_encrypted[i] != plainText[i])
+//              {
+//                  encryptionOk = false;
+//                  break;
+//              }
+//          }
+//      }
 
-      stat = CSEC_DRV_EncryptECB(CSEC_KEY_1, plainText, 16U, cipherText, 1U);
-      stat = CSEC_DRV_DecryptECB(CSEC_KEY_1, cipherText, 16U, cipherText_encrypted, 1U);
 
 
+//      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 1U);
+//
+//
+//    stat = CSEC_DRV_VerifyMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 16U, &verifystatus, 1U );
 
-      if (stat == STATUS_SUCCESS)
-      {
-          /* Check if the decrypted cipher text is same as plain text */
-          for (i = 0; i < 16; i++)
-          {
-              if (cipherText_encrypted[i] != plainText[i])
-              {
-                  encryptionOk = false;
-                  break;
-              }
-          }
-      }
+
+      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+
+      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, cipherText, 16U, Mac_Generated, 1U);
+
+for ( int i = 0; i<32 ; i++)
+{
+	if (i<16)
+	message [i] = plainText[i];
+	else if( i > 15)
+	message [i] = Mac_Generated[i];
+}
+
+// SEND MESSAGE BUFFER VIA CAN AT MESSAGE ID: 0x800
+    stat = CSEC_DRV_VerifyMAC(CSEC_RAM_KEY, cipherText, 16U, Mac_Generated, 16U, &verifystatus, 1U );
 
       if (encryptionOk)
       {

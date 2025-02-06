@@ -50,6 +50,21 @@
 			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/flash/doxygen/flash_driver.dox</locationURI>
 		</link>
 		<link>
+			<name>doc/SDK/platform/drivers/src/flexio/doxygen/flexio.dox</name>
+			<type>1</type>
+			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/flexio/doxygen/flexio.dox</locationURI>
+		</link>
+		<link>
+			<name>doc/SDK/platform/drivers/src/flexio/doxygen/flexio_driver.dox</name>
+			<type>1</type>
+			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/flexio/doxygen/flexio_driver.dox</locationURI>
+		</link>
+		<link>
+			<name>doc/SDK/platform/drivers/src/flexio/doxygen/flexio_spi_driver.dox</name>
+			<type>1</type>
+			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/flexio/doxygen/flexio_spi_driver.dox</locationURI>
+		</link>
+		<link>
 			<name>doc/SDK/platform/drivers/src/interrupt/doxygen/interrupt.dox</name>
 			<type>1</type>
 			<locationURI>s32sdk_s32k1xx_rtm_403/platform/drivers/src/interrupt/doxygen/interrupt.dox</locationURI>

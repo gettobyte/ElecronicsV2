@@ -86,8 +86,13 @@ lpi2c_master_user_config_t lpi2c0_MasterConfig0 = {
   .callbackParam = NULL
 };
 
+/*
+ * 0x28: 40
+ * 0x29: 41
+ *
+ */
 lpi2c_master_user_config_t lpi2c0_MasterConfig1 = {
-  .slaveAddress = 40U,
+  .slaveAddress = 41U,
   .is10bitAddr = false,
   .operatingMode = LPI2C_STANDARD_MODE,
   .baudRate = 100000UL,

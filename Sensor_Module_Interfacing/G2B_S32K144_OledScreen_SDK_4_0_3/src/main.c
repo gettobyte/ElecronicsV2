@@ -1460,6 +1460,8 @@ status_t x;
 uint8_t tx_bno055[1] = { 0x00};
 
 uint8_t tx_oled[1] = { 0x70};
+
+status_t x;
 int main(void)
 {
 
@@ -1486,15 +1488,15 @@ int main(void)
      *  -   See LPI2C components for configuration details
      */
     //bno055
-    LPI2C_DRV_MasterInit(INST_LPI2C0, &lpi2c0_MasterConfig1, &lpi2c1MasterState);
+    x = LPI2C_DRV_MasterInit(INST_LPI2C0, &lpi2c0_MasterConfig1, &lpi2c1MasterState);
 
-    OLED_I2C_MASTER_SEND(INST_LPI2C0, tx_bno055,1, false );
+x =     OLED_I2C_MASTER_SEND(INST_LPI2C0, tx_bno055,1, false );
 
 
     //oled
-    LPI2C_DRV_MasterInit(INST_LPI2C0, &lpi2c0_MasterConfig0, &lpi2c1MasterState);
+    x = LPI2C_DRV_MasterInit(INST_LPI2C0, &lpi2c0_MasterConfig0, &lpi2c1MasterState);
 
-    OLED_I2C_MASTER_SEND(INST_LPI2C0, tx_oled,1, false );
+   x =  OLED_I2C_MASTER_SEND(INST_LPI2C0, tx_oled,1, false );
 
 
     /* Send a packet of data to the bus slave */
