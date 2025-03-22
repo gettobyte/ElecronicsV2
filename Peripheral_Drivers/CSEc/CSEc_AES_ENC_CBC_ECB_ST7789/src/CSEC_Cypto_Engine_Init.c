@@ -62,7 +62,7 @@ status_t initFlashForCsecOperation(void)
 		uint32_t address;
 		uint32_t size;
 #if (FEATURE_FLS_HAS_PROGRAM_PHRASE_CMD == 1u)
-		uint8_t unsecure_key[FTFx_PHRASE_SIZE] = {0xFFu, 0xFFu, 0xFFu, 0xFFu, 0xFEu, 0xFFu, 0xFFu, 0xFFu};
+		uint8_t unsecure_key[FTFx_PHRASE_SIZE] = {0x1Fu, 0xFFu, 0xFFu, 0xFFu, 0xFEu, 0xFFu, 0xFFu, 0xFFu};
 #else   /* FEATURE_FLASH_HAS_PROGRAM_LONGWORD_CMD */
 		uint8_t unsecure_key[FTFx_LONGWORD_SIZE] = {0xFEu, 0xFFu, 0xFFu, 0xFFu};
 #endif  /* FEATURE_FLS_HAS_PROGRAM_PHRASE_CMD */
@@ -93,7 +93,13 @@ status_t initFlashForCsecOperation(void)
 
 }
 
+bool keyLoaded;
+uint8_t key[16] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+            0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+
+
 uint8_t key_counter = 0;
+status_t flash_init_for_csec;
 
 int main(void)
 {
@@ -105,16 +111,11 @@ int main(void)
 						g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
-  status_t flash_init_for_csec;
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 
   /* Turn off the leds */
   PINS_DRV_SetPins(LED_PORT, (1 << LED_ERROR) | (1 << LED_OK));
-
-  bool keyLoaded;
-  uint8_t key[16] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-              0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
 
   /* Initialize CSEc driver */
   CSEC_DRV_Init(&csecState);
@@ -123,14 +124,23 @@ int main(void)
   flash_init_for_csec = initFlashForCsecOperation();
 
 
-  if((flash_init_for_csec == STATUS_SUCCESS ))
 
-  	  PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+  if((flash_init_for_csec == STATUS_SUCCESS ))
+  {
+	  PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
+	  /* Load the MASTER_ECU key with a known value, which will be used as Authorization
+	   * key (a secret key known by the application in order to configure other user keys) */
+	   keyLoaded = setAuthKey();
+	  /* Load the selected key */
+	  /* First load => counter == 1 */
+	  keyLoaded = loadKey(CSEC_KEY_1, key, 16);
+
+  }
 
     else if(flash_init_for_csec == CSEc_FLASH_PARTION_ALREADY_DONE )
-
+    {
   	  PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
-
+    }
 
   for(;;) {
     if(exit_code != 0) {

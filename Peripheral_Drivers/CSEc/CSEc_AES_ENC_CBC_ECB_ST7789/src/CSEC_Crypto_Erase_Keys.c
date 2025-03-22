@@ -92,6 +92,8 @@ status_t initFlashForCsecOperation(void)
 }
 
 uint8_t key_counter = 0;
+bool auth_key_status;
+status_t flash_init_for_csec;
 
 int main(void)
 {
@@ -103,8 +105,7 @@ int main(void)
 						g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
-  status_t flash_init_for_csec;
-  /* Initialize pins */
+ /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
 
   /* Turn off the leds */
@@ -114,12 +115,9 @@ int main(void)
     /* Initialize CSEc driver */
     CSEC_DRV_Init(&csecState);
 
-    /* Initialize Flash for CSEc operation */
-    flash_init_for_csec = initFlashForCsecOperation();
-
-    /* Load the MASTER_ECU key with a known value, which will be used as Authorization
-     * key (a secret key known by the application in order to configure other user keys) */
-    setAuthKey();
+////    /* Load the MASTER_ECU key with a known value, which will be used as Authorization
+////     * key (a secret key known by the application in order to configure other user keys) */
+//    auth_key_status =  setAuthKey();
 
       if (eraseKeys())
        {

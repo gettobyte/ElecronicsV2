@@ -137,16 +137,16 @@ int main(void)
 
 
 
-  CSEC_DRV_GetID(chall,uid,  status_reg, mac);
+//  CSEC_DRV_GetID(chall,uid,  status_reg, mac);
 
 
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
-  setAuthKey();
+  keyLoaded = setAuthKey();
 
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 14);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 20);
   if (keyLoaded)
   {
       uint8_t i;

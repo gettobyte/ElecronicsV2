@@ -91,6 +91,8 @@ uint32_t starttime __attribute__((section (".customSection")));
 
 int main(void)
 {
+	uint32_t u32BootSize = 0x00018000U;
+	  status_t statusVal;
   /* Write your code here */
   /* Initialize and configure clocks
    * 	-	see clock manager component for details
@@ -100,7 +102,6 @@ int main(void)
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
   status_t flash_init_for_csec;
-
 
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
@@ -116,15 +117,15 @@ int main(void)
   CSEC_DRV_Init(&csecState);
 
   /* Initialize Flash for CSEc operation */
-    flash_init_for_csec = initFlashForCsecOperation();
+//    flash_init_for_csec = initFlashForCsecOperation();
 
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
-  setAuthKey();
-
+   keyLoaded = setAuthKey();
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 3);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 16);
+
   if (keyLoaded)
   {
       uint8_t i;
