@@ -106,7 +106,7 @@ int main(void)
 
  statusVal = CSEC_DRV_BootFailure();
 
-// statusVal =  CSEC_DRV_BootOK();
+//statusVal =  CSEC_DRV_BootOK();
 
 // load the BOOT_MAC_KEY
 

@@ -176,13 +176,16 @@
 							<tool id="com.freescale.s32ds.cross.gnu.disassembler.458605526" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.ram.439276965.1210083367" name="CSEC_Crypto_Secure_Debug.c" rcbsApplicability="disable" resourcePath="src/CSEC_Crypto_Secure_Debug.c" toolsToInvoke="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1376043168.1850829177">
+						<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1376043168.1850829177" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1376043168"/>
+					</fileInfo>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.ram.439276965.Project_Settings/Debugger" name="Debugger" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger" toolsToInvoke=""/>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.ram.439276965.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="Linker_Files|Debugger" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry excluding="CSEc_Secure_boot.c|CSEC_Testing.c|CSEC_CMAC.c|CSEC_aes_cbc_ecb_encryption_image.c|CSEC_Crypto_Erase_Keys.c|main.c|CSEC_AES_ECB_ST7789_IMAGE.c|CSEC_AES_ECB.c|CSEC_AES_CBC_ST7789_IMAGE.c|CSEC_AES_CBC.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="CSEC_Crypto_Secure_Debug.c|CSEC_Crypto_Random_Number.c|CSEC_Crypto_Export_Import_keys.c|CSEc_Secure_boot.c|CSEC_Testing.c|CSEC_CMAC.c|CSEC_aes_cbc_ecb_encryption_image.c|CSEC_Crypto_Erase_Keys.c|main.c|CSEC_AES_ECB_ST7789_IMAGE.c|CSEC_AES_ECB.c|CSEC_AES_CBC_ST7789_IMAGE.c|CSEC_AES_CBC.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -554,9 +557,6 @@
 							<tool id="com.freescale.s32ds.cross.gnu.disassembler.294677534" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.189860498.586895788.1357047989" name="CSEc_Secure_boot.c" rcbsApplicability="disable" resourcePath="src/CSEc_Secure_boot.c" toolsToInvoke="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1463336148.1214010093">
-						<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1463336148.1214010093" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1463336148"/>
-					</fileInfo>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.189860498.586895788.Project_Settings/Debugger" name="Debugger" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger" toolsToInvoke=""/>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.189860498.586895788.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
 					<sourceEntries>
