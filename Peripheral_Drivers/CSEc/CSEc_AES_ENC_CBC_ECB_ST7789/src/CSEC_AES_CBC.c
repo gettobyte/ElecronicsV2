@@ -117,7 +117,7 @@ int main(void)
 						g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
   CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_FORCIBLE);
 
-  status_t flash_init_for_csec;
+  status_t flash_init_for_csec, ram_key_load_status;
 
   /* Initialize pins */
   PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
@@ -136,17 +136,28 @@ int main(void)
   flash_init_for_csec = initFlashForCsecOperation();
 
 
+//  eraseKeys();
+//
+//  /* Initialize Flash for CSEc operation */
+//  flash_init_for_csec = initFlashForCsecOperation();
+
 
 //  CSEC_DRV_GetID(chall,uid,  status_reg, mac);
 
 
   /* Load the MASTER_ECU key with a known value, which will be used as Authorization
    * key (a secret key known by the application in order to configure other user keys) */
-  keyLoaded = setAuthKey();
+
+keyLoaded = setAuthKey();
 
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 20);
+
+
+ keyLoaded = loadKey(CSEC_KEY_1, key, 35);
+
+  ram_key_load_status =  CSEC_DRV_LoadPlainKey(key);
+
   if (keyLoaded)
   {
       uint8_t i;
@@ -162,28 +173,28 @@ int main(void)
       0x30, 0xd8, 0xcd, 0xb7, 0x80, 0x70, 0xb4, 0xc5, 0x5a};
 
       starttime = OSIF_GetMilliseconds();
-//      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+      stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
+
+      stat = CSEC_DRV_DecryptCBC(CSEC_KEY_1, cipherText, 16U, Iv, cipherText_encrypted, 1U);
+
+      if (stat == STATUS_SUCCESS)
+      {
+          /* Check if the decrypted cipher text is same as plain text */
+          for (i = 0; i < 16; i++)
+          {
+              if (cipherText_encrypted[i] != plainText[i])
+              {
+                  encryptionOk = false;
+                  break;
+              }
+          }
+      }
+
+
+//      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 1U);
 //
-//      stat = CSEC_DRV_DecryptCBC(CSEC_KEY_1, cipherText, 16U, Iv, cipherText_encrypted, 1U);
 //
-//      if (stat == STATUS_SUCCESS)
-//      {
-//          /* Check if the decrypted cipher text is same as plain text */
-//          for (i = 0; i < 16; i++)
-//          {
-//              if (cipherText_encrypted[i] != plainText[i])
-//              {
-//                  encryptionOk = false;
-//                  break;
-//              }
-//          }
-//      }
-
-
-      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 1U);
-
-
-    stat = CSEC_DRV_VerifyMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 16U, &verifystatus, 1U );
+//    stat = CSEC_DRV_VerifyMAC(CSEC_RAM_KEY, plainText, 16U, cipherText, 16U, &verifystatus, 1U );
 
       if (encryptionOk)
       {

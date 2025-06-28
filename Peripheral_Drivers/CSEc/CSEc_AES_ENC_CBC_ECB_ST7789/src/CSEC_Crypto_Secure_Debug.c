@@ -6,3 +6,6 @@
  */
 
 
+
+//CSEC_DRV_DbgChal()
+//CSEC_DRV_DbgAuth()

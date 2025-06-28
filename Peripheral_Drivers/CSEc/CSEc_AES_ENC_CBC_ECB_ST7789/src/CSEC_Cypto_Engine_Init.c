@@ -101,6 +101,9 @@ uint8_t key[16] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
 uint8_t key_counter = 0;
 status_t flash_init_for_csec;
 
+
+bool erase_status;
+
 int main(void)
 {
   /* Write your code here */
@@ -120,6 +123,10 @@ int main(void)
   /* Initialize CSEc driver */
   CSEC_DRV_Init(&csecState);
 
+
+ // erase_status = eraseKeys();
+
+
   /* Initialize Flash for CSEc operation */
   flash_init_for_csec = initFlashForCsecOperation();
 
@@ -137,10 +144,17 @@ int main(void)
 
   }
 
+
     else if(flash_init_for_csec == CSEc_FLASH_PARTION_ALREADY_DONE )
     {
   	  PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);
     }
+
+  keyLoaded = setAuthKey();
+	  /* Load the selected key */
+	  /* First load => counter == 1 */
+	  keyLoaded = loadKey(CSEC_KEY_1, key, 16);
+
 
   for(;;) {
     if(exit_code != 0) {

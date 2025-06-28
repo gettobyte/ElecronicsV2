@@ -142,7 +142,7 @@ int main(void)
 
   /* Load the selected key */
   /* First load => counter == 1 */
-  keyLoaded = loadKey(CSEC_KEY_1, key, 15);
+  keyLoaded = loadKey(CSEC_KEY_1, key, 31);
   if (keyLoaded)
   {
       uint8_t i;
@@ -188,7 +188,7 @@ int main(void)
 
       stat = CSEC_DRV_EncryptCBC(CSEC_KEY_1, plainText, 16U, Iv, cipherText, 1U);
 
-      stat = CSEC_DRV_GenerateMAC(CSEC_RAM_KEY, cipherText, 16U, Mac_Generated, 1U);
+      stat = CSEC_DRV_GenerateMAC(CSEC_KEY_1, cipherText, 16U, Mac_Generated, 1U);
 
 for ( int i = 0; i<32 ; i++)
 {

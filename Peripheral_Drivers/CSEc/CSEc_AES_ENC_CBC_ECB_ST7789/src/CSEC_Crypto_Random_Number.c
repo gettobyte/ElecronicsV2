@@ -6,3 +6,6 @@
  */
 
 
+//CSEC_DRV_GenerateRND()
+//CSEC_DRV_ExtendSeed()
+//CSEC_DRV_InitRNG()

@@ -94,7 +94,7 @@ status_t initFlashForCsecOperation(void)
 uint8_t key_counter = 0;
 bool auth_key_status;
 status_t flash_init_for_csec;
-
+bool erase_status;
 int main(void)
 {
   /* Write your code here */
@@ -119,7 +119,9 @@ int main(void)
 ////     * key (a secret key known by the application in order to configure other user keys) */
 //    auth_key_status =  setAuthKey();
 
-      if (eraseKeys())
+    erase_status = eraseKeys();
+
+      if (erase_status)
        {
            PINS_DRV_ClearPins(LED_PORT, 1 << LED_OK);
            PINS_DRV_ClearPins(LED_PORT, 1 << LED_ERROR);

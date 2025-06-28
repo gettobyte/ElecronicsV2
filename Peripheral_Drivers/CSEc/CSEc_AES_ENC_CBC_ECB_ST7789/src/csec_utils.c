@@ -270,12 +270,14 @@ bool eraseKeys(void)
     if (stat != STATUS_SUCCESS)
         return false;
 
-    CSEC_DRV_DbgAuth(auth);
+    stat = CSEC_DRV_DbgAuth(auth);
+    if (stat != STATUS_SUCCESS)
+        return false;
 
     return true;
 }
 
-/* Loads/updates a non-volatile key. */
+/* Loads/updates a non-volatile key */
 bool loadKey(csec_key_id_t keyId, uint8_t *keyNew, uint8_t counter)
 {
     uint8_t uid[15] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
