@@ -65,7 +65,7 @@ instance:
  */
 
 lpi2c_master_user_config_t lpi2c0_MasterConfig0 = {
-  .slaveAddress = 40U,
+  .slaveAddress = 0x29,
   .is10bitAddr = false,
   .operatingMode = LPI2C_STANDARD_MODE,
   .baudRate = 100000UL,
