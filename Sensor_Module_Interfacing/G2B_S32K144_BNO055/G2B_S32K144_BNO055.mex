@@ -36,6 +36,12 @@
                <pins>
                   <pin peripheral="LPI2C0" signal="sda, sda" pin_num="73" pin_signal="PTA2"/>
                   <pin peripheral="LPI2C0" signal="scl, scl" pin_num="72" pin_signal="PTA3"/>
+                  <pin peripheral="LPUART1" signal="txd" pin_num="80" pin_signal="PTC7">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="LPUART1" signal="rxd" pin_num="81" pin_signal="PTC6"/>
                </pins>
             </function>
          </functions_list>
@@ -222,10 +228,22 @@
                   <data type="Version">1.0.0</data>
                </feature>
             </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.driver.lpuart" description="LPUART Driver not found in the toolchain/IDE project. Project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.driver.lpuart" description="Unsupported version of the LPUART Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. Project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">1.0.0</data>
+               </feature>
+            </dependency>
          </dependencies>
          <generated_project_files>
             <file path="board/peripherals_lpi2c_config_1.c" update_enabled="true"/>
             <file path="board/peripherals_lpi2c_config_1.h" update_enabled="true"/>
+            <file path="board/peripherals_lpuart_1.c" update_enabled="true"/>
+            <file path="board/peripherals_lpuart_1.h" update_enabled="true"/>
             <file path="board/sdk_project_config.h" update_enabled="true"/>
          </generated_project_files>
          <peripherals_profile>
@@ -254,6 +272,24 @@
                            </struct>
                         </array>
                         <array name="slaveConfigurationLPI2C"/>
+                     </config_set>
+                  </instance>
+                  <instance name="lpuart_1" uuid="c7ef3df8-d6e9-4cda-9d97-6e69d5d87289" type="lpuart_config" type_id="lpuart" mode="general" peripheral="LPUART_1" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="lpuart_driver">
+                        <setting name="lpuart_state_name" value="lpUartState0"/>
+                        <array name="lpuart_configuration">
+                           <struct name="0">
+                              <setting name="name" value="lpuart_0_InitConfig0"/>
+                              <setting name="readonly" value="true"/>
+                              <setting name="transferType" value="LPUART_USING_INTERRUPTS"/>
+                              <setting name="baudRate" value="9600"/>
+                              <setting name="parityMode" value="LPUART_PARITY_DISABLED"/>
+                              <setting name="stopBitCount" value="LPUART_ONE_STOP_BIT"/>
+                              <setting name="bitCountPerChar" value="LPUART_8_BITS_PER_CHAR"/>
+                              <setting name="rxDMAChannel" value="0"/>
+                              <setting name="txDMAChannel" value="0"/>
+                           </struct>
+                        </array>
                      </config_set>
                   </instance>
                </instances>

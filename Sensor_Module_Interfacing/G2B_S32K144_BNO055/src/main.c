@@ -50,10 +50,28 @@ uint8_t masterTxBuffer = 0x26;
 status_t x;
 
     lpi2c_master_state_t lpi2c1MasterState;
+    lpuart_state_t lpuart1state;
 
 uint8_t tx_bno055[1] = { 0x00};
 
 uint8_t tx_oled[1] = { 0x70};
+
+// Function to send the euler data over UART
+void printEulerOverUart(bno055_euler_t *euler) {
+    // Create a buffer to store the formatted string
+    char buffer[100];
+
+    // Format the Euler angles into a string
+    snprintf(buffer, sizeof(buffer),
+             "Heading: %.2f, Roll: %.2f, Pitch: %.2f\n",
+             euler->heading_deg, euler->roll_deg, euler->pitch_deg);
+
+    // Send the string over UART (assuming LPUART instance 0, adjust as necessary)
+    status_t status = LPUART_DRV_SendDataBlocking(0, (const uint8_t*)buffer, strlen(buffer), 1000);
+    if (status != STATUS_SUCCESS) {
+        // Handle error (could print error or take other action)
+    }
+}
 
 //bno055_euler_t euler;
 
@@ -73,6 +91,8 @@ int main(void)
 	    x = LPI2C_DRV_MasterInit(INST_LPI2C0, &lpi2c0_MasterConfig0, &lpi2c1MasterState);
 	    // 2. Initialize the BNO055 sensor
 
+	    x = LPUART_DRV_Init(INST_LPUART_1, &lpuart1state, &lpuart_0_InitConfig0 );
+
 	     x = OLED_I2C_MASTER_SEND(INST_LPI2C0, tx_bno055,1, false );
 
 	     st = bno055_init();
@@ -85,7 +105,9 @@ int main(void)
 	         while (1) {
 	             st = bno055_read_euler_deg(&euler);
 	             if (st == BNO055_STATUS_OK) {
-	                 printf("Heading: %.2f, Roll: %.2f, Pitch: %.2f\r\n",
+
+	            	 printEulerOverUart(&euler);
+	            	 printf("Heading: %.2f, Roll: %.2f, Pitch: %.2f\r\n",
 	                        euler.heading_deg, euler.roll_deg, euler.pitch_deg);
 	             } else {
 	                 printf("Error reading Euler angles: %d\r\n", st);

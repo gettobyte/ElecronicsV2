@@ -22,36 +22,36 @@ functionalGroups:
 /*******************************************************************************
  * Included files 
  ******************************************************************************/
-#include "peripherals_lpi2c_config_1.h"
+#include "peripherals_lpuart_1.h"
 
 /*******************************************************************************
- * lpi2c_config_1 initialization code
+ * lpuart_1 initialization code
  ******************************************************************************/
 /* clang-format off */
 /* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 instance:
-- name: 'lpi2c_config_1'
-- type: 'lpi2c_config'
+- name: 'lpuart_1'
+- type: 'lpuart_config'
 - mode: 'general'
 - custom_name_enabled: 'false'
-- type_id: 'lpi2c'
+- type_id: 'lpuart'
 - functional_group: 'BOARD_InitPeripherals'
-- peripheral: 'LPI2C0'
+- peripheral: 'LPUART_1'
 - config_sets:
-  - lpi2c:
-    - masterConfigurationLPI2C:
+  - lpuart_driver:
+    - lpuart_state_name: 'lpUartState0'
+    - lpuart_configuration:
       - 0:
-        - name: 'lpi2c0_MasterConfig0'
-        - readonly: 'false'
-        - lpi2c_master_cfg_slaveAddress: '0x28'
-        - lpi2c_master_cfg_is10bitAddr: 'false'
-        - lpi2c_master_cfg_operatingMode: 'LPI2C_STANDARD_MODE'
-        - lpi2c_master_cfg_baudRate: '100000'
-        - lpi2c_master_cfg_transferType: 'LPI2C_USING_INTERRUPTS'
-        - lpi2c_master_cfg_dmaChannel: '0'
-        - lpi2c_master_cfg_masterCallback: 'NULL'
-        - lpi2c_master_cfg_callbackParam: 'NULL'
-    - slaveConfigurationLPI2C: []
+        - name: 'lpuart_0_InitConfig0'
+        - readonly: 'true'
+        - transferType: 'LPUART_USING_INTERRUPTS'
+        - baudRate: '9600'
+        - parityMode: 'LPUART_PARITY_DISABLED'
+        - stopBitCount: 'LPUART_ONE_STOP_BIT'
+        - bitCountPerChar: 'LPUART_8_BITS_PER_CHAR'
+        - rxDMAChannel: '0'
+        - txDMAChannel: '0'
+    - quick_selection: 'dv_lpuart0'
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
 
@@ -63,16 +63,16 @@ instance:
  * The external variables will be used in other source files in application code.
  *
  */
+lpuart_state_t lpUartState0;
 
-lpi2c_master_user_config_t lpi2c0_MasterConfig0 = {
-  .slaveAddress = 40U,
-  .is10bitAddr = false,
-  .operatingMode = LPI2C_STANDARD_MODE,
-  .baudRate = 100000UL,
-  .transferType = LPI2C_USING_INTERRUPTS,
-  .dmaChannel = 0U,
-  .masterCallback = NULL,
-  .callbackParam = NULL
+const lpuart_user_config_t lpuart_0_InitConfig0 = {
+  .transferType = LPUART_USING_INTERRUPTS,
+  .baudRate = 9600UL,
+  .parityMode = LPUART_PARITY_DISABLED,
+  .stopBitCount = LPUART_ONE_STOP_BIT,
+  .bitCountPerChar = LPUART_8_BITS_PER_CHAR,
+  .rxDMAChannel = 0UL,
+  .txDMAChannel = 0UL
 };
 
 
