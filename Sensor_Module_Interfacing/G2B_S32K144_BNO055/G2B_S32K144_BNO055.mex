@@ -42,6 +42,8 @@
                      </pin_features>
                   </pin>
                   <pin peripheral="LPUART1" signal="rxd" pin_num="81" pin_signal="PTC6"/>
+                  <pin peripheral="CAN0" signal="txd, txd" pin_num="8" pin_signal="PTE5"/>
+                  <pin peripheral="CAN0" signal="rxd, rxd" pin_num="9" pin_signal="PTE4"/>
                </pins>
             </function>
          </functions_list>
@@ -238,8 +240,20 @@
                   <data type="Version">1.0.0</data>
                </feature>
             </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.driver.flexcan" description="FLEXCAN Driver not found in the toolchain/IDE project. Project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.driver.flexcan" description="Unsupported version of the FLEXCAN Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. Project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">1.0.0</data>
+               </feature>
+            </dependency>
          </dependencies>
          <generated_project_files>
+            <file path="board/peripherals_flexcan_config_1.c" update_enabled="true"/>
+            <file path="board/peripherals_flexcan_config_1.h" update_enabled="true"/>
             <file path="board/peripherals_lpi2c_config_1.c" update_enabled="true"/>
             <file path="board/peripherals_lpi2c_config_1.h" update_enabled="true"/>
             <file path="board/peripherals_lpuart_1.c" update_enabled="true"/>
@@ -261,7 +275,7 @@
                            <struct name="0">
                               <setting name="name" value="lpi2c0_MasterConfig0"/>
                               <setting name="readonly" value="false"/>
-                              <setting name="lpi2c_master_cfg_slaveAddress" value="0x28"/>
+                              <setting name="lpi2c_master_cfg_slaveAddress" value="0x29"/>
                               <setting name="lpi2c_master_cfg_is10bitAddr" value="false"/>
                               <setting name="lpi2c_master_cfg_operatingMode" value="LPI2C_STANDARD_MODE"/>
                               <setting name="lpi2c_master_cfg_baudRate" value="100000"/>
@@ -290,6 +304,35 @@
                               <setting name="txDMAChannel" value="0"/>
                            </struct>
                         </array>
+                     </config_set>
+                  </instance>
+                  <instance name="flexcan_config_1" uuid="ef144c44-4746-48c8-ae40-d694a81c1732" type="flexcan_config" type_id="flexcan" mode="general" peripheral="CAN0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="flexcan">
+                        <struct name="flexcanCfg">
+                           <setting name="name" value="flexcanInitConfig0"/>
+                           <setting name="readonly" value="false"/>
+                           <setting name="flexcan_cfg_flexcanMode" value="FLEXCAN_NORMAL_MODE"/>
+                           <setting name="flexcan_cfg_fd_enable" value="false"/>
+                           <setting name="flexcan_cfg_payload" value="FLEXCAN_PAYLOAD_SIZE_8"/>
+                           <setting name="flexcan_cfg_max_num_mb" value="16"/>
+                           <setting name="flexcan_cfg_num_id_filters" value="FLEXCAN_RX_FIFO_ID_FILTERS_8"/>
+                           <setting name="flexcan_cfg_is_rx_fifo_needed" value="false"/>
+                           <setting name="flexcan_cfg_transfer_type" value="FLEXCAN_RXFIFO_USING_INTERRUPTS"/>
+                           <setting name="flexcan_cfg_rxFifoDMAChannel" value="0"/>
+                           <setting name="flexcan_cfg_pe_clock" value="FLEXCAN_CLK_SOURCE_PERIPH"/>
+                           <setting name="flexcan_bitrate2ts" value="true"/>
+                           <struct name="flexcan_cfg_time_segments2">
+                              <struct name="flexcan_cfg_bitrate">
+                                 <setting name="flexcan_cfg_rJumpwidth" value="1"/>
+                                 <setting name="input_nominal_bitrate" value="500"/>
+                                 <setting name="input_nominal_sampling" value="87.5"/>
+                              </struct>
+                           </struct>
+                        </struct>
+                        <struct name="flexcanPN">
+                           <setting name="pnOn" value="false"/>
+                        </struct>
+                        <setting name="flexcan_state_name" value="flexcanState0"/>
                      </config_set>
                   </instance>
                </instances>

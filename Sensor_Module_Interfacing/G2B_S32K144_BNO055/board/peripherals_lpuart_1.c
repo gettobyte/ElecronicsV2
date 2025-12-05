@@ -51,7 +51,6 @@ instance:
         - bitCountPerChar: 'LPUART_8_BITS_PER_CHAR'
         - rxDMAChannel: '0'
         - txDMAChannel: '0'
-    - quick_selection: 'dv_lpuart0'
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
 

@@ -22,36 +22,44 @@ functionalGroups:
 /*******************************************************************************
  * Included files 
  ******************************************************************************/
-#include "peripherals_lpi2c_config_1.h"
+#include "peripherals_flexcan_config_1.h"
 
 /*******************************************************************************
- * lpi2c_config_1 initialization code
+ * flexcan_config_1 initialization code
  ******************************************************************************/
 /* clang-format off */
 /* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 instance:
-- name: 'lpi2c_config_1'
-- type: 'lpi2c_config'
+- name: 'flexcan_config_1'
+- type: 'flexcan_config'
 - mode: 'general'
 - custom_name_enabled: 'false'
-- type_id: 'lpi2c'
+- type_id: 'flexcan'
 - functional_group: 'BOARD_InitPeripherals'
-- peripheral: 'LPI2C0'
+- peripheral: 'CAN0'
 - config_sets:
-  - lpi2c:
-    - masterConfigurationLPI2C:
-      - 0:
-        - name: 'lpi2c0_MasterConfig0'
-        - readonly: 'false'
-        - lpi2c_master_cfg_slaveAddress: '0x29'
-        - lpi2c_master_cfg_is10bitAddr: 'false'
-        - lpi2c_master_cfg_operatingMode: 'LPI2C_STANDARD_MODE'
-        - lpi2c_master_cfg_baudRate: '100000'
-        - lpi2c_master_cfg_transferType: 'LPI2C_USING_INTERRUPTS'
-        - lpi2c_master_cfg_dmaChannel: '0'
-        - lpi2c_master_cfg_masterCallback: 'NULL'
-        - lpi2c_master_cfg_callbackParam: 'NULL'
-    - slaveConfigurationLPI2C: []
+  - flexcan:
+    - flexcanCfg:
+      - name: 'flexcanInitConfig0'
+      - readonly: 'false'
+      - flexcan_cfg_flexcanMode: 'FLEXCAN_NORMAL_MODE'
+      - flexcan_cfg_fd_enable: 'false'
+      - flexcan_cfg_payload: 'FLEXCAN_PAYLOAD_SIZE_8'
+      - flexcan_cfg_max_num_mb: '16'
+      - flexcan_cfg_num_id_filters: 'FLEXCAN_RX_FIFO_ID_FILTERS_8'
+      - flexcan_cfg_is_rx_fifo_needed: 'false'
+      - flexcan_cfg_transfer_type: 'FLEXCAN_RXFIFO_USING_INTERRUPTS'
+      - flexcan_cfg_rxFifoDMAChannel: '0'
+      - flexcan_cfg_pe_clock: 'FLEXCAN_CLK_SOURCE_PERIPH'
+      - flexcan_bitrate2ts: 'true'
+      - flexcan_cfg_time_segments2:
+        - flexcan_cfg_bitrate:
+          - flexcan_cfg_rJumpwidth: '1'
+          - input_nominal_bitrate: '500'
+          - input_nominal_sampling: '87.5'
+    - flexcanPN:
+      - pnOn: 'false'
+    - flexcan_state_name: 'flexcanState0'
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
 
@@ -64,15 +72,25 @@ instance:
  *
  */
 
-lpi2c_master_user_config_t lpi2c0_MasterConfig0 = {
-  .slaveAddress = 41U,
-  .is10bitAddr = false,
-  .operatingMode = LPI2C_STANDARD_MODE,
-  .baudRate = 100000UL,
-  .transferType = LPI2C_USING_INTERRUPTS,
-  .dmaChannel = 0U,
-  .masterCallback = NULL,
-  .callbackParam = NULL
+flexcan_state_t flexcanState0;
+
+flexcan_user_config_t flexcanInitConfig0 = {
+  .flexcanMode = FLEXCAN_NORMAL_MODE,
+  .fd_enable = false,
+  .payload = FLEXCAN_PAYLOAD_SIZE_8,
+  .max_num_mb = 16UL,
+  .num_id_filters = FLEXCAN_RX_FIFO_ID_FILTERS_8,
+  .is_rx_fifo_needed = false,
+  .transfer_type = FLEXCAN_RXFIFO_USING_INTERRUPTS,
+  .rxFifoDMAChannel = 0U,
+  .pe_clock = FLEXCAN_CLK_SOURCE_PERIPH,
+  .bitrate = {
+    .propSeg = 7UL,
+    .phaseSeg1 = 4UL,
+    .phaseSeg2 = 1UL,
+    .preDivider = 5UL,
+    .rJumpwidth = 1UL
+  }
 };
 
 
