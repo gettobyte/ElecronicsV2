@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNO055 IMU Plate Visualization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    /* Container for plate with 3D perspective */
+    .imu-container {
+      perspective: 800px;
+      width: 400px;
+      height: 300px;
+      margin: 50px auto;
+    }
+
+    /* The plate */
+    .plate {
+      width: 300px;
+      height: 200px;
+      background-color: #27ae60;
+      border-radius: 10px;
+      transform-style: preserve-3d;
+      transition: transform 0.05s linear; /* smooth motion */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    /* IMU data display */
+    .imu-data {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body onload="main()">
+
+  <!-- FreeMASTER ActiveX object -->
+  <object
+    name="freemaster"
+    width="0"
+    height="0"
+    classid="clsid:48A185F1-FFDB-11D3-80E3-00C04F176153">
+  </object>
+
+  <h1>BNO055 IMU Plate Visualization</h1>
+
+  <div class="imu-container">
+    <div class="plate">PLATE</div>
+  </div>
+
+  <div class="imu-data">
+    <p id="yaw">Yaw: 0°</p>
+    <p id="pitch">Pitch: 0°</p>
+    <p id="roll">Roll: 0°</p>
+  </div>
+
+  <script>
+    let plate, yawEl, pitchEl, rollEl;
+
+    function main() {
+      plate = document.querySelector(".plate");
+      yawEl = document.getElementById("yaw");
+      pitchEl = document.getElementById("pitch");
+      rollEl = document.getElementById("roll");
+
+      // Update IMU data every 50ms
+      setInterval(updateIMU, 50);
+    }
+
+let prevYaw = 0, prevPitch = 0, prevRoll = 0;
+
+    function updateIMU() {
+  let yaw = 0, pitch = 0, roll = 0;
+
+  if(freemaster.ReadVariable("Yaw")) yaw = freemaster.LastVariable_vValue;
+  if(freemaster.ReadVariable("Pitch")) pitch = freemaster.LastVariable_vValue;
+  if(freemaster.ReadVariable("Roll")) roll = freemaster.LastVariable_vValue;
+
+  // Correct for wrap-around for each angle
+  yaw = unwrapAngle(prevYaw, yaw);
+  pitch = unwrapAngle(prevPitch, pitch);
+  roll = unwrapAngle(prevRoll, roll);
+
+  // Apply rotation
+  plate.style.transform = `rotateX(${pitch}deg) rotateY(${yaw}deg) rotateZ(${roll}deg)`;
+
+  // Update textual display
+  yawEl.textContent = `Yaw: ${yaw.toFixed(2)}°`;
+  pitchEl.textContent = `Pitch: ${pitch.toFixed(2)}°`;
+  rollEl.textContent = `Roll: ${roll.toFixed(2)}°`;
+
+  // Save previous values
+  prevYaw = yaw;
+  prevPitch = pitch;
+  prevRoll = roll;
+}
+
+// Helper function to unwrap angles across 0/360 boundary
+function unwrapAngle(prev, current) {
+  let delta = current - prev;
+  if(delta > 180) delta -= 360;
+  if(delta < -180) delta += 360;
+  return prev + delta;
+}
+  </script>
+</body>
+</html>
